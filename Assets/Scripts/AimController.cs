@@ -38,7 +38,7 @@ public class AimController : MonoBehaviour
         if (Input.GetMouseButton(0) && canAttack)
         {
             canAttack = false;
-            Instantiate(attackObject, attackTransform.position, Quaternion.identity);
+            Instantiate(attackObject, attackTransform.position, transform.rotation * Quaternion.Euler(0, 0, -45));
             StartCoroutine(WaitAttackCooldown());
         }
     }
