@@ -41,3 +41,24 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Ground
+    uniqueID: 2000106925
+    locked: 0
+  - name: Environment
+    uniqueID: 3780939645
+    locked: 0
+  - name: Hazards
+    uniqueID: 3583305493
+    locked: 0
+  - name: Walls
+    uniqueID: 3188057303
+    locked: 0
+  - name: Enemies
+    uniqueID: 2259155675
+    locked: 0
+  - name: Bullets
+    uniqueID: 335262491
+    locked: 0
+  - name: Player
+    uniqueID: 1676653107
+    locked: 0
