@@ -25,8 +25,8 @@ public class PlayerController : MonoBehaviour
     private void GetPlayerInput()
     {
         // Stick movement
-        //playerMovement = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-        playerMovement = new Vector2(0, 0);
+        playerMovement = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        //playerMovement = new Vector2(0, 0);
         // Keyboard movement
         float xMovement = 0;
         float yMovement = 0;
