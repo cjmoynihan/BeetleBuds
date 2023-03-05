@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
+    // Health related info
     public int hitPoints;
+    public Transform playerTransform;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -17,5 +19,7 @@ public class EnemyController : MonoBehaviour
             }
         }
     }
+
+
 
 }

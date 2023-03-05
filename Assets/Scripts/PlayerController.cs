@@ -48,4 +48,13 @@ public class PlayerController : MonoBehaviour
 
         rb.MovePosition(rb.position + realtimeMovement);
     }
+
+    public class Stats
+    {
+        // Put default stats here
+        public Stats()
+        {
+
+        }
+    }
 }
