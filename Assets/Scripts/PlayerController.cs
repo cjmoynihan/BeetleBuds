@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    // public int startingHealth;
+    // public int startingDamage;
+
     public float playerSpeed;
 
     private Rigidbody2D rb;
@@ -50,7 +53,7 @@ public class PlayerController : MonoBehaviour
     }
 
     public List<Parts.BugPart> playerParts;
-    public Stats initialStats;
+    public Stats initialStats = new Stats();
 
     // Define initial stats and create Stats class for Parts.cs
     public class Stats
