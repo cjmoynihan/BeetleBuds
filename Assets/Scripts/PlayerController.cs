@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    // public int startingHealth;
+    // public int startingDamage;
+
     public float playerSpeed;
 
     private Rigidbody2D rb;
@@ -50,12 +53,29 @@ public class PlayerController : MonoBehaviour
         rb.MovePosition(rb.position + realtimeMovement);
     }
 
+    public List<Parts.BugPart> playerParts;
+    public Stats initialStats = new Stats();
+
+    // Define initial stats and create Stats class for Parts.cs
     public class Stats
     {
-        // Put default stats here
+        public int health;
+        public int damage;
+
         public Stats()
         {
-
+            health = 5;
+            damage = 1;
         }
+    }
+
+    public Stats getCurrentStats()
+    {
+        Stats tempStats = initialStats;
+        foreach(Parts.BugPart part in playerParts)
+        {
+            tempStats = part.applyStats(tempStats);
+        }
+        return tempStats;
     }
 }
