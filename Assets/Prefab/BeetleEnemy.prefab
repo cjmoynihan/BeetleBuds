@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4790237902876466518}
   - component: {fileID: 4790237902876466519}
   - component: {fileID: 1292151046474001356}
-  - component: {fileID: 6302186998182709266}
+  - component: {fileID: 7560408163519701543}
   m_Layer: 0
   m_Name: BeetleEnemy
   m_TagString: Enemy
@@ -124,7 +124,7 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0.000000059604645}
   m_Size: {x: 0.38, y: 0.38}
   m_Direction: 0
---- !u!114 &6302186998182709266
+--- !u!114 &7560408163519701543
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -133,8 +133,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4790237902876466516}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e11b6059c002c4c7db111f3bfa382c0d, type: 3}
+  m_Script: {fileID: 11500000, guid: 67547ee822c7543129bb716004b56589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoints: 3
-  playerTransform: {fileID: 0}
+  hitPoints: 1

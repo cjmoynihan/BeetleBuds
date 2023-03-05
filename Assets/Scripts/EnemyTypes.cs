@@ -55,15 +55,15 @@ public class EnemyTypes
     }
 
 
-    public class SimpleAI : EnemyBehavior
-    {
-        protected override void PlayerCollision(Collision2D collision)
-        {
-
-        }
-        public override void Behavior()
-        {
-            
-        }
-    }
+    //public class SimpleAI : EnemyBehavior
+    //{
+    //    protected override void PlayerCollision(Collision2D collision)
+    //    {
+    //        FindPlayer().GetComponent<PlayerController>().health -= 1;
+    //    }
+    //    public override void Behavior()
+    //    {
+    //        transform.LookAt(FindPlayerTransform());
+    //    }
+    //}
 }
