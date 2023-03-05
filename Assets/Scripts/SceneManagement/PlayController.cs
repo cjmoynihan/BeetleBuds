@@ -18,7 +18,7 @@ public class PlayController
     {
         floorsMap = new Dictionary<string, FloorController>();
         floors = new List<string>();
-        var floorPaths = Directory.GetDirectories("Assets\\Scenes\\Floors");
+        var floorPaths = Directory.GetDirectories("Assets/Scenes/Floors");
 
         foreach(var floorPath in floorPaths)
         {
