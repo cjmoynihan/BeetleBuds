@@ -10,16 +10,13 @@ public class EnemyController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Attack")
+        if (collision.gameObject.tag == "Attack")
         {
             hitPoints -= 1;
-            if(hitPoints <= 0)
+            if (hitPoints <= 0)
             {
                 Destroy(gameObject);
             }
         }
     }
-
-
-
 }

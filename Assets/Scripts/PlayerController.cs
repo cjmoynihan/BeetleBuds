@@ -8,10 +8,21 @@ public class PlayerController : MonoBehaviour
     // public int startingDamage;
 
     public float playerSpeed;
+    public float health = 5;
 
     private Rigidbody2D rb;
     // This variable will accept player movement from either keyboard or controller
     private Vector2 playerMovement;
+
+
+    public void CauseDamage(int damage)
+    {
+        health -= damage;
+    }
+    public void GameOver()
+    {
+        Destroy(gameObject);
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +34,10 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         GetPlayerInput();
+        if (health <= 0)
+        {
+            GameOver();
+        }
     }
 
     private void GetPlayerInput()
