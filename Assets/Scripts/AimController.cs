@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -22,9 +23,14 @@ public class AimController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Find mouse
-        mousePos = mainCam.ScreenToWorldPoint(Input.mousePosition);
-
+        try
+        {
+            // Find mouse
+            mousePos = mainCam.ScreenToWorldPoint(Input.mousePosition);
+        } catch (MissingReferenceException)
+        {
+            mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+        }
         // Calculate the amount we need to rotate
         Vector3 rotation = mousePos - transform.position;
 
