@@ -9,9 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Menus/Main Menu.unity
     guid: 74986c922d7eb204497213d98384dba9
   - enabled: 1
-    path: Assets/Scenes/FirstFloor/BasicLevel.unity
-    guid: e66f6d7ce50014effb627ca9bc15cbb4
+    path: Assets/Scenes/Floors/First Floor/BasicLevel.unity
+    guid: a6fbfe5a92045314f8118245cf1dbaf5
   - enabled: 1
-    path: Assets/Scenes/FirstFloor/StartStop.unity
-    guid: 04ad6250d0120cb4e8dc220d06176e0b
+    path: Assets/Scenes/Floors/First Floor/TestingGrounds.unity
+    guid: bb1e8bf5363b9514f93b8243f25f478a
   m_configObjects: {}

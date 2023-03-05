@@ -17,16 +17,15 @@ public class PlayController
     public PlayController()
     {
         floorsMap = new Dictionary<string, FloorController>();
+        floors = new List<string>();
+        var floorPaths = Directory.GetDirectories("Assets\\Scenes\\Floors");
 
-        floors = new List<string>
+        foreach(var floorPath in floorPaths)
         {
-            "FirstFloor"
-        };
-
-        foreach(var floor in floors)
-        {
-            FloorController loadedFloor = new FloorController($"Assets\\Scenes\\{floor}");
-            floorsMap.Add(floor, loadedFloor);
+            FloorController loadedFloor = new FloorController(floorPath);
+            var floorName = new DirectoryInfo(floorPath).Name;
+            floorsMap.Add(floorName, loadedFloor);
+            floors.Add(floorName);
         }
     }
 
@@ -37,9 +36,8 @@ public class PlayController
         currentFloor.NextRoom();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Next()
     {
-
+        currentFloor.NextRoom();
     }
 }
