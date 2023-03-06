@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitPoints: 2
-  rotationSpeed: 35
+  rotationSpeed: 80
   moveSpeed: 20
   chargeSpeed: 5000
   chargeMargin: 2

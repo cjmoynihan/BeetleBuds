@@ -9,11 +9,11 @@ public class HornBeetleAI : EnemyTypes.EnemyBehavior
     // Charging enemy
     private bool chargeReady = false;
     private bool charging = false;
-    public float rotationSpeed = 35.0f;
-    public float moveSpeed = 0.75f;
-    public float chargeSpeed = 1000f;
+    public float rotationSpeed = 80.0f;
+    public float moveSpeed = 20f;
+    public float chargeSpeed = 5000f;
     // The amount of degrees before it decides to charge
-    public float chargeMargin = 20f;
+    public float chargeMargin = 2f;
     public float chargeBuildUp = 1f;
 
 
