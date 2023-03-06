@@ -15,7 +15,7 @@ public class HornBeetleAI : EnemyTypes.EnemyBehavior
     // The amount of degrees before it decides to charge
     public float chargeMargin = 2f;
     public float chargeBuildUp = 1f;
-
+    public float recoilAmount = 0.1f;
 
     public override void Behavior()
     {
@@ -81,10 +81,17 @@ public class HornBeetleAI : EnemyTypes.EnemyBehavior
         // Apply knockback and shake effect
         chargeReady = false;
         charging = false;
+        Rigidbody2D rb = GetComponent<Rigidbody2D>();
+        rb.velocity = new Vector2(rb.velocity.x * recoilAmount, rb.velocity.y * recoilAmount)
+        //ContactPoint2D collisionPoint = collision.GetContact(0);
+        //GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
+        //Knockback();
+        ;
     }
     private void Knockback()
     {
-        throw new System.NotImplementedException();
+        Rigidbody2D rb = GetComponent<Rigidbody2D>();
+        rb.AddForce(transform.up * -chargeSpeed);
     }
     private void Shake()
     {
