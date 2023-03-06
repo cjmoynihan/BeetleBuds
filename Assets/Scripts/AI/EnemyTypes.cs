@@ -24,6 +24,8 @@ public class EnemyTypes
         }
         protected abstract void PlayerCollision(Collision2D collision);
 
+        protected virtual void AllCollision(Collision2D collision) { }
+
         protected void OnCollisionEnter2D(Collision2D collision)
         {
             if (collision.gameObject.tag == "Attack")
@@ -34,6 +36,7 @@ public class EnemyTypes
             {
                 PlayerCollision(collision);
             }
+            AllCollision(collision);
         }
         public void FixedUpdate()
         {
