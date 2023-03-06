@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameController : MonoBehaviour
 {
     PlayController _levelController;
+    public GameObject seedGenerator;
     public GameObject _player;
 
     public void Awake()
@@ -18,6 +19,8 @@ public class GameController : MonoBehaviour
 
     public void PlayGame()
     {
+        var seedGen = seedGenerator.GetComponent<SetSeed>();
+        seedGen.SetGameSeed();
         Instantiate(_player);
         _levelController.LoadNextLevel();
 
