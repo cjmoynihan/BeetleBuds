@@ -4,5 +4,13 @@ using UnityEngine;
 
 public class CentipedeAI : EnemyTypes.EnemyBehavior
 {
-   
+    public override void Behavior()
+    {
+        throw new System.NotImplementedException();
+    }
+
+    protected override void PlayerCollision(Collision2D collision)
+    {
+        throw new System.NotImplementedException();
+    }
 }
