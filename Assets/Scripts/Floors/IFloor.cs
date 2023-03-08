@@ -4,7 +4,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public abstract class IFloor : MonoBehaviour
+public abstract class IFloor : ScriptableObject
 {
     public abstract List<string> Rooms { get; }
 
@@ -16,12 +16,17 @@ public abstract class IFloor : MonoBehaviour
 
     public List<string> RoomsVisited { get;} = new List<string>();
 
+    public int NumRoomsVisited { get; set; } = 0;
+
     public List<string> RoomsRemaining { get; set; } = new List<string>();
+
+    public abstract int StartingDifficulty { get; }
+
+    public abstract int IncrementalDifficulty { get; }
 
     public string ChooseRoom()
     {
-
-        if (RoomsRemaining.Count == 0 && RoomsVisited.Count < Rooms.Count)
+        if (RoomsRemaining.Count == 0)
         {
             RoomsRemaining = Rooms.Select(x => x).ToList();
         }

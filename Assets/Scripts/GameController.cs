@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
-    PlayController _playController;
+    public PlayController _playController;
     public GameObject seedGenerator;
     public GameObject _player;
 

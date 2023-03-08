@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8095561717322853184}
   m_Layer: 0
   m_Name: BeetleSpawn
-  m_TagString: Untagged
+  m_TagString: EnemySpawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100,3 +100,4 @@ MonoBehaviour:
   zoneHeight: 3
   zoneWidth: 3
   numToSpawn: 2
+  spawnValue: 1

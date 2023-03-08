@@ -10,10 +10,10 @@ public class PlayController
 {
     private List<IFloor> floors = new List<IFloor>
     {
-        new FirstFloor()
+        ScriptableObject.CreateInstance<FirstFloor>()
     };
     private int currentFloorIndex = 0;
-    private IFloor currentFloor;
+    public IFloor currentFloor;
 
     public void LoadNextLevel()
     {
