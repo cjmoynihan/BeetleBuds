@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
-    PlayController _levelController;
+    PlayController _playController;
     public GameObject seedGenerator;
     public GameObject _player;
 
@@ -14,7 +14,7 @@ public class GameController : MonoBehaviour
     }
     public void Start()
     {
-        _levelController = new PlayController();
+        _playController = new PlayController();
     }
 
     public void PlayGame()
@@ -22,11 +22,11 @@ public class GameController : MonoBehaviour
         var seedGen = seedGenerator.GetComponent<SetSeed>();
         seedGen.SetGameSeed();
         Instantiate(_player);
-        _levelController.LoadNextLevel();
+        _playController.LoadNextLevel();
 
     }
     public void Next()
     {
-        _levelController.Next();
+        _playController.Next();
     }
 }
