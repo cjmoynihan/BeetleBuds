@@ -8,16 +8,12 @@ using UnityEngine.SceneManagement;
 
 public class PlayController
 {
-    private List<IFloor> floors;
+    private List<IFloor> floors = new List<IFloor>
+    {
+        new FirstFloor()
+    };
     private int currentFloorIndex = 0;
     private IFloor currentFloor;
-
-
-    public PlayController()
-    {
-
-       floors = GameObject.FindGameObjectWithTag("LevelController").GetComponents<IFloor>().ToList();
-    }
 
     public void LoadNextLevel()
     {

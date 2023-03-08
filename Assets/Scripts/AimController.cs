@@ -25,12 +25,12 @@ public class AimController : MonoBehaviour
     {
         try
         {
-            // Find mouse
             mousePos = mainCam.ScreenToWorldPoint(Input.mousePosition);
-        } catch (MissingReferenceException)
+        } catch
         {
             mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
         }
+
         // Calculate the amount we need to rotate
         Vector3 rotation = mousePos - transform.position;
 
@@ -39,13 +39,19 @@ public class AimController : MonoBehaviour
         transform.rotation = Quaternion.Euler(0, 0, rotZ);
 
 
-
+        Console.Write(1);
         // Handle attacking
         if (Input.GetMouseButton(0) && canAttack)
         {
+            Console.Write(2);
+
             canAttack = false;
             Instantiate(attackObject, attackTransform.position, transform.rotation * Quaternion.Euler(0, 0, -45));
+            Console.Write(3);
+
             StartCoroutine(WaitAttackCooldown());
+            Console.Write(4);
+
         }
     }
 
