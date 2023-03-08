@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class SpawnController : MonoBehaviour
@@ -9,7 +10,7 @@ public class SpawnController : MonoBehaviour
 
     private void Awake()
     {
-        DontDestroyOnLoad(this);
+        DontDestroyOnLoad(this.gameObject);
     }
 
     // Start is called before the first frame update

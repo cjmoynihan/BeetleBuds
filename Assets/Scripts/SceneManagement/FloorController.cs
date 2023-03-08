@@ -8,7 +8,6 @@ using UnityEngine.SceneManagement;
 
 public class FloorController
 {
-    private int numRoomsVisited = 0;
     private List<string> roomsPossible;
     private string currentRoom;
 
