@@ -1930,7 +1930,7 @@ PrefabInstance:
     - target: {fileID: 6971708094904432090, guid: 72891d497eb32864bbf0ce16a07941b5, type: 3}
       propertyPath: _player
       value: 
-      objectReference: {fileID: 5330450271777675221, guid: 8c593f9cda269ba45b365c4f3d78e542, type: 3}
+      objectReference: {fileID: 6118661290419202036, guid: 14fb36a8800d64c89b3ac293b3c7755a, type: 3}
     - target: {fileID: 6971708094904432090, guid: 72891d497eb32864bbf0ce16a07941b5, type: 3}
       propertyPath: seedGenerator
       value: 
