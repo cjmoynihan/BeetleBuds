@@ -15,7 +15,7 @@ TagManager:
   - UI
   - Player
   - Bullets
-  - 
+  - Centipede
   - Walls
   - 
   - 
@@ -57,6 +57,9 @@ TagManager:
     locked: 0
   - name: Enemies
     uniqueID: 2259155675
+    locked: 0
+  - name: Centipede
+    uniqueID: 4017402743
     locked: 0
   - name: Bullets
     uniqueID: 335262491

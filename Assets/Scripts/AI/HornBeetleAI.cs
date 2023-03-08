@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class HornBeetleAI : EnemyTypes.EnemyBehavior
 {
+    public void Start()
+    {
+        Debug.Log($"Health:{FindPlayer().GetComponent<PlayerController>().health}");
+    }
     // Horn beetle moves slowly
     // Has "big" attack
     // Charging enemy
@@ -15,7 +19,7 @@ public class HornBeetleAI : EnemyTypes.EnemyBehavior
     // The amount of degrees before it decides to charge
     public float chargeMargin = 2f;
     public float chargeBuildUp = 1f;
-
+    public float recoilAmount = 0.1f;
 
     public override void Behavior()
     {
@@ -30,7 +34,7 @@ public class HornBeetleAI : EnemyTypes.EnemyBehavior
 
             // Calculate rotation difference
             float rotationAngle = (Mathf.Atan2(playerTransform.position.y - transform.position.y, playerTransform.position.x - transform.position.x)) * Mathf.Rad2Deg - 90;
-            Debug.Log(rotationAngle);
+            //Debug.Log(rotationAngle);
             Quaternion targetRotation = Quaternion.Euler(new Vector3(0, 0, rotationAngle));
             transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
 
@@ -74,6 +78,8 @@ public class HornBeetleAI : EnemyTypes.EnemyBehavior
     {
         // Deal damage, knockback self, knockback player
         //throw new System.NotImplementedException();
+        FindPlayer().GetComponent<PlayerController>().health -= 2;
+        Debug.Log($"Health:{FindPlayer().GetComponent<PlayerController>().health}");
     }
 
     protected override void AllCollision(Collision2D collision)
@@ -81,10 +87,17 @@ public class HornBeetleAI : EnemyTypes.EnemyBehavior
         // Apply knockback and shake effect
         chargeReady = false;
         charging = false;
+        Rigidbody2D rb = GetComponent<Rigidbody2D>();
+        rb.velocity = new Vector2(rb.velocity.x * recoilAmount, rb.velocity.y * recoilAmount)
+        //ContactPoint2D collisionPoint = collision.GetContact(0);
+        //GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
+        //Knockback();
+        ;
     }
     private void Knockback()
     {
-        throw new System.NotImplementedException();
+        Rigidbody2D rb = GetComponent<Rigidbody2D>();
+        rb.AddForce(transform.up * -chargeSpeed);
     }
     private void Shake()
     {
