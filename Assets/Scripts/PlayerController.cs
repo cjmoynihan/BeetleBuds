@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     public float playerSpeed;
     public float health = 5;
 
-    private Rigidbody2D rb;
+    public Rigidbody2D rb;
     // This variable will accept player movement from either keyboard or controller
     private Vector2 playerMovement;
 
