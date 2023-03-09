@@ -124,6 +124,8 @@ MonoBehaviour:
   hitPoints: 1
   attackCooldown: 2
   stingerObject: {fileID: 31159246857361409, guid: 32cdbfb7258e4444a9a1e2cb8a2cc183, type: 3}
+  attackVelocity: 1
+  attackPositionBuffer: 0.15
 --- !u!50 &-5253380273933446430
 Rigidbody2D:
   serializedVersion: 4

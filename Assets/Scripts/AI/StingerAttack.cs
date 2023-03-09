@@ -9,6 +9,9 @@ public class StingerAttack : EnemyTypes.EnemyBehavior
     protected override void PlayerCollision(Collision2D collision)
     {
         FindPlayer().GetComponent<PlayerController>().health -= damage;
+    }
+    protected override void AllCollision(Collision2D collision)
+    {
         Destroy(gameObject);
     }
     public override void Behavior()

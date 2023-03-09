@@ -180,6 +180,7 @@ GameObject:
   - component: {fileID: 582604848}
   - component: {fileID: 582604847}
   - component: {fileID: 582604846}
+  - component: {fileID: 582604849}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -253,6 +254,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &582604849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 582604845}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a160d838ff8b4b4693ac20007e008c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AssetsPPU: 16
+  m_RefResolutionX: 3840
+  m_RefResolutionY: 2160
+  m_UpscaleRT: 0
+  m_PixelSnapping: 0
+  m_CropFrameX: 0
+  m_CropFrameY: 0
+  m_StretchFill: 0
 --- !u!1 &1050193256
 GameObject:
   m_ObjectHideFlags: 0
@@ -3274,6 +3295,14 @@ PrefabInstance:
       propertyPath: m_GravityScale
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6923605421475437595, guid: 205b67544460540c8a0ab87390163bf2, type: 3}
+      propertyPath: attackVelocity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6923605421475437595, guid: 205b67544460540c8a0ab87390163bf2, type: 3}
+      propertyPath: attackPositionBuffer
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6923605421475437596, guid: 205b67544460540c8a0ab87390163bf2, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -3284,7 +3313,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6923605421475437596, guid: 205b67544460540c8a0ab87390163bf2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.09
+      value: 3.69
       objectReference: {fileID: 0}
     - target: {fileID: 6923605421475437596, guid: 205b67544460540c8a0ab87390163bf2, type: 3}
       propertyPath: m_LocalPosition.z

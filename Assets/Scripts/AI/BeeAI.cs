@@ -7,6 +7,8 @@ public class BeeAI : EnemyTypes.EnemyBehavior
     public float attackCooldown = 2;
     private bool canAttack = true;
     public GameObject stingerObject;
+    public float attackVelocity = 1;
+    public float attackPositionBuffer = 0.15f;
 
     public override void Behavior()
     {
@@ -18,12 +20,16 @@ public class BeeAI : EnemyTypes.EnemyBehavior
         // TODO: Make regular attack
 
         Vector3? playerPosition = LineOfSight();
+        // TODO: Fix player targeting mechanism
         playerPosition = FindPlayerTransform().position;
-        if(playerPosition != null)
+        if(playerPosition != null && canAttack)
         {
-            
-            var attackDirection = playerPosition - transform.position;
-            Instantiate(stingerObject, transform.position, Quaternion.Euler((Vector3)attackDirection));
+            Vector3 attackDirection = (Vector3)playerPosition - transform.position;
+            // Not sure why the rotation doesn't work? Should be the last variable in Instantiate
+            GameObject newStinger = Instantiate(stingerObject, transform.position + attackDirection * attackPositionBuffer, Quaternion.Euler(attackDirection));
+            Debug.Log(Quaternion.Euler(attackDirection));
+            Rigidbody2D stingerRB = newStinger.GetComponent<Rigidbody2D>();
+            stingerRB.velocity = attackDirection * attackVelocity;
             canAttack = false;
             StartCoroutine(WaitAfterShot());
 
