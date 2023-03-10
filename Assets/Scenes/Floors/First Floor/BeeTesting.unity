@@ -3301,7 +3301,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6923605421475437595, guid: 205b67544460540c8a0ab87390163bf2, type: 3}
       propertyPath: attackPositionBuffer
-      value: 0.5
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 6923605421475437596, guid: 205b67544460540c8a0ab87390163bf2, type: 3}
       propertyPath: m_RootOrder
