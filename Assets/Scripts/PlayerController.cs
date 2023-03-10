@@ -34,6 +34,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        GetCurrentStats();
         GetPlayerInput();
         if (health <= 0)
         {
@@ -68,7 +69,7 @@ public class PlayerController : MonoBehaviour
         rb.MovePosition(rb.position + realtimeMovement);
     }
 
-    private List<Parts.BugPart> playerParts;
+    private List<Parts.BugPart> playerParts = new List<Parts.BugPart>();
     public Stats initialStats = new Stats();
 
     // Define initial stats and create Stats class for Parts.cs
@@ -82,6 +83,15 @@ public class PlayerController : MonoBehaviour
             health = 5;
             damage = 1;
         }
+
+        public Stats Copy()
+        {
+            return new Stats
+            {
+                health = health,
+                damage = damage
+            };
+        }
     }
 
     public void AddParts(Parts.BugPart part)
@@ -90,13 +100,14 @@ public class PlayerController : MonoBehaviour
         playerParts.Add(part);
     }
 
-    public Stats getCurrentStats()
+    public Stats GetCurrentStats()
     {
-        Stats tempStats = initialStats;
+        Stats tempStats = initialStats.Copy();
         foreach(Parts.BugPart part in playerParts)
         {
             tempStats = part.applyStats(tempStats);
         }
+        health = tempStats.health;
         return tempStats;
     }
 }

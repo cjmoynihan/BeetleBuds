@@ -19,7 +19,7 @@ public class AntHead : Parts.BugPart
 
     public override PlayerController.Stats applyStats(PlayerController.Stats initialStats)
     {
-        initialStats.damage += 5;
+        initialStats.health += 100;
         return initialStats;
     }
 }
