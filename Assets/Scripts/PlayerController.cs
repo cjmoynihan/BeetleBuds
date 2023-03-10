@@ -4,14 +4,23 @@ using UnityEngine;
 
 public class PlayerController : StatsController
 {
-    // public int startingHealth;
-    // public int startingDamage;
-
-
+    public int STARTING_HEALTH = 5;
+    public int STARTING_SPEED = 2;
 
     public Rigidbody2D rb;
     // This variable will accept player movement from either keyboard or controller
     private Vector2 playerMovement;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        health = STARTING_HEALTH;
+        moveSpeed = STARTING_SPEED;
+
+        DontDestroyOnLoad(this.gameObject);
+        rb = GetComponent<Rigidbody2D>();
+    }
+
 
 
     public void CauseDamage(int damage)
@@ -22,14 +31,6 @@ public class PlayerController : StatsController
     {
         Destroy(gameObject);
     }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        DontDestroyOnLoad(this.gameObject);
-        rb = GetComponent<Rigidbody2D>();
-    }
-
     // Update is called once per frame
     void Update()
     {
