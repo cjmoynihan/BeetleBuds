@@ -6,6 +6,8 @@ public class SimpleAI : EnemyTypes.EnemyBehavior
 {
     public float speed = 0.8f;
 
+    public override int SpawnValue => 1;
+
     protected override void PlayerCollision(Collision2D collision)
     {
         FindPlayer().GetComponent<PlayerController>().health -= 1;

@@ -21,6 +21,8 @@ public class HornBeetleAI : EnemyTypes.EnemyBehavior
     public float chargeBuildUp = 1f;
     public float recoilAmount = 0.1f;
 
+    public override int SpawnValue => 4;
+
     public override void Behavior()
     {
         Transform playerTransform = FindPlayerTransform();

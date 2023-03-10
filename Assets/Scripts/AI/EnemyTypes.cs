@@ -11,6 +11,7 @@ public class EnemyTypes
     //  Other properties -> Splitting, dealing damage to itself, etc
     public abstract class EnemyBehavior : MonoBehaviour
     {
+        public abstract int SpawnValue { get; }
         public int hitPoints = 1;
         // Applies in place, modifying the enemy object directly
         public abstract void Behavior();

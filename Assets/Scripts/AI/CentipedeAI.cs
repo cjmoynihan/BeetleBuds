@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CentipedeAI : EnemyTypes.EnemyBehavior
 {
+    public override int SpawnValue => 5;
+
     public override void Behavior()
     {
         throw new System.NotImplementedException();
