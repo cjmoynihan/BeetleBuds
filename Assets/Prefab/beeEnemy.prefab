@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6923605421475437595}
   - component: {fileID: -5253380273933446430}
   - component: {fileID: 8733442934331467033}
+  - component: {fileID: 1080291633879962736}
   m_Layer: 0
   m_Name: beeEnemy
   m_TagString: Untagged
@@ -75,7 +76,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2035811621
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: -892860155, guid: c243a84419ab14751a85b32d5dcf6f36, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -163,3 +164,33 @@ CapsuleCollider2D:
   m_Offset: {x: 0.23509994, y: 0}
   m_Size: {x: 3.8139079, y: 6.4000006}
   m_Direction: 0
+--- !u!114 &1080291633879962736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6923605421475437599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1787241925
+      Data2: 1126785496
+      Data3: 1114071724
+      Data4: 1015762305
+    Path: event:/Enemy Bugs/bee buzz
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
