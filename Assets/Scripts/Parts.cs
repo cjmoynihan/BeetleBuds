@@ -6,7 +6,6 @@ using static PlayerController;
 
 public class Parts : MonoBehaviour
 {
-    
     public enum BugSlot
     {
         Eyes,

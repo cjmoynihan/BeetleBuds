@@ -14,6 +14,7 @@ public class PlayerController : StatsController
     // Start is called before the first frame update
     void Start()
     {
+        maxHealth = STARTING_HEALTH;
         health = STARTING_HEALTH;
         moveSpeed = STARTING_SPEED;
 
@@ -21,16 +22,6 @@ public class PlayerController : StatsController
         rb = GetComponent<Rigidbody2D>();
     }
 
-
-
-    public void CauseDamage(int damage)
-    {
-        health -= damage;
-    }
-    public void GameOver()
-    {
-        Destroy(gameObject);
-    }
     // Update is called once per frame
     void Update()
     {
@@ -40,6 +31,16 @@ public class PlayerController : StatsController
         {
             GameOver();
         }
+    }
+
+    public void CauseDamage(int damage)
+    {
+        health -= damage;
+    }
+
+    public void GameOver()
+    {
+        Destroy(gameObject);
     }
 
     private void GetPlayerInput()
@@ -64,7 +65,7 @@ public class PlayerController : StatsController
     private void FixedUpdate()
     {
         // Apply movement based on speed and framerate
-        Vector2 realtimeMovement = playerMovement * playerSpeed * Time.deltaTime;
+        Vector2 realtimeMovement = playerMovement * moveSpeed * Time.deltaTime;
 
         rb.MovePosition(rb.position + realtimeMovement);
     }
