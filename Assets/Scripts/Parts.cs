@@ -2,9 +2,9 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static PlayerController;
+//using static PlayerController;
 
-public class Parts : MonoBehaviour
+public class Parts
 {
     public enum BugSlot
     {
@@ -17,6 +17,7 @@ public class Parts : MonoBehaviour
         Tail
     }
 
+    // Bug Part is a StatEffect that also has a slot, cost, and other information
     public abstract class BugPart : MonoBehaviour
     {
         public abstract string itemName { get; }
@@ -29,6 +30,6 @@ public class Parts : MonoBehaviour
 
         public abstract int cost { get; }
 
-        public abstract Stats applyStats(Stats initialStats);
+        public abstract StatsController.Stats applyStats(StatsController.Stats initialStats); 
     }
 }

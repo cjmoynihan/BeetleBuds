@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class PlayerController : StatsController
 {
+    // Can now get current stats by simply calling them (ie this.health)
+    // Updated properties so that any effects added by using AddEffect will
+    //  apply their modifiers before those variables are pulled.
+    // Setting variables will set the original value, not the modified one
+    // Make sure to AddEffect or RemoveEffect when adding status effects or bug parts
+    // Check out StatsController for more information
+
     public int STARTING_HEALTH = 5;
     public int STARTING_SPEED = 2;
 
@@ -25,7 +32,6 @@ public class PlayerController : StatsController
     // Update is called once per frame
     void Update()
     {
-        GetCurrentStats();
         GetPlayerInput();
         if (health <= 0)
         {
@@ -71,44 +77,11 @@ public class PlayerController : StatsController
     }
 
     private List<Parts.BugPart> playerParts = new List<Parts.BugPart>();
-    public Stats initialStats = new Stats();
-
-    // Define initial stats and create Stats class for Parts.cs
-    public class Stats
-    {
-        public int health;
-        public int damage;
-
-        public Stats()
-        {
-            health = 5;
-            damage = 1;
-        }
-
-        public Stats Copy()
-        {
-            return new Stats
-            {
-                health = health,
-                damage = damage
-            };
-        }
-    }
 
     public void AddParts(Parts.BugPart part)
     {
         // TODO: Logic to swap out parts of the same type.
+        AddEffect(part.applyStats);
         playerParts.Add(part);
-    }
-
-    public Stats GetCurrentStats()
-    {
-        Stats tempStats = initialStats.Copy();
-        foreach(Parts.BugPart part in playerParts)
-        {
-            tempStats = part.applyStats(tempStats);
-        }
-        health = tempStats.health;
-        return tempStats;
     }
 }

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,29 +13,47 @@ public class StatsController : MonoBehaviour
         public int health;
         public float moveSpeed;
         public float attackSpeed;
-        private List<StatEffect> statEffects;
-        public Stats modifiedStats;
-
-        // Initalizer
-        public Stats()
+        private List<Func<Stats, Stats>> statEffects = new List<Func<Stats, Stats>>();
+        public Stats modifiedStats
         {
-
+            get
+            {
+                if(statEffects.Count == 0)
+                {
+                    return this;
+                } else
+                {
+                    return modifiedStats;
+                }
+            }
+            set { modifiedStats = value; }
         }
 
-        public void AddEffect(StatEffect effect)
+        // Note, may have to add or remove effects during update instead...
+        public void AddEffect(Func<Stats, Stats> effect)
         {
             statEffects.Add(effect);
-            GetAppliedStats();
+            UpdateStats();
+        }
+        public void RemoveEffect(Func<Stats, Stats> effect)
+        {
+            if(statEffects.Remove(effect))
+            {
+                // Returns false if object has already been removed
+                UpdateStats();
+            }
         }
 
         // Shallowcopy. Do not modify vars of children!
         public Stats ShallowCopy()
         {
-            Stats tempStats = new Stats();
-            tempStats.maxHealth = maxHealth;
-            tempStats.health = health;
-            tempStats.moveSpeed = moveSpeed;
-            tempStats.attackSpeed = attackSpeed;
+            Stats tempStats = new()
+            {
+                maxHealth = maxHealth,
+                health = health,
+                moveSpeed = moveSpeed,
+                attackSpeed = attackSpeed
+            };
             return tempStats;
         }
 
@@ -44,12 +63,15 @@ public class StatsController : MonoBehaviour
         public Stats GetAppliedStats()
         {
             Stats tempStats = ShallowCopy();
-            foreach (StatEffect effect in statEffects)
+            foreach (Func<Stats, Stats> effect in statEffects)
             {
-                tempStats = effect.applyStats(tempStats);
+                tempStats = effect(tempStats);
             }
-            modifiedStats = tempStats;
             return tempStats;
+        }
+        private void UpdateStats()
+        {
+            modifiedStats = GetAppliedStats();
         }
 
     }
@@ -78,8 +100,12 @@ public class StatsController : MonoBehaviour
         get { return initialStats.modifiedStats.attackSpeed; }
         set { initialStats.moveSpeed = value; }
     }
-    public void AddEffect(StatEffect effect)
+    public void AddEffect(Func<Stats, Stats> effect)
     {
         initialStats.AddEffect(effect);
+    }
+    public void RemoveEffect(Func<Stats, Stats> effect)
+    {
+        initialStats.RemoveEffect(effect);
     }
 }
