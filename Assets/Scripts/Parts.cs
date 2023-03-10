@@ -6,7 +6,8 @@ using static PlayerController;
 
 public class Parts : MonoBehaviour
 {
-    public enum bugSlot
+    
+    public enum BugSlot
     {
         Eyes,
         Mouth,
@@ -17,14 +18,18 @@ public class Parts : MonoBehaviour
         Tail
     }
 
-    public abstract class BugPart
+    public abstract class BugPart : MonoBehaviour
     {
-        private bugSlot thisSlot;
+        public abstract string itemName { get; }
 
-        public BugPart(bugSlot slot)
-        {
-            bugSlot thisSlot = slot;
-        }
+        public abstract string description { get;}
+
+        public abstract BugSlot slot { get;  }
+
+        public abstract Sprite partSprite { get; }
+
+        public abstract int cost { get; }
+
         public abstract Stats applyStats(Stats initialStats);
     }
 }

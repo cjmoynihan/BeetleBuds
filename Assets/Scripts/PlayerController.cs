@@ -68,7 +68,7 @@ public class PlayerController : MonoBehaviour
         rb.MovePosition(rb.position + realtimeMovement);
     }
 
-    public List<Parts.BugPart> playerParts;
+    private List<Parts.BugPart> playerParts;
     public Stats initialStats = new Stats();
 
     // Define initial stats and create Stats class for Parts.cs
@@ -82,6 +82,12 @@ public class PlayerController : MonoBehaviour
             health = 5;
             damage = 1;
         }
+    }
+
+    public void AddParts(Parts.BugPart part)
+    {
+        // TODO: Logic to swap out parts of the same type.
+        playerParts.Add(part);
     }
 
     public Stats getCurrentStats()

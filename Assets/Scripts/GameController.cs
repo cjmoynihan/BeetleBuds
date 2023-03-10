@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameController : MonoBehaviour
 {
     public PlayController _playController;
+    public GameObject _hud;
     public GameObject seedGenerator;
     public GameObject _player;
 
@@ -21,10 +22,16 @@ public class GameController : MonoBehaviour
     {
         var seedGen = seedGenerator.GetComponent<SetSeed>();
         seedGen.SetGameSeed();
-        Instantiate(_player);
+        LoadPersistentObjects();
         _playController.LoadNextLevel();
-
     }
+
+    public void LoadPersistentObjects()
+    {
+        DontDestroyOnLoad(Instantiate(_player));
+        DontDestroyOnLoad(Instantiate(_hud));
+    }
+
     public void Next()
     {
         _playController.Next();

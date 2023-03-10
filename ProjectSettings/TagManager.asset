@@ -7,6 +7,9 @@ TagManager:
   - Attack
   - Enemy
   - EnemySpawn
+  - InteractionText
+  - InteractiveItem
+  - InteractiveObject
   layers:
   - Default
   - TransparentFX
@@ -55,6 +58,9 @@ TagManager:
     locked: 0
   - name: Walls
     uniqueID: 3188057303
+    locked: 0
+  - name: Items
+    uniqueID: 320282909
     locked: 0
   - name: Enemies
     uniqueID: 2259155675
