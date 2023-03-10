@@ -2,13 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : StatsController
 {
     // public int startingHealth;
     // public int startingDamage;
 
-    public float playerSpeed;
-    public float health = 5;
+
 
     public Rigidbody2D rb;
     // This variable will accept player movement from either keyboard or controller
