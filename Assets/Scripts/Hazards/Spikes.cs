@@ -35,7 +35,7 @@ public class Spikes : IHazard
     {
         for (int i = 0; i < pushback; i += gradualPushValue)
         {
-            player.rb.AddRelativeForce(pushbackDirection*gradualPushValue);\
+            player.rb.AddRelativeForce(pushbackDirection*gradualPushValue);
             yield return new WaitForSeconds(0.01f);
         }
     }
