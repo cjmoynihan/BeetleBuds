@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class PlayerController : StatsController
@@ -14,6 +15,9 @@ public class PlayerController : StatsController
     public int STARTING_HEALTH = 5;
     public int STARTING_SPEED = 2;
 
+    public List<Parts.BugPart> playerParts;
+    public List<List<Parts.BugPart>> playerPartsTest;
+
     public Rigidbody2D rb;
     // This variable will accept player movement from either keyboard or controller
     private Vector2 playerMovement;
@@ -24,6 +28,17 @@ public class PlayerController : StatsController
         maxHealth = STARTING_HEALTH;
         health = STARTING_HEALTH;
         moveSpeed = STARTING_SPEED;
+
+        // Organize bug parts by part. Important for correct swapping
+        var tempParts = playerParts.OrderBy(part => (int)part.slot);
+        playerParts = Enumerable.ToList<Parts.BugPart>(tempParts);
+
+        //playerParts = (List<Parts.BugPart>)playerParts.OrderBy(part => (int)part.slot);
+        // Add effects to stats
+        foreach(Parts.BugPart part in playerParts)
+        {
+            AddEffect(part.applyStats);
+        }
 
         DontDestroyOnLoad(this.gameObject);
         rb = GetComponent<Rigidbody2D>();
@@ -76,12 +91,12 @@ public class PlayerController : StatsController
         rb.MovePosition(rb.position + realtimeMovement);
     }
 
-    private List<Parts.BugPart> playerParts = new List<Parts.BugPart>();
-
-    public void AddParts(Parts.BugPart part)
+    public void AddParts(Parts.BugPart newPart)
     {
-        // TODO: Logic to swap out parts of the same type.
-        AddEffect(part.applyStats);
-        playerParts.Add(part);
+        // Logic to swap out parts of the same type.
+        Parts.BugPart previousPart = playerParts[(int)newPart.slot];
+        RemoveEffect(previousPart.applyStats);
+        AddEffect(newPart.applyStats);
+        playerParts[(int)newPart.slot] = newPart;
     }
 }

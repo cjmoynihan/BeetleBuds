@@ -5,7 +5,7 @@ using UnityEngine.XR;
 
 public class AntLegs : Parts.BugPart
 {
-    public override Parts.BugSlot slot => Parts.BugSlot.Eyes;
+    public override Parts.BugSlot slot => Parts.BugSlot.Legs;
 
     public Sprite limbSprite;
 

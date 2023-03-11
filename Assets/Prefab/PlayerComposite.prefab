@@ -63,6 +63,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   STARTING_HEALTH: 5
   STARTING_SPEED: 2
+  playerParts: []
   rb: {fileID: 0}
 --- !u!114 &6118661290419202037
 MonoBehaviour:
