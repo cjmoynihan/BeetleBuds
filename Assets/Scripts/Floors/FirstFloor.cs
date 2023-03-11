@@ -19,4 +19,5 @@ public class FirstFloor : IFloor
 
     public override int IncrementalDifficulty => 3;
 
+    public override string Shop => "FirstFloorShop";
 }

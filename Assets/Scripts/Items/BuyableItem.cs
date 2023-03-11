@@ -50,7 +50,6 @@ public class BuyableItem : AbstractInteractiveObject
     {
         if (!interactable) return;
         startPress = DateTime.Now;
-        eSpriteRenderer.GetComponent<SpriteRenderer>();
         var color = eSpriteRenderer.color;
         eSpriteRenderer.color = new Color(color.r, color.g, color.b, 0);
     }
@@ -65,6 +64,7 @@ public class BuyableItem : AbstractInteractiveObject
         if (pressTime.TotalSeconds > timeToBuy && eIsPressed)
         {
             var player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+            player.health -= item.cost;
             player.AddParts(item);
             isPurchased = true;
             LonelyBehavior();
