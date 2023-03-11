@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static PlayerController;
 
 public class Parts : MonoBehaviour
 {
@@ -30,6 +29,6 @@ public class Parts : MonoBehaviour
 
         public abstract int cost { get; }
 
-        public abstract Stats applyStats(Stats initialStats);
+        public abstract StatsController.Stats applyStats(StatsController.Stats initialStats);
     }
 }

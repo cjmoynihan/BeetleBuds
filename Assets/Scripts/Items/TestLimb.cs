@@ -17,7 +17,7 @@ public class TestLimb : Parts.BugPart
 
     public override string description => "TEST EYES DESCRIPTION!!";
 
-    public override PlayerController.Stats applyStats(PlayerController.Stats initialStats)
+    public override StatsController.Stats applyStats(StatsController.Stats initialStats)
     {
         initialStats.health += 1;
         return initialStats;

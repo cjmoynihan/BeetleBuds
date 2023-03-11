@@ -2,18 +2,42 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : StatsController
 {
-    // public int startingHealth;
-    // public int startingDamage;
+    // Can now get current stats by simply calling them (ie this.health)
+    // Updated properties so that any effects added by using AddEffect will
+    //  apply their modifiers before those variables are pulled.
+    // Setting variables will set the original value, not the modified one
+    // Make sure to AddEffect or RemoveEffect when adding status effects or bug parts
+    // Check out StatsController for more information
 
-    public float playerSpeed;
-    public float health = 5;
+    public int STARTING_HEALTH = 5;
+    public int STARTING_SPEED = 2;
 
     public Rigidbody2D rb;
     // This variable will accept player movement from either keyboard or controller
     private Vector2 playerMovement;
 
+    // Start is called before the first frame update
+    void Start()
+    {
+        maxHealth = STARTING_HEALTH;
+        health = STARTING_HEALTH;
+        moveSpeed = STARTING_SPEED;
+
+        DontDestroyOnLoad(this.gameObject);
+        rb = GetComponent<Rigidbody2D>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        GetPlayerInput();
+        if (health <= 0)
+        {
+            GameOver();
+        }
+    }
 
     public void CauseDamage(int damage)
     {
@@ -22,24 +46,6 @@ public class PlayerController : MonoBehaviour
     public void GameOver()
     {
         Destroy(gameObject);
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        DontDestroyOnLoad(this.gameObject);
-        rb = GetComponent<Rigidbody2D>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        GetCurrentStats();
-        GetPlayerInput();
-        if (health <= 0)
-        {
-            GameOver();
-        }
     }
 
     private void GetPlayerInput()
@@ -64,50 +70,17 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         // Apply movement based on speed and framerate
-        Vector2 realtimeMovement = playerMovement * playerSpeed * Time.deltaTime;
+        Vector2 realtimeMovement = playerMovement * moveSpeed * Time.deltaTime;
 
         rb.MovePosition(rb.position + realtimeMovement);
     }
 
     private List<Parts.BugPart> playerParts = new List<Parts.BugPart>();
-    public Stats initialStats = new Stats();
-
-    // Define initial stats and create Stats class for Parts.cs
-    public class Stats
-    {
-        public int health;
-        public int damage;
-
-        public Stats()
-        {
-            health = 5;
-            damage = 1;
-        }
-
-        public Stats Copy()
-        {
-            return new Stats
-            {
-                health = health,
-                damage = damage
-            };
-        }
-    }
 
     public void AddParts(Parts.BugPart part)
     {
         // TODO: Logic to swap out parts of the same type.
+        AddEffect(part.applyStats);
         playerParts.Add(part);
-    }
-
-    public Stats GetCurrentStats()
-    {
-        Stats tempStats = initialStats.Copy();
-        foreach(Parts.BugPart part in playerParts)
-        {
-            tempStats = part.applyStats(tempStats);
-        }
-        health = tempStats.health;
-        return tempStats;
     }
 }

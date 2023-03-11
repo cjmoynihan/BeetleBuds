@@ -5,35 +5,28 @@ using UnityEngine.UI;
 
 public class Chomp : IHazard
 {
-    private float playerSpeedReduction;
-
     SpriteRenderer spriteRenderer;
-
+    public Sprite closedMouth;
+    public Sprite openMouth;
     private float reduction = 0.5F;
 
-    public Sprite closedMouth;
-
-    public Sprite openMouth;
+    public StatsController.Stats ChompEffect(StatsController.Stats initialStats)
+    {
+        initialStats.moveSpeed *= reduction;
+        return initialStats;
+    }
 
     public void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    protected  void Behavior(Collider2D collider)
-    {
-        var player = collider.gameObject.GetComponent<PlayerController>();
-        var ps = player.playerSpeed;
-        player.playerSpeed = ps * reduction;
-    }
-
-
     private void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.gameObject.tag == "Player")
         {
             spriteRenderer.sprite = closedMouth;
-            Behavior(collider);
+            collider.gameObject.GetComponent<PlayerController>().AddEffect(ChompEffect);
         }
     }
 
@@ -42,9 +35,7 @@ public class Chomp : IHazard
         if (collider.gameObject.tag == "Player")
         {
             spriteRenderer.sprite = openMouth;
-            var player = collider.gameObject.GetComponent<PlayerController>();
-            var ps = player.playerSpeed;
-            player.playerSpeed = ps / reduction;
+            collider.gameObject.GetComponent<PlayerController>().RemoveEffect(ChompEffect);
         }
     }
 
