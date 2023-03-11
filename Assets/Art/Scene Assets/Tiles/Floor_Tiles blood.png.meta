@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b24582ca2e020ca43a89dd43551db99d
+guid: 1ce1152f71d00a64a85d44af9e0a1089
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -101,23 +101,11 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Wall_Tiles_0
+      name: Floor_Tiles blood_0
       rect:
         serializedVersion: 2
         x: 0
@@ -131,14 +119,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa84c07f6bed61f478cbce0800479673
-      internalID: -913547481
+      spriteID: 1b8cb7eeb8dd6964292fd86473a82b82
+      internalID: 537175499
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wall_Tiles_1
+      name: Floor_Tiles blood_1
       rect:
         serializedVersion: 2
         x: 160
@@ -152,14 +140,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0c1b3a3481659344bc8da0d146b9eaa
-      internalID: -1075557539
+      spriteID: d39f81b2fab054949a27789d21976438
+      internalID: 1542988217
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wall_Tiles_2
+      name: Floor_Tiles blood_2
       rect:
         serializedVersion: 2
         x: 320
@@ -173,14 +161,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1123c4af867b4e44b6d440b80c8ee7a
-      internalID: -1562740278
+      spriteID: 577ed652f359d1f449529a55bdbbba2e
+      internalID: 225974305
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wall_Tiles_3
+      name: Floor_Tiles blood_3
       rect:
         serializedVersion: 2
         x: 480
@@ -194,35 +182,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9f970379d2f61c488168e3df77eb8a9
-      internalID: -586247439
+      spriteID: 38d8446a262a44e48a05cbb0e1436439
+      internalID: -165347573
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wall_Tiles_4
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 480
-        width: 160
-        height: 160
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2972d3375abfb7548837a516a023f32c
-      internalID: 93073797
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Wall_Tiles_5
+      name: Floor_Tiles blood_4
       rect:
         serializedVersion: 2
         x: 0
@@ -236,14 +203,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 179dcac1ad0858f4e8ec9d8a912c1e94
-      internalID: 1376669352
+      spriteID: 465c67c81efcf8a48b49800cac5ad555
+      internalID: 13630207
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wall_Tiles_6
+      name: Floor_Tiles blood_5
       rect:
         serializedVersion: 2
         x: 160
@@ -257,14 +224,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e960938ed654734d9b149d29346bf5d
-      internalID: 730457345
+      spriteID: c95c4f5b08527da4ebbc9b1aef9799ce
+      internalID: 378357796
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wall_Tiles_7
+      name: Floor_Tiles blood_6
       rect:
         serializedVersion: 2
         x: 320
@@ -278,14 +245,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bfef2bc97ab123d41ac56c7f42802df3
-      internalID: -1970943519
+      spriteID: 0c7ef8af8549ded40990ec6cec3cdc11
+      internalID: -1112544314
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wall_Tiles_8
+      name: Floor_Tiles blood_7
       rect:
         serializedVersion: 2
         x: 480
@@ -299,35 +266,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ca31cfc9d3824643a6bce17993d3e59
-      internalID: -1544771870
+      spriteID: caaa1375c82ddbb4ea50bd92d97a0294
+      internalID: -1610961189
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wall_Tiles_9
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 320
-        width: 160
-        height: 160
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b8dfefe8e5a5f21458cf216ada6fc093
-      internalID: -1180988651
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Wall_Tiles_10
+      name: Floor_Tiles blood_8
       rect:
         serializedVersion: 2
         x: 0
@@ -341,14 +287,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 118c913d885502a49a3e66f2583870dc
-      internalID: -721216227
+      spriteID: a7edbffdfb9843b49b5cc0b425563f6e
+      internalID: 2111813762
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wall_Tiles_11
+      name: Floor_Tiles blood_9
       rect:
         serializedVersion: 2
         x: 160
@@ -362,14 +308,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d5fa240e95c63e4b980e31fb57f0a69
-      internalID: -819697686
+      spriteID: ff7143bff406dd548a2b700389bbc5e4
+      internalID: 924338380
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wall_Tiles_12
+      name: Floor_Tiles blood_10
       rect:
         serializedVersion: 2
         x: 320
@@ -383,14 +329,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 65bc1b4e930d74c41a9c21d0cfb54685
-      internalID: -1501781586
+      spriteID: 3c9cac9596770bc41b46fd90dcaac4f6
+      internalID: 1433192726
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wall_Tiles_13
+      name: Floor_Tiles blood_11
       rect:
         serializedVersion: 2
         x: 480
@@ -404,35 +350,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d64a21308c79e774f93255168910f9ff
-      internalID: 280107570
+      spriteID: 28b43c593d4ffc64885ce00d58cc976a
+      internalID: 1108173212
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wall_Tiles_14
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 160
-        width: 160
-        height: 160
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5e30f027bb0b9a84291e80804c146543
-      internalID: 1315647876
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Wall_Tiles_15
+      name: Floor_Tiles blood_12
       rect:
         serializedVersion: 2
         x: 0
@@ -446,14 +371,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 021fa1a994a111142b9382c7df36882c
-      internalID: -718231098
+      spriteID: e9021a8d8fa9c99439480b17838fdccb
+      internalID: 1279173961
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wall_Tiles_16
+      name: Floor_Tiles blood_13
       rect:
         serializedVersion: 2
         x: 160
@@ -467,14 +392,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d1d9e9fd15d92840bd77a5927b66c98
-      internalID: 1663246872
+      spriteID: c4a800ee34df7544d8ef7f31bbee559f
+      internalID: -178744771
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wall_Tiles_17
+      name: Floor_Tiles blood_14
       rect:
         serializedVersion: 2
         x: 320
@@ -488,14 +413,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 156d616d18702b541a596b5be1e7edfd
-      internalID: -1760957961
+      spriteID: 5e3559257e080a843ab1eaeb63478f7c
+      internalID: -1296243073
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wall_Tiles_18
+      name: Floor_Tiles blood_15
       rect:
         serializedVersion: 2
         x: 480
@@ -509,14 +434,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2cd5cc81ca35a54984078414d527d70
-      internalID: -839385106
+      spriteID: f3b0a8add237bf449be999a914e60997
+      internalID: 517483634
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wall_Tiles_19
+      name: Floor_Tiles blood_16
       rect:
         serializedVersion: 2
         x: 640
@@ -530,8 +455,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e8be7a51e8d4da4fb66a8722bad8ffe
-      internalID: -663879746
+      spriteID: 1234e1b2c8d868e449ebfd337d3627a6
+      internalID: 2056866226
       vertices: []
       indices: 
       edges: []
@@ -547,26 +472,23 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Wall_Tiles_0: -913547481
-      Wall_Tiles_1: -1075557539
-      Wall_Tiles_10: -721216227
-      Wall_Tiles_11: -819697686
-      Wall_Tiles_12: -1501781586
-      Wall_Tiles_13: 280107570
-      Wall_Tiles_14: 1315647876
-      Wall_Tiles_15: -718231098
-      Wall_Tiles_16: 1663246872
-      Wall_Tiles_17: -1760957961
-      Wall_Tiles_18: -839385106
-      Wall_Tiles_19: -663879746
-      Wall_Tiles_2: -1562740278
-      Wall_Tiles_3: -586247439
-      Wall_Tiles_4: 93073797
-      Wall_Tiles_5: 1376669352
-      Wall_Tiles_6: 730457345
-      Wall_Tiles_7: -1970943519
-      Wall_Tiles_8: -1544771870
-      Wall_Tiles_9: -1180988651
+      Floor_Tiles blood_0: 537175499
+      Floor_Tiles blood_1: 1542988217
+      Floor_Tiles blood_10: 1433192726
+      Floor_Tiles blood_11: 1108173212
+      Floor_Tiles blood_12: 1279173961
+      Floor_Tiles blood_13: -178744771
+      Floor_Tiles blood_14: -1296243073
+      Floor_Tiles blood_15: 517483634
+      Floor_Tiles blood_16: 2056866226
+      Floor_Tiles blood_2: 225974305
+      Floor_Tiles blood_3: -165347573
+      Floor_Tiles blood_4: 13630207
+      Floor_Tiles blood_5: 378357796
+      Floor_Tiles blood_6: -1112544314
+      Floor_Tiles blood_7: -1610961189
+      Floor_Tiles blood_8: 2111813762
+      Floor_Tiles blood_9: 924338380
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
