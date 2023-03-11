@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3937169443354334926}
   - component: {fileID: 6848326345320922540}
+  - component: {fileID: 7525827989295758889}
   m_Layer: 0
   m_Name: mouth_manager
   m_TagString: Untagged
@@ -49,6 +50,22 @@ MonoBehaviour:
   childSprites:
   - {fileID: 6118661291860561837}
   - {fileID: 6118661290433583804}
+--- !u!114 &7525827989295758889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268628357613957687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae2d6b5b4f49a4c038ac8a1a8ca81071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  childrenSprites:
+  - {fileID: 21300000, guid: f22b75cb7074547d99e5e065b1baab74, type: 3}
+  - {fileID: 21300000, guid: 50a18b6e074c741eb8ea45be3c2cb9b4, type: 3}
+  limbSprite: {fileID: 21300000, guid: f22b75cb7074547d99e5e065b1baab74, type: 3}
 --- !u!1 &1075721334729796217
 GameObject:
   m_ObjectHideFlags: 0
@@ -59,6 +76,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6886908651271963981}
   - component: {fileID: 1696021319754358814}
+  - component: {fileID: 6597069498657184821}
   m_Layer: 0
   m_Name: body_manager
   m_TagString: Untagged
@@ -96,6 +114,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSprites:
   - {fileID: 6118661291177812785}
+--- !u!114 &6597069498657184821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1075721334729796217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19c587765fcc24d9897e17bbd63dc2c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  childrenSprites: []
+  limbSprite: {fileID: 21300000, guid: 0e1786710f51a42b5991bacf4e89ee7a, type: 3}
 --- !u!1 &1873788249567316095
 GameObject:
   m_ObjectHideFlags: 0
@@ -168,6 +200,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4744539572270361947}
   - component: {fileID: 4695911498702569476}
+  - component: {fileID: 748946026059186765}
   m_Layer: 0
   m_Name: leg_manager
   m_TagString: Untagged
@@ -215,6 +248,26 @@ MonoBehaviour:
   - {fileID: 6118661290786584760}
   - {fileID: 6118661291118303122}
   - {fileID: 6118661290660361897}
+--- !u!114 &748946026059186765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2061673160695701591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eff40e4cac9194d119570951c794ed0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  childrenSprites:
+  - {fileID: 21300000, guid: 36fc3ba256c3f49478ef6734b7f6c5e0, type: 3}
+  - {fileID: 21300000, guid: fd6dfa69dae4c41faa3183e739a6999c, type: 3}
+  - {fileID: 21300000, guid: ae82d1b39f831408d95fb3bab1f46466, type: 3}
+  - {fileID: 21300000, guid: edcfd91a8df754d338e4e9f1c204851f, type: 3}
+  - {fileID: 21300000, guid: 4d80b67e82b8a4ecdaf86e81cc43efe6, type: 3}
+  - {fileID: 21300000, guid: a2752f783257e41edb724b1c97c9f1a4, type: 3}
+  limbSprite: {fileID: 21300000, guid: 36fc3ba256c3f49478ef6734b7f6c5e0, type: 3}
 --- !u!1 &3079939029947449365
 GameObject:
   m_ObjectHideFlags: 0
@@ -225,6 +278,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4744469332338424421}
   - component: {fileID: 7571022319731402046}
+  - component: {fileID: 7856188971333777241}
   m_Layer: 0
   m_Name: eye_manager
   m_TagString: Untagged
@@ -262,6 +316,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSprites:
   - {fileID: 6118661291793437488}
+--- !u!114 &7856188971333777241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3079939029947449365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: feffc62e9d0f74bb5948b9a0c297522a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  childrenSprites: []
+  limbSprite: {fileID: 21300000, guid: 45902b530d9d749a38b97410a512100f, type: 3}
 --- !u!1 &6118661290419202036
 GameObject:
   m_ObjectHideFlags: 0
@@ -319,7 +387,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   STARTING_HEALTH: 5
   STARTING_SPEED: 2
-  childPartObjects: []
+  childPartObjects:
+  - {fileID: 1873788249567316095}
+  - {fileID: 3079939029947449365}
+  - {fileID: 1075721334729796217}
+  - {fileID: 6903739757163598147}
+  - {fileID: 2061673160695701591}
+  - {fileID: 268628357613957687}
   rb: {fileID: 0}
 --- !u!114 &6118661290419202037
 MonoBehaviour:
@@ -1542,6 +1616,7 @@ GameObject:
   m_Component:
   - component: {fileID: 54168251167445015}
   - component: {fileID: 3880516501181371575}
+  - component: {fileID: 4522748956340278320}
   m_Layer: 0
   m_Name: booty_manager
   m_TagString: Untagged
@@ -1579,3 +1654,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSprites:
   - {fileID: 6118661292239724743}
+--- !u!114 &4522748956340278320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6903739757163598147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b8be943e4ffa4240b52b32d67639cef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  childrenSprites: []
+  limbSprite: {fileID: 21300000, guid: 8e9d7c5f297dd41aa81776debbefd794, type: 3}

@@ -15,7 +15,7 @@ public class PlayerController : StatsController
     public int STARTING_HEALTH = 5;
     public int STARTING_SPEED = 2;
 
-    private List<Parts.BugPart> playerParts;
+    private List<Parts.BugPart> playerParts = new List<Parts.BugPart>();
     public List<GameObject> childPartObjects;
 
     public Rigidbody2D rb;
@@ -29,22 +29,30 @@ public class PlayerController : StatsController
         health = STARTING_HEALTH;
         moveSpeed = STARTING_SPEED;
 
-        // Initialize starting bug body parts
+        rb = GetComponent<Rigidbody2D>();
 
-
-        // Organize bug parts by part. Important for correct swapping
-        var tempParts = playerParts.OrderBy(part => (int)part.slot);
-        playerParts = Enumerable.ToList<Parts.BugPart>(tempParts);
-
-        //playerParts = (List<Parts.BugPart>)playerParts.OrderBy(part => (int)part.slot);
-        // Add effects to stats
-        foreach(Parts.BugPart part in playerParts)
+        // Organize child parts by part type
+        childPartObjects = Enumerable.ToList<GameObject>(childPartObjects.OrderBy(obj => (int)obj.GetComponent<Parts.BugPart>().slot));
+        // Add in player parts
+        foreach(GameObject childManager in childPartObjects)
         {
-            AddEffect(part.applyStats);
+            Parts.BugPart bp = childManager.GetComponent<Parts.BugPart>();
+            playerParts.Add(bp);
+            AddEffect(bp.applyStats);
         }
 
+        //// Organize bug parts by part. Important for correct swapping
+        //var tempParts = playerParts.OrderBy(part => (int)part.slot);
+        //playerParts = Enumerable.ToList<Parts.BugPart>(tempParts);
+
+        ////playerParts = (List<Parts.BugPart>)playerParts.OrderBy(part => (int)part.slot);
+        //// Add effects to stats
+        //foreach(Parts.BugPart part in playerParts)
+        //{
+        //    AddEffect(part.applyStats);
+        //}
+
         DontDestroyOnLoad(this.gameObject);
-        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
