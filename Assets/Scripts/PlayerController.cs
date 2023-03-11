@@ -15,8 +15,8 @@ public class PlayerController : StatsController
     public int STARTING_HEALTH = 5;
     public int STARTING_SPEED = 2;
 
-    public List<Parts.BugPart> playerParts;
-    public List<List<Parts.BugPart>> playerPartsTest;
+    private List<Parts.BugPart> playerParts;
+    public List<GameObject> childPartObjects;
 
     public Rigidbody2D rb;
     // This variable will accept player movement from either keyboard or controller
@@ -28,6 +28,9 @@ public class PlayerController : StatsController
         maxHealth = STARTING_HEALTH;
         health = STARTING_HEALTH;
         moveSpeed = STARTING_SPEED;
+
+        // Initialize starting bug body parts
+
 
         // Organize bug parts by part. Important for correct swapping
         var tempParts = playerParts.OrderBy(part => (int)part.slot);

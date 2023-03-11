@@ -106,6 +106,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4763804258032849615}
   - component: {fileID: 3099806762695171919}
+  - component: {fileID: 3587425630979546024}
   m_Layer: 0
   m_Name: head_manager
   m_TagString: Untagged
@@ -143,6 +144,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSprites:
   - {fileID: 6118661292222008471}
+--- !u!114 &3587425630979546024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873788249567316095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85efbab06effcb842adb05bbe5e88fa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  childrenSprites: []
+  limbSprite: {fileID: 21300000, guid: d2ea93c1ff790469d85be4d130be1cbf, type: 3}
 --- !u!1 &2061673160695701591
 GameObject:
   m_ObjectHideFlags: 0
@@ -304,7 +319,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   STARTING_HEALTH: 5
   STARTING_SPEED: 2
-  playerParts: []
+  childPartObjects: []
   rb: {fileID: 0}
 --- !u!114 &6118661290419202037
 MonoBehaviour:

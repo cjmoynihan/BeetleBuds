@@ -27,6 +27,8 @@ public class Parts
 
         public abstract Sprite partSprite { get; }
 
+        public List<Sprite> childrenSprites;
+
         public abstract int cost { get; }
 
         public abstract StatsController.Stats applyStats(StatsController.Stats initialStats);
