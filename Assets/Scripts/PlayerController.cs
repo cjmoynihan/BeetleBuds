@@ -105,6 +105,22 @@ public class PlayerController : StatsController
     public void AddParts(Parts.BugPart newPart)
     {
         // Logic to swap out parts of the same type.
+        GameObject childManager = childPartObjects[(int)newPart.slot];
+        // Swap scripts
+
+        // Legacy code:
+        //Parts.BugPart oldComponent = childManager.GetComponent<Parts.BugPart>();
+        //newPart.childrenSprites = oldComponent.childrenSprites;
+        // :End legacy code
+
+        Component newComponent = childManager.AddComponent(newPart.GetType());
+        Destroy(childManager.GetComponent<Parts.BugPart>());
+
+        // Swap sprites
+        newPart.ReplaceSprites();
+        
+        // Add new parts to logic
+        // Remove old parts from logic
         Parts.BugPart previousPart = playerParts[(int)newPart.slot];
         RemoveEffect(previousPart.applyStats);
         AddEffect(newPart.applyStats);

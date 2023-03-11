@@ -4360,7 +4360,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShopTextObject: {fileID: 22124349}
   BuyableParts:
-  - {fileID: 4635149715720130851, guid: 7ef65b566ed3060419861be578216ace, type: 3}
   - {fileID: 6413054704157409293, guid: 18e5975bfd32d4c4885c169686a0957d, type: 3}
 --- !u!1001 &1155525703
 PrefabInstance:
