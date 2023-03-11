@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class PlayerController : StatsController
@@ -14,6 +15,9 @@ public class PlayerController : StatsController
     public int STARTING_HEALTH = 1;
     public int STARTING_SPEED = 2;
 
+    private List<Parts.BugPart> playerParts = new List<Parts.BugPart>();
+    public List<GameObject> childPartObjects;
+
     public Rigidbody2D rb;
     // This variable will accept player movement from either keyboard or controller
     private Vector2 playerMovement;
@@ -25,8 +29,30 @@ public class PlayerController : StatsController
         health = STARTING_HEALTH;
         moveSpeed = STARTING_SPEED;
 
-        DontDestroyOnLoad(this.gameObject);
         rb = GetComponent<Rigidbody2D>();
+
+        // Organize child parts by part type
+        childPartObjects = Enumerable.ToList<GameObject>(childPartObjects.OrderBy(obj => (int)obj.GetComponent<Parts.BugPart>().slot));
+        // Add in player parts
+        foreach(GameObject childManager in childPartObjects)
+        {
+            Parts.BugPart bp = childManager.GetComponent<Parts.BugPart>();
+            playerParts.Add(bp);
+            AddEffect(bp.applyStats);
+        }
+
+        //// Organize bug parts by part. Important for correct swapping
+        //var tempParts = playerParts.OrderBy(part => (int)part.slot);
+        //playerParts = Enumerable.ToList<Parts.BugPart>(tempParts);
+
+        ////playerParts = (List<Parts.BugPart>)playerParts.OrderBy(part => (int)part.slot);
+        //// Add effects to stats
+        //foreach(Parts.BugPart part in playerParts)
+        //{
+        //    AddEffect(part.applyStats);
+        //}
+
+        DontDestroyOnLoad(this.gameObject);
     }
 
     // Update is called once per frame
@@ -76,12 +102,44 @@ public class PlayerController : StatsController
         rb.MovePosition(rb.position + realtimeMovement);
     }
 
-    private List<Parts.BugPart> playerParts = new List<Parts.BugPart>();
-
-    public void AddParts(Parts.BugPart part)
+    public void AddParts(Parts.BugPart newPart)
     {
-        // TODO: Logic to swap out parts of the same type.
-        AddEffect(part.applyStats);
-        playerParts.Add(part);
+        // Logic to swap out parts of the same type.
+        GameObject childManager = childPartObjects[(int)newPart.slot];
+        // Swap scripts
+
+        // Legacy code:
+        Parts.BugPart oldComponent = childManager.GetComponent<Parts.BugPart>();
+        //newPart.childrenSprites = oldComponent.childrenSprites;
+        // :End legacy code
+
+        Component newComponent = childManager.AddComponent(newPart.GetType());
+        //Destroy(GetComponent(oldComponent.GetType()));  // Not destroying component!!
+        Destroy(oldComponent);
+
+        // Swap sprites
+        SpriteRenderer[] childRenderers = childManager.GetComponentsInChildren<SpriteRenderer>();
+        if (childRenderers.Length == 1)
+        {
+            childRenderers[0].sprite = newPart.partSprite;
+        } else
+        {
+            for (int idx = 0; idx < childRenderers.Length; idx++)
+            {
+                childRenderers[idx].sprite = newPart.childrenSprites[idx];
+            }
+        }
+
+        //Parts.BugPart newScript = childManager.GetComponent
+        //Parts.BugPart inplaceScript = childManager.GetComponent(newPart.GetType());
+        //newPart.ReplaceSprites();
+
+
+        // Add new parts to logic
+        // Remove old parts from logic
+        Parts.BugPart previousPart = playerParts[(int)newPart.slot];
+        RemoveEffect(previousPart.applyStats);
+        AddEffect(newPart.applyStats);
+        playerParts[(int)newPart.slot] = newPart;
     }
 }
