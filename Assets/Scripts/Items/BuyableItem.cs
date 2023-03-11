@@ -5,7 +5,6 @@ using System.Linq;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
-using static UnityEditor.Experimental.GraphView.Port;
 
 public class BuyableItem : AbstractInteractiveObject
 {
