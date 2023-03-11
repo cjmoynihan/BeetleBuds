@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR;
 
-public class AntHead : Parts.BugPart
+public class AntWings : Parts.BugPart
 {
-    public override Parts.BugSlot slot => Parts.BugSlot.Head;
+    public override Parts.BugSlot slot => Parts.BugSlot.Wings;
 
     public Sprite limbSprite;
 
@@ -13,13 +13,13 @@ public class AntHead : Parts.BugPart
 
     public override int cost => 1;
 
-    public override string itemName => "Generic Ant head";
+    public override string itemName => "A lack of wings";
 
-    public override string description => "Test Ant Description";
+    public override string description => "Sadly you don't have any wings";
 
     public override StatsController.Stats applyStats(StatsController.Stats initialStats)
     {
-        initialStats.health += 5;
+        
         return initialStats;
     }
 }
