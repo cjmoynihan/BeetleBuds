@@ -6,6 +6,8 @@ public class StingerAttack : EnemyTypes.EnemyBehavior
 {
     public int damage = 1;
 
+    public override int SpawnValue => 5;
+
     protected override void PlayerCollision(Collision2D collision)
     {
         FindPlayer().GetComponent<PlayerController>().health -= damage;

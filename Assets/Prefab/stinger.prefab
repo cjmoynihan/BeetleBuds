@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 9216663164463124185}
   - component: {fileID: 5517771123860071206}
   - component: {fileID: 5026145465648827258}
+  - component: {fileID: -2690733991783125919}
   m_Layer: 7
   m_Name: stinger
   m_TagString: Enemy
@@ -74,7 +75,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 335262491
-  m_SortingLayer: 7
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f22b75cb7074547d99e5e065b1baab74, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -138,3 +139,33 @@ CapsuleCollider2D:
   m_Offset: {x: 0.021025479, y: 0.010512829}
   m_Size: {x: 0.56179535, y: 1.0728216}
   m_Direction: 0
+--- !u!114 &-2690733991783125919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 31159246857361409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1322396812
+      Data2: 1192502121
+      Data3: 1590124734
+      Data4: -1611242304
+    Path: event:/Enemy Bugs/stinger shot
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20

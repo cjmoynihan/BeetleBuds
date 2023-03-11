@@ -19,9 +19,9 @@ public class RoomSpawnController : MonoBehaviour
             if (!spawnHere) continue;
 
             var spawn = spawnPoints[index % spawnPoints.Count()];
-            var spawnValue = spawn.spawnValue;
+            var spawnValue = spawn.SpawnEnemy();
             accumulatedDifficulty += spawnValue;
-            spawn.SpawnEnemy();
+            
         }
     }
 

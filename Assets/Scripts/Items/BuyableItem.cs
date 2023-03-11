@@ -5,7 +5,6 @@ using System.Linq;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
-using static UnityEditor.Experimental.GraphView.Port;
 
 public class BuyableItem : AbstractInteractiveObject
 {
@@ -20,8 +19,6 @@ public class BuyableItem : AbstractInteractiveObject
     public float timeToBuy = 1;
 
     public bool isPurchased = false;
-
-    private float pixelScale = 400;
 
     public override string InteractionText { get {
             if (isPurchased) 
@@ -67,11 +64,11 @@ public class BuyableItem : AbstractInteractiveObject
         bool eIsPressed = Input.GetKey(KeyCode.E);
         if (pressTime.TotalSeconds > timeToBuy && eIsPressed)
         {
+            var player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+            player.AddParts(item);
             isPurchased = true;
             LonelyBehavior();
             interactable = false;
-            var player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
-            player.AddParts(item);
             Debug.Log("Item Purchased");
         }
         else if (eIsPressed)

@@ -10,6 +10,8 @@ public class BeeAI : EnemyTypes.EnemyBehavior
     public float attackVelocity = 1;
     public float attackPositionBuffer = 0.15f;
 
+    public override int SpawnValue => 3;
+
     public override void Behavior()
     {
         // Happens every FixedUpdate. Used for attacking, etc

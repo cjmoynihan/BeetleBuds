@@ -17,9 +17,9 @@ public class AntHead : Parts.BugPart
 
     public override string description => "Test Ant Description";
 
-    public override PlayerController.Stats applyStats(PlayerController.Stats initialStats)
+    public override StatsController.Stats applyStats(StatsController.Stats initialStats)
     {
-        initialStats.damage += 5;
+        initialStats.health += 100;
         return initialStats;
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class HealthController : MonoBehaviour
 {
-    public TextMeshPro healthText;
+    public GameObject TextObject;
 
     private PlayerController playerController;
 
@@ -14,7 +14,8 @@ public class HealthController : MonoBehaviour
     {
         try
         {
-            healthText.text = "HEALTH: " + playerController.health.ToString();
+            var textbox = TextObject.GetComponent<TMP_Text>();
+            textbox.text = "HEALTH: " + playerController.health.ToString();
         } catch
         {
             playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
