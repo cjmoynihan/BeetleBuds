@@ -7,13 +7,13 @@ public class Parts
 {
     public enum BugSlot
     {
-        Eyes,
-        Mouth,
-        Antennae,
-        Legs,
-        Wings,
         Body,
-        Tail
+        Booty,
+        Eyes,
+        Head,
+        Legs,
+        Mouth,
+        Wings
     }
 
     // Bug Part is a StatEffect that also has a slot, cost, and other information
@@ -23,7 +23,7 @@ public class Parts
 
         public abstract string description { get;}
 
-        public abstract BugSlot slot { get;  }
+        public abstract BugSlot slot { get; }
 
         public abstract Sprite partSprite { get; }
 
