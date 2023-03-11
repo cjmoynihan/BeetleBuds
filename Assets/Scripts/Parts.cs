@@ -57,19 +57,19 @@ public class Parts
             }
         }
 
-        //public void _replaceSprites(List<Sprite> newSprites)
-        //{
-        //    SpriteRenderer[] childSprites = GetSpriteRenderers();
-        //    for (int idx = 0; idx < childrenSprites.Count; idx++)
-        //    {
-        //        childSprites[idx].sprite = newSprites[idx];
-        //    }
-        //}
-        //public void _replaceSingleSprite(Sprite newSprite)
-        //{
-        //    SpriteRenderer[] childSprites = GetSpriteRenderers();
-        //    childSprites[0].sprite = newSprite;
-        //}
+        public void _replaceSprites(List<Sprite> newSprites)
+        {
+            SpriteRenderer[] childSprites = GetSpriteRenderers();
+            for (int idx = 0; idx < childrenSprites.Count; idx++)
+            {
+                childSprites[idx].sprite = newSprites[idx];
+            }
+        }
+        public void _replaceSingleSprite(Sprite newSprite)
+        {
+            SpriteRenderer[] childSprites = GetSpriteRenderers();
+            childSprites[0].sprite = newSprite;
+        }
 
         public abstract int cost { get; }
 

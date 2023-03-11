@@ -109,16 +109,32 @@ public class PlayerController : StatsController
         // Swap scripts
 
         // Legacy code:
-        //Parts.BugPart oldComponent = childManager.GetComponent<Parts.BugPart>();
+        Parts.BugPart oldComponent = childManager.GetComponent<Parts.BugPart>();
         //newPart.childrenSprites = oldComponent.childrenSprites;
         // :End legacy code
 
         Component newComponent = childManager.AddComponent(newPart.GetType());
-        Destroy(childManager.GetComponent<Parts.BugPart>());
+        //Destroy(GetComponent(oldComponent.GetType()));  // Not destroying component!!
+        Destroy(oldComponent);
 
         // Swap sprites
-        newPart.ReplaceSprites();
-        
+        SpriteRenderer[] childRenderers = childManager.GetComponentsInChildren<SpriteRenderer>();
+        if (childRenderers.Length == 1)
+        {
+            childRenderers[0].sprite = newPart.partSprite;
+        } else
+        {
+            for (int idx = 0; idx < childRenderers.Length; idx++)
+            {
+                childRenderers[idx].sprite = newPart.childrenSprites[idx];
+            }
+        }
+
+        //Parts.BugPart newScript = childManager.GetComponent
+        //Parts.BugPart inplaceScript = childManager.GetComponent(newPart.GetType());
+        //newPart.ReplaceSprites();
+
+
         // Add new parts to logic
         // Remove old parts from logic
         Parts.BugPart previousPart = playerParts[(int)newPart.slot];
