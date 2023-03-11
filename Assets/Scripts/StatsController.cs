@@ -14,14 +14,16 @@ public class StatsController : MonoBehaviour
         public float moveSpeed;
         public float attackSpeed;
         private List<Func<Stats, Stats>> statEffects = new List<Func<Stats, Stats>>();
-        public Stats modifiedStats
+        private Stats modifiedStats;
+        public Stats ModifiedStats
         {
             get
             {
-                if(statEffects.Count == 0)
+                if (statEffects.Count == 0)
                 {
                     return this;
-                } else
+                }
+                else
                 {
                     return modifiedStats;
                 }
@@ -37,7 +39,7 @@ public class StatsController : MonoBehaviour
         }
         public void RemoveEffect(Func<Stats, Stats> effect)
         {
-            if(statEffects.Remove(effect))
+            if (statEffects.Remove(effect))
             {
                 // Returns false if object has already been removed
                 UpdateStats();
@@ -71,7 +73,7 @@ public class StatsController : MonoBehaviour
         }
         private void UpdateStats()
         {
-            modifiedStats = GetAppliedStats();
+            ModifiedStats = GetAppliedStats();
         }
 
     }
@@ -82,22 +84,22 @@ public class StatsController : MonoBehaviour
     private Stats initialStats = new Stats();
     public int maxHealth
     {
-        get { return initialStats.modifiedStats.maxHealth; }
+        get { return initialStats.ModifiedStats.maxHealth; }
         set { initialStats.maxHealth = value; }
     }
     public int health
     {
-        get { return initialStats.modifiedStats.health; }
+        get { return initialStats.ModifiedStats.health; }
         set { initialStats.health = value; }
     }
     public float moveSpeed
     {
-        get { return initialStats.modifiedStats.moveSpeed; }
+        get { return initialStats.ModifiedStats.moveSpeed; }
         set { initialStats.moveSpeed = value; }
     }
     public float attackSpeed
     {
-        get { return initialStats.modifiedStats.attackSpeed; }
+        get { return initialStats.ModifiedStats.attackSpeed; }
         set { initialStats.moveSpeed = value; }
     }
     public void AddEffect(Func<Stats, Stats> effect)
