@@ -7,20 +7,24 @@ public class ShootingController : MonoBehaviour
     private Camera mainCam;
     private Vector3 mousePos;
     private Animator anim;
+    private PlayerController playerController;
 
 
     public GameObject attackObject;
     public Transform attackTransform;
     public bool canAttack = true;
     public float attackRotation = -45;
-    public float attackCooldown = 0.3f;
     public int ninetyRotations = 3;
 
     // Start is called before the first frame update
     void Start()
     {
         mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+        GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
+        anim = playerObj.GetComponent<Animator>();
+        playerController = playerObj.GetComponent<PlayerController>();
         anim = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
+
     }
 
     public Vector2 rotate90(Vector2 v2)
@@ -67,7 +71,7 @@ public class ShootingController : MonoBehaviour
 
     IEnumerator WaitAttackCooldown()
     {
-        yield return new WaitForSeconds(attackCooldown);
+        yield return new WaitForSeconds(playerController.ModifiedStats.attackCooldown);
         canAttack = true;
     }
     private IEnumerator StopAttackAnimation()

@@ -4579,6 +4579,7 @@ MonoBehaviour:
   ShopTextObject: {fileID: 22124349}
   BuyableParts:
   - {fileID: 6413054704157409293, guid: 18e5975bfd32d4c4885c169686a0957d, type: 3}
+  - {fileID: -1287107248042989461, guid: d3a4163b59ef34688839ac0d38ff76a1, type: 3}
 --- !u!1001 &1155525703
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4807,7 +4808,7 @@ RectTransform:
   - {fileID: 1204369593}
   - {fileID: 22124350}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
