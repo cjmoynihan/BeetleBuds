@@ -2488,14 +2488,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57c008f954fe54a8bb972de1018a2cb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_RootBone: {fileID: 5709414474364212064}
+  m_RootBone: {fileID: 5974523434218724649}
   m_BoneTransforms:
   - {fileID: 5974523434218724649}
   - {fileID: 3455344141299773827}
   - {fileID: 7089172070810188990}
   m_Bounds:
-    m_Center: {x: -0.11686447, y: -0.87451726, z: 0}
-    m_Extent: {x: 0.19343477, y: 0.2999999, z: 0}
+    m_Center: {x: 1.32947, y: -0.99871534, z: 0}
+    m_Extent: {x: 0.39961067, y: 0.16943139, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
