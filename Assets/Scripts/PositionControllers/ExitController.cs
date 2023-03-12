@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class ExitController : MonoBehaviour
 {
+    public float openSpeed = 0.9f;
+
+    public GameObject doorOpen;
+
+    public GameObject doorClosed;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -15,6 +20,17 @@ public class ExitController : MonoBehaviour
                 var gameController = controllerObject.GetComponent<GameController>();
                 gameController.Next();
             }
+        }
+    }
+    
+
+    
+    private void Update()
+    {
+        if (GameObject.FindGameObjectsWithTag("Enemy").Length == 0)
+        {
+            var door = doorClosed.GetComponent<SpriteRenderer>();
+            door.transform.localScale *= openSpeed;
         }
     }
 }

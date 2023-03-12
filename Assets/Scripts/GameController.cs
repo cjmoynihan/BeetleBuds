@@ -16,6 +16,8 @@ public class GameController : MonoBehaviour
     public void Start()
     {
         _playController = new PlayController();
+        Resolution currentResolution = Screen.currentResolution;
+        Screen.SetResolution(currentResolution.width, currentResolution.height, false);
     }
 
     public void PlayGame()

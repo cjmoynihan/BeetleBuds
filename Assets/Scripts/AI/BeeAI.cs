@@ -61,6 +61,6 @@ public class BeeAI : EnemyTypes.EnemyBehavior
 
     protected override void PlayerCollision(Collision2D collision)
     {
-        throw new System.NotImplementedException();
+        collision.gameObject.GetComponent<PlayerController>().health -= 1;
     }
 }
