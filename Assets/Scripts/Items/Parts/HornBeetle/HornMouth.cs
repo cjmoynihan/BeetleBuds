@@ -17,7 +17,7 @@ public class HornMouth : Parts.BugPart
     {
         initialStats.attackDamage *= 2;
         initialStats.attackRange *= 2;
-        initialStats.attackSpeed *= 2;  // Negative effect
+        initialStats.attackCooldown *= 2;  // Negative effect
         return initialStats;
     }
 }

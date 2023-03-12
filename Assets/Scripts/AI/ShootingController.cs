@@ -62,7 +62,8 @@ public class ShootingController : MonoBehaviour
             anim.SetBool("IsAttacking", true);
 
             canAttack = false;
-            Instantiate(attackObject, attackTransform.position, transform.rotation * Quaternion.Euler(0, 0, attackRotation));
+            GameObject attack = Instantiate(attackObject, attackTransform.position, transform.rotation * Quaternion.Euler(0, 0, attackRotation));
+            attack.transform.localScale *= playerController.ModifiedStats.attackRange;
             StartCoroutine(StopAttackAnimation());
             StartCoroutine(WaitAttackCooldown());
 
