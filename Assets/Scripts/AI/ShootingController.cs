@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class ShootingController : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class ShootingController : MonoBehaviour
     public bool canAttack = true;
     public float attackRotation = -45;
     public int ninetyRotations = 3;
+    public float playerSlow = 0.5f;
 
     // Start is called before the first frame update
     void Start()
@@ -66,9 +68,23 @@ public class ShootingController : MonoBehaviour
             attack.transform.localScale *= playerController.ModifiedStats.attackRange;
             StartCoroutine(StopAttackAnimation());
             StartCoroutine(WaitAttackCooldown());
-
+            StartCoroutine(SlowPlayer());
         }
     }
+
+    public StatsController.Stats slowAttacker(StatsController.Stats initialStats)
+    {
+        initialStats.moveSpeed *= playerSlow;
+        return initialStats;
+    }
+    private IEnumerator SlowPlayer()
+    {
+        Func<StatsController.Stats, StatsController.Stats> slowFunc = slowAttacker;
+        playerController.AddEffect(slowFunc);
+        yield return new WaitForSeconds(playerController.ModifiedStats.slowDuration);
+        playerController.RemoveEffect(slowFunc);
+    }
+
 
     IEnumerator WaitAttackCooldown()
     {

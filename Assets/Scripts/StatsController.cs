@@ -15,7 +15,7 @@ public class StatsController : MonoBehaviour
         public float attackCooldown;
         public float attackRange;
         public float attackDamage;
-        public float playerSlow;
+        public float slowDuration;
         private List<Func<Stats, Stats>> statEffects = new List<Func<Stats, Stats>>();
         private Stats modifiedStats;
         public Stats _parentStats = null;
@@ -63,7 +63,7 @@ public class StatsController : MonoBehaviour
                 attackCooldown = attackCooldown,
                 attackRange = attackRange,
                 attackDamage = attackDamage,
-                playerSlow = playerSlow
+                slowDuration = slowDuration
             };
             return tempStats;
         }
@@ -160,15 +160,12 @@ public class StatsController : MonoBehaviour
             initialStats.UpdateStats();
         }
     }
-    public float playerSlow
+    public float slowDuration
     {
-        get
-        {
-            return initialStats.playerSlow;
-        }
+        get { return initialStats.slowDuration; }
         set
         {
-            initialStats.playerSlow = value;
+            initialStats.slowDuration = value;
             initialStats.UpdateStats();
         }
     }
