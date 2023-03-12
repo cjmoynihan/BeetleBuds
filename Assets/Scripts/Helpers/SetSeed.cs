@@ -13,10 +13,7 @@ public class SetSeed : MonoBehaviour
 
     public bool usePlayerSeed;
 
-    public TMP_Text seedbox;
-
-
-    public void SetGameSeed()
+    public void SetGameSeed(TMP_Text seedbox)
     {
         if (useRandomSeed)
         {

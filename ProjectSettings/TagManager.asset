@@ -10,6 +10,7 @@ TagManager:
   - InteractionText
   - InteractiveItem
   - InteractiveObject
+  - GameState
   layers:
   - Default
   - TransparentFX
