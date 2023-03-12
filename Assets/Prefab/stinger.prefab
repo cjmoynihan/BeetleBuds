@@ -161,7 +161,7 @@ MonoBehaviour:
     Path: event:/Enemy Bugs/stinger_shot
   Event: 
   PlayEvent: 1
-  StopEvent: 2
+  StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0

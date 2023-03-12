@@ -180,6 +180,7 @@ GameObject:
   - component: {fileID: 7795517496714594258}
   - component: {fileID: 7795517496714594260}
   - component: {fileID: -6186944040270116282}
+  - component: {fileID: 4733982792252587321}
   m_Layer: 3
   m_Name: Exit
   m_TagString: Untagged
@@ -297,3 +298,33 @@ MonoBehaviour:
   openSpeed: 0.9
   doorOpen: {fileID: 4794834336987390293}
   doorClosed: {fileID: 471896221018010235}
+--- !u!114 &4733982792252587321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7795517496714594259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: 2001779543
+      Data2: 1171467416
+      Data3: -1468783469
+      Data4: 824803856
+    Path: event:/World/change_room
+  Event: 
+  PlayEvent: 5
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
