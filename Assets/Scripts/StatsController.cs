@@ -74,6 +74,10 @@ public class StatsController : MonoBehaviour
         public void UpdateStats()
         {
             ModifiedStats = GetAppliedStats();
+            if (ModifiedStats.health > ModifiedStats.maxHealth)
+            {
+                ModifiedStats.health = ModifiedStats.maxHealth;
+            }
         }
 
     }
