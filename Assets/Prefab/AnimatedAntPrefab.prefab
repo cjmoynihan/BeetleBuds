@@ -945,7 +945,6 @@ MonoBehaviour:
   attackTransform: {fileID: 6790117430474110134}
   canAttack: 1
   attackRotation: -45
-  attackCooldown: 0.3
   ninetyRotations: 3
 --- !u!1 &2858336365565704849
 GameObject:
@@ -1195,7 +1194,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3245137915381739891}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.0699463, y: -3.685791, z: 0.06377112}
+  m_LocalPosition: {x: -0.13, y: -2.6937938, z: 0.06377112}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1245,6 +1244,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   STARTING_HEALTH: 5
   STARTING_SPEED: 3
+  STARTING_ATTACK_COOLDOWN: 0.5
   STARTING_DAMAGE: 1
   STARTING_RANGE: 1
   childPartObjects:

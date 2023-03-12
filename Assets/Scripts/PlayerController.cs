@@ -17,6 +17,7 @@ public class PlayerController : StatsController
     public float STARTING_ATTACK_COOLDOWN = 0.5f;
     public float STARTING_DAMAGE = 1f;
     public float STARTING_RANGE = 1f;
+    public float PLAYER_SLOW = 0.7f;
 
     private List<Parts.BugPart> playerParts = new List<Parts.BugPart>();
     public List<GameObject> childPartObjects;
@@ -41,6 +42,7 @@ public class PlayerController : StatsController
         attackCooldown = STARTING_ATTACK_COOLDOWN;
         attackDamage = STARTING_DAMAGE;
         attackRange = STARTING_RANGE;
+        playerSlow = PLAYER_SLOW;
 
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();

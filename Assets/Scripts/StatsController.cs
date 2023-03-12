@@ -15,8 +15,10 @@ public class StatsController : MonoBehaviour
         public float attackCooldown;
         public float attackRange;
         public float attackDamage;
+        public float playerSlow;
         private List<Func<Stats, Stats>> statEffects = new List<Func<Stats, Stats>>();
         private Stats modifiedStats;
+        public Stats _parentStats = null;
         public Stats ModifiedStats
         {
             get
@@ -53,12 +55,15 @@ public class StatsController : MonoBehaviour
         {
             Stats tempStats = new()
             {
+                // Set _parentStats to the upmost stats
+                _parentStats = (_parentStats != null ? _parentStats : this),
                 maxHealth = maxHealth,
                 health = health,
                 moveSpeed = moveSpeed,
                 attackCooldown = attackCooldown,
                 attackRange = attackRange,
-                attackDamage = attackDamage
+                attackDamage = attackDamage,
+                playerSlow = playerSlow
             };
             return tempStats;
         }
@@ -83,7 +88,6 @@ public class StatsController : MonoBehaviour
                 ModifiedStats.health = ModifiedStats.maxHealth;
             }
         }
-
     }
 
     // All of the get and set functions for these stats have been overloaded
@@ -144,6 +148,7 @@ public class StatsController : MonoBehaviour
         set
         {
             initialStats.attackRange = value;
+            initialStats.UpdateStats();
         }
     }
     public float attackDamage
@@ -152,6 +157,19 @@ public class StatsController : MonoBehaviour
         set
         {
             initialStats.attackDamage = value;
+            initialStats.UpdateStats();
+        }
+    }
+    public float playerSlow
+    {
+        get
+        {
+            return initialStats.playerSlow;
+        }
+        set
+        {
+            initialStats.playerSlow = value;
+            initialStats.UpdateStats();
         }
     }
     public void AddEffect(Func<Stats, Stats> effect)

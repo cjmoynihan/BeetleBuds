@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2500763501382547674}
   - component: {fileID: 9173784819448897112}
-  - component: {fileID: 6376423696797136402}
+  - component: {fileID: -8614968051780695604}
   m_Layer: 6
-  m_Name: _HornBody
+  m_Name: HornBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -72,9 +72,9 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1676653107
-  m_SortingLayer: 9
+  m_SortingLayer: 10
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0e1786710f51a42b5991bacf4e89ee7a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 422b1f20597fc472ba0a37ad9783d0c6, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -85,7 +85,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6376423696797136402
+--- !u!114 &-8614968051780695604
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -94,7 +94,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 3233193428765748090}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19c587765fcc24d9897e17bbd63dc2c6, type: 3}
+  m_Script: {fileID: 11500000, guid: 234ccfd600a0c49728de1a926505847b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  limbSprite: {fileID: 21300000, guid: 0e1786710f51a42b5991bacf4e89ee7a, type: 3}
+  childrenSprites: []
+  limbSprite: {fileID: 21300000, guid: 422b1f20597fc472ba0a37ad9783d0c6, type: 2}
+  invulnerabilityLength: 1
