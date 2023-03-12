@@ -14,6 +14,9 @@ public class PlayerController : StatsController
 
     public int STARTING_HEALTH = 1;
     public float STARTING_SPEED = 2f;
+    public float STARTING_ATTACK_COOLDOWN = 0.5f;
+    public float STARTING_DAMAGE = 1f;
+    public float STARTING_RANGE = 1f;
 
     private List<Parts.BugPart> playerParts = new List<Parts.BugPart>();
     public List<GameObject> childPartObjects;
@@ -35,6 +38,9 @@ public class PlayerController : StatsController
         maxHealth = STARTING_HEALTH;
         health = STARTING_HEALTH;
         moveSpeed = STARTING_SPEED;
+        attackCooldown = STARTING_ATTACK_COOLDOWN;
+        attackDamage = STARTING_DAMAGE;
+        attackRange = STARTING_RANGE;
 
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();

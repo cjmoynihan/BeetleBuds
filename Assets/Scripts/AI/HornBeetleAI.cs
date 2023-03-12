@@ -4,10 +4,6 @@ using UnityEngine;
 
 public class HornBeetleAI : EnemyTypes.EnemyBehavior
 {
-    public void Start()
-    {
-
-    }
     // Horn beetle moves slowly
     // Has "big" attack
     // Charging enemy

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyTypes
 {
+
     // Enemy needs:
     //  Behavior -> How does it move, rotate?
     //  Attack -> How does it deal damage (could incorporate into behavior)
@@ -13,11 +14,18 @@ public class EnemyTypes
     {
         public abstract int SpawnValue { get; }
         public int hitPoints = 1;
+        private PlayerController playerController;
         // Applies in place, modifying the enemy object directly
         public abstract void Behavior();
+
+        protected virtual void Start()
+        {
+            playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+        }
+
         protected void AttackCollision(Collision2D collision)
         {
-            hitPoints -= 1;
+            hitPoints -= Mathf.CeilToInt(playerController.ModifiedStats.attackDamage);
             if (hitPoints <= 0)
             {
                 Destroy(gameObject);

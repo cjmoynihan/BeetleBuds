@@ -1245,6 +1245,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   STARTING_HEALTH: 5
   STARTING_SPEED: 3
+  STARTING_DAMAGE: 1
+  STARTING_RANGE: 1
   childPartObjects:
   - {fileID: 5677040893703033626}
   - {fileID: 3118511709526794206}

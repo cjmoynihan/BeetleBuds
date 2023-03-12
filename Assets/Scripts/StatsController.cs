@@ -12,7 +12,9 @@ public class StatsController : MonoBehaviour
         public int maxHealth;
         public int health;
         public float moveSpeed;
-        public float attackSpeed;
+        public float attackCooldown;
+        public float attackRange;
+        public float attackDamage;
         private List<Func<Stats, Stats>> statEffects = new List<Func<Stats, Stats>>();
         private Stats modifiedStats;
         public Stats ModifiedStats
@@ -54,7 +56,9 @@ public class StatsController : MonoBehaviour
                 maxHealth = maxHealth,
                 health = health,
                 moveSpeed = moveSpeed,
-                attackSpeed = attackSpeed
+                attackCooldown = attackCooldown,
+                attackRange = attackRange,
+                attackDamage = attackDamage
             };
             return tempStats;
         }
@@ -125,13 +129,29 @@ public class StatsController : MonoBehaviour
             initialStats.UpdateStats();
         }
     }
-    public float attackSpeed
+    public float attackCooldown
     {
-        get { return initialStats.attackSpeed; }
+        get { return initialStats.attackCooldown; }
         set
         {
-            initialStats.attackSpeed = value;
+            initialStats.attackCooldown = value;
             initialStats.UpdateStats();
+        }
+    }
+    public float attackRange
+    {
+        get { return initialStats.attackRange; }
+        set
+        {
+            initialStats.attackRange = value;
+        }
+    }
+    public float attackDamage
+    {
+        get { return initialStats.attackDamage; }
+        set
+        {
+            initialStats.attackDamage = value;
         }
     }
     public void AddEffect(Func<Stats, Stats> effect)
