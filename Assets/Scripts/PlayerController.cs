@@ -114,7 +114,7 @@ public class PlayerController : StatsController
     private void FixedUpdate()
     {
         // Apply movement based on speed and framerate
-        Vector2 realtimeMovement = playerMovement * moveSpeed * Time.deltaTime;
+        Vector2 realtimeMovement = playerMovement * ModifiedStats.moveSpeed * Time.deltaTime;
 
         rb.MovePosition(rb.position + realtimeMovement);
     }
