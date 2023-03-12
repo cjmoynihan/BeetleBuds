@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: -5253380273933446430}
   - component: {fileID: 8733442934331467033}
   - component: {fileID: 1080291633879962736}
+  - component: {fileID: -4141951709446732778}
   m_Layer: 0
   m_Name: babyBee
   m_TagString: Untagged
@@ -184,7 +185,7 @@ MonoBehaviour:
       Data2: 1126785496
       Data3: 1114071724
       Data4: 1015762305
-    Path: event:/Enemy Bugs/bee buzz
+    Path: event:/Enemy Bugs/bee_buzz
   Event: 
   PlayEvent: 1
   StopEvent: 2

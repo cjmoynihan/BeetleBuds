@@ -2020,6 +2020,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3245137915381739891, guid: c91b41286252440a289a2f234fab5ff1, type: 3}
     - target: {fileID: 6971708094904432090, guid: 72891d497eb32864bbf0ce16a07941b5, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6971708094904432090, guid: 72891d497eb32864bbf0ce16a07941b5, type: 3}
       propertyPath: seedGenerator
       value: 
       objectReference: {fileID: 157233743}

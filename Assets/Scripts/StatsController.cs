@@ -86,6 +86,8 @@ public class StatsController : MonoBehaviour
     // Getting the variable returns the modified variable
     // Setting the variable changes the initial (unmodified by status effects)
     private Stats initialStats = new Stats();
+    protected Animator anim;
+
     public Stats ModifiedStats
     {
         get { return initialStats.ModifiedStats; }
@@ -105,6 +107,11 @@ public class StatsController : MonoBehaviour
         get { return initialStats.health; }
         set
         {
+            if (value < health)
+            {
+                anim.SetBool("TakeDamage", true);
+                StartCoroutine(StopAnimation());
+            }
             initialStats.health = value;
             initialStats.UpdateStats();
         }
@@ -134,5 +141,11 @@ public class StatsController : MonoBehaviour
     public void RemoveEffect(Func<Stats, Stats> effect)
     {
         initialStats.RemoveEffect(effect);
+    }
+    public IEnumerator StopAnimation()
+    {
+        AnimatorStateInfo curState = anim.GetCurrentAnimatorStateInfo(0);
+        yield return new WaitForEndOfFrame();
+        anim.SetBool("TakeDamage", false);
     }
 }

@@ -183,7 +183,7 @@ MonoBehaviour:
       Data2: 1126785496
       Data3: 1114071724
       Data4: 1015762305
-    Path: event:/Enemy Bugs/bee buzz
+    Path: event:/Enemy Bugs/bee_buzz
   Event: 
   PlayEvent: 1
   StopEvent: 2

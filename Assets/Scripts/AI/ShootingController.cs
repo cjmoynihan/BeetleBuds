@@ -6,6 +6,7 @@ public class ShootingController : MonoBehaviour
 {
     private Camera mainCam;
     private Vector3 mousePos;
+    private Animator anim;
 
 
     public GameObject attackObject;
@@ -19,6 +20,7 @@ public class ShootingController : MonoBehaviour
     void Start()
     {
         mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+        anim = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
     }
 
     public Vector2 rotate90(Vector2 v2)
@@ -53,12 +55,12 @@ public class ShootingController : MonoBehaviour
         // Handle Attacking
         if (Input.GetMouseButton(0) && canAttack)
         {
-
+            anim.SetBool("IsAttacking", true);
 
             canAttack = false;
             Instantiate(attackObject, attackTransform.position, transform.rotation * Quaternion.Euler(0, 0, attackRotation));
+            StartCoroutine(StopAttackAnimation());
             StartCoroutine(WaitAttackCooldown());
-
 
         }
     }
@@ -67,5 +69,11 @@ public class ShootingController : MonoBehaviour
     {
         yield return new WaitForSeconds(attackCooldown);
         canAttack = true;
+    }
+    private IEnumerator StopAttackAnimation()
+    {
+        AnimatorStateInfo curState = anim.GetCurrentAnimatorStateInfo(0);
+        yield return new WaitForEndOfFrame();
+        anim.SetBool("IsAttacking", false);
     }
 }
