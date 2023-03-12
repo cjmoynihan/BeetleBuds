@@ -44,4 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 479ec2b97cbe56241a9fdbfa3ed98c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _player: {fileID: 5330450271777675221, guid: 8c593f9cda269ba45b365c4f3d78e542, type: 3}
+  _hud: {fileID: 1686316719878659521, guid: 9f8ab8a08b802494cb307cde529fd708, type: 3}
+  seedGenerator: {fileID: 0}
+  _player: {fileID: 3245137915381739891, guid: c91b41286252440a289a2f234fab5ff1, type: 3}

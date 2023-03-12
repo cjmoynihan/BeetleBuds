@@ -90,7 +90,10 @@ public class StatsController : MonoBehaviour
     public int health
     {
         get { return initialStats.ModifiedStats.health; }
-        set { initialStats.health = value; }
+        set { 
+            initialStats.health = value;
+            initialStats.GetAppliedStats();
+        }
     }
     public float moveSpeed
     {
