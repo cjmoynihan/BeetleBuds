@@ -59,7 +59,7 @@ public class PlayerController : StatsController
     void Update()
     {
         GetPlayerInput();
-        if (health <= 0)
+        if (ModifiedStats.health <= 0)
         {
             GameOver();
         }

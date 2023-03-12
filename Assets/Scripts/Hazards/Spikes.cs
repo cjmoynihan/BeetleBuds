@@ -25,7 +25,6 @@ public class Spikes : IHazard
 
         var transform = player.transform;
         player.GetComponent<PlayerController>().health -= damage;
-        Debug.Log($"Health:{FindPlayer().GetComponent<PlayerController>().health}");
 
         Vector3 direction = new Vector3(Mathf.Cos(Mathf.Deg2Rad*(90 - transform.eulerAngles.z)), Mathf.Sin(Mathf.Deg2Rad*(90 - transform.eulerAngles.z)), Mathf.Sin(Mathf.Deg2Rad*(90 - transform.eulerAngles.y))) * -1;
         StartCoroutine(PushBack(player,direction));
