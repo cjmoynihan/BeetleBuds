@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: -5253380273933446430}
   - component: {fileID: 8733442934331467033}
   - component: {fileID: 1080291633879962736}
+  - component: {fileID: -4141951709446732778}
   m_Layer: 0
   m_Name: babyBee
   m_TagString: Untagged
@@ -183,7 +184,7 @@ MonoBehaviour:
       Data2: 1126785496
       Data3: 1114071724
       Data4: 1015762305
-    Path: event:/Enemy Bugs/bee buzz
+    Path: event:/Enemy Bugs/bee_buzz
   Event: 
   PlayEvent: 1
   StopEvent: 2
@@ -194,3 +195,15 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
+--- !u!114 &-4141951709446732778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6923605421475437599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 774f64c45e6943743a09daf86a9d1552, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

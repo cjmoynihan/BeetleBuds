@@ -1178,6 +1178,8 @@ GameObject:
   - component: {fileID: 436527976250729849}
   - component: {fileID: 6520502300271829733}
   - component: {fileID: 9188582068773051570}
+  - component: {fileID: -3900331874446038476}
+  - component: {fileID: -508478531295272918}
   m_Layer: 6
   m_Name: AnimatedAntPrefab
   m_TagString: Player
@@ -1193,7 +1195,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3245137915381739891}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.13, y: -2.6937938, z: 0.06377112}
+  m_LocalPosition: {x: -7.24, y: -0.38, z: 0.06377112}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1319,6 +1321,48 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attenuationObject: {fileID: 0}
+--- !u!114 &-3900331874446038476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3245137915381739891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 774f64c45e6943743a09daf86a9d1552, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-508478531295272918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3245137915381739891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 980012546
+      Data2: 1283664559
+      Data3: -1769850994
+      Data4: -212676603
+    Path: event:/Ambience/ambience_frogs
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &3391638903462796453
 GameObject:
   m_ObjectHideFlags: 0
