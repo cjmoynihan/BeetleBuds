@@ -15,7 +15,7 @@ public class HealthController : MonoBehaviour
         try
         {
             var textbox = TextObject.GetComponent<TMP_Text>();
-            textbox.text = "HEALTH: " + playerController.health.ToString();
+            textbox.text = "HEALTH: " + playerController.ModifiedStats.health.ToString();
         } catch
         {
             playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();

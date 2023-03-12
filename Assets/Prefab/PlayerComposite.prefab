@@ -344,6 +344,7 @@ GameObject:
   - component: {fileID: 6118661290419202025}
   - component: {fileID: 6118661290419202024}
   - component: {fileID: 8003299882254272889}
+  - component: {fileID: -3227422702436434808}
   m_Layer: 0
   m_Name: PlayerComposite
   m_TagString: Player
@@ -463,6 +464,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attenuationObject: {fileID: 0}
+--- !u!114 &-3227422702436434808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6118661290419202036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 980012546
+      Data2: 1283664559
+      Data3: -1769850994
+      Data4: -212676603
+    Path: event:/Ambience/ambience_frogs
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &6118661290433583802
 GameObject:
   m_ObjectHideFlags: 0
