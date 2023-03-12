@@ -25,6 +25,7 @@ public class QueenBeeController : EnemyTypes.EnemyBehavior
     public float moveSpeed = 100f;
     public float minDistance = 3f;
     public float backupModifier = 4f;
+    public float knockback = 300f;
 
     // Attack Control
     private bool canAttack = true;
@@ -74,9 +75,11 @@ public class QueenBeeController : EnemyTypes.EnemyBehavior
                 MovingAndShooting();
                 break;
             case AttackState.BirthTime:
+                RotateTowardsPlayer();
                 if (spawned) break;
                 initialScale = transform.localScale.x;
-                Shoot(babyBee);
+                Shoot(babyBee, true);
+
                 spawned = true;
                 StartCoroutine(ShootBeeCooldown());
                 break;
@@ -171,7 +174,7 @@ public class QueenBeeController : EnemyTypes.EnemyBehavior
 
 
     // Update is called once per frame
-    void Shoot(GameObject projectile)
+    void Shoot(GameObject projectile, bool knockback=false)
     {
         var playerPosition = FindPlayerTransform().position;
         var accuracy = Random.Range(-spread, spread);
@@ -185,6 +188,11 @@ public class QueenBeeController : EnemyTypes.EnemyBehavior
             Rigidbody2D stingerRB = newStinger.GetComponent<Rigidbody2D>();
             stingerRB.velocity = attackDirection * attackVelocity;
             canAttack = false;
+            if (knockback)
+            {
+                Rigidbody2D rb = GetComponent<Rigidbody2D>();
+                rb.AddForce(transform.up * -this.knockback);
+            }
             StartCoroutine(WaitAfterShot());
         }
     }
