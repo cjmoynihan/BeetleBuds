@@ -13,7 +13,7 @@ public class PlayerController : StatsController
     // Check out StatsController for more information
 
     public int STARTING_HEALTH = 1;
-    public int STARTING_SPEED = 2;
+    public float STARTING_SPEED = 2f;
 
     private List<Parts.BugPart> playerParts = new List<Parts.BugPart>();
     public List<GameObject> childPartObjects;
@@ -21,6 +21,13 @@ public class PlayerController : StatsController
     public Rigidbody2D rb;
     // This variable will accept player movement from either keyboard or controller
     private Vector2 playerMovement;
+    public float magnitude
+    {
+        get
+        {
+            return playerMovement.magnitude;
+        }
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +37,7 @@ public class PlayerController : StatsController
         moveSpeed = STARTING_SPEED;
 
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
 
         // Organize child parts by part type
         childPartObjects = Enumerable.ToList<GameObject>(childPartObjects.OrderBy(obj => (int)obj.GetComponent<Parts.BugPart>().slot));
@@ -79,7 +87,7 @@ public class PlayerController : StatsController
     {
         // Stick movement
         playerMovement = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-        //playerMovement = new Vector2(0, 0);
+        playerMovement = new Vector2(0, 0);
         // Keyboard movement
         float xMovement = 0;
         float yMovement = 0;
@@ -91,6 +99,14 @@ public class PlayerController : StatsController
             yMovement -= 1;
         if (Input.GetKey(KeyCode.W))
             yMovement += 1;
+        if (xMovement != 0 | yMovement != 0)
+        {
+            anim.SetBool("PlayerWalking", true);
+        }
+        else
+        {
+            anim.SetBool("PlayerWalking", false);
+        }
         playerMovement += new Vector2(xMovement, yMovement);
     }
 
