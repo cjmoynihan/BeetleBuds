@@ -101,47 +101,59 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Flytrap_3
+      name: Flytrap_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 21
-        width: 365
-        height: 291
+        y: 0
+        width: 401.5
+        height: 337
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 24, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c75714a06e1635f44994838e9585322e
-      internalID: 2078294503
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Flytrap_5
-      rect:
-        serializedVersion: 2
-        x: 419
-        y: 8
-        width: 355
-        height: 156
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c1a89a29e27bf84bb4a721af8cd466c
-      internalID: 1041819121
+      spriteID: aca78357a3969c64ebb38d168e56ce34
+      internalID: 673351893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flytrap_1
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 0
+        width: 401.5
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca205efffc7e8e545bf3a4ae1e6fef41
+      internalID: -919596442
       vertices: []
       indices: 
       edges: []
@@ -159,12 +171,6 @@ TextureImporter:
     nameFileIdTable:
       Flytrap_0: 673351893
       Flytrap_1: -919596442
-      Flytrap_2: -946574578
-      Flytrap_3: 2078294503
-      Flytrap_4: 346295437
-      Flytrap_5: 1041819121
-      Flytrap_6: -2107353327
-      Flytrap_7: -1432668654
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
