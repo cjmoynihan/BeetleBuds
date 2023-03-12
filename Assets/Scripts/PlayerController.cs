@@ -80,7 +80,8 @@ public class PlayerController : StatsController
 
     public void GameOver()
     {
-        Destroy(gameObject);
+        anim.SetBool("IsDead", true);
+        //Destroy(gameObject);
     }
 
     private void GetPlayerInput()
