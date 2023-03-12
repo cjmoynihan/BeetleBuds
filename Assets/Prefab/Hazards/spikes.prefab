@@ -124,7 +124,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb663c6bff17bd648a0b72f0cbf7b9c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoints: 1
-  damage: 0
+  damage: 1
   pushback: 2000
   gradualPushValue: 200

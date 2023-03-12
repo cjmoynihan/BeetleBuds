@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,8 +25,13 @@ public abstract class IFloor : ScriptableObject
 
     public abstract int IncrementalDifficulty { get; }
 
+    public abstract string Shop { get; }
+
     public string ChooseRoom()
     {
+        // Rounds up to the nearest whole number.
+        if (RoomsPerRun - 2 == RoomsVisited.Count) return "FirstFloorShop";
+
         if (RoomsRemaining.Count == 0)
         {
             RoomsRemaining = Rooms.Select(x => x).ToList();
@@ -33,10 +39,10 @@ public abstract class IFloor : ScriptableObject
 
         if (RoomsPerRun == RoomsVisited.Count)
         {
-            return BossRooms[Random.Range(0,BossRooms.Count)];
+            return BossRooms[UnityEngine.Random.Range(0,BossRooms.Count)];
         }
 
-        var roomIndex = Random.Range(0, RoomsRemaining.Count);
+        var roomIndex = UnityEngine.Random.Range(0, RoomsRemaining.Count);
         var currentRoom = RoomsRemaining[roomIndex];
         RoomsRemaining.RemoveAt(roomIndex);
         RoomsVisited.Add(currentRoom);

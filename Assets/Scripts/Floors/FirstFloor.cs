@@ -13,10 +13,11 @@ public class FirstFloor : IFloor
 
     public override List<string> BossRooms => new List<string>();
 
-    public override int RoomsPerRun => 4;
+    public override int RoomsPerRun => 20;
 
     public override int StartingDifficulty => 3;
 
     public override int IncrementalDifficulty => 3;
 
+    public override string Shop => "FirstFloorShop";
 }

@@ -12,7 +12,7 @@ public class PlayerController : StatsController
     // Make sure to AddEffect or RemoveEffect when adding status effects or bug parts
     // Check out StatsController for more information
 
-    public int STARTING_HEALTH = 5;
+    public int STARTING_HEALTH = 1;
     public int STARTING_SPEED = 2;
 
     private List<Parts.BugPart> playerParts = new List<Parts.BugPart>();
