@@ -1532,6 +1532,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5315222489409661256}
   - component: {fileID: 6840018655891935380}
+  - component: {fileID: -6205983469353035472}
   m_Layer: 0
   m_Name: Queen Bee
   m_TagString: Untagged
@@ -1592,6 +1593,36 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-6205983469353035472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6416344576048853291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -31381399
+      Data2: 1103009641
+      Data3: -357571186
+      Data4: 948797975
+    Path: event:/Enemy Bugs/queen bee buzz
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &6572394127635634521
 GameObject:
   m_ObjectHideFlags: 0
