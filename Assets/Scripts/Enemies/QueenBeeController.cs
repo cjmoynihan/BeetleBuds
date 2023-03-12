@@ -19,6 +19,7 @@ public class QueenBeeController : EnemyTypes.EnemyBehavior
     public bool canTransform = true;
     public float timeBetweenShifts = 5f;
     private float shiftCountdown = 5f;
+    public int maxHitPoints = 300;
 
     // Movement Control
     public float tangentForce = 500f;
@@ -200,5 +201,9 @@ public class QueenBeeController : EnemyTypes.EnemyBehavior
     {
         yield return new WaitForSeconds(attackCooldown);
         canAttack = true;
+    }
+    private void Awake()
+    {
+        hitPoints = maxHitPoints;
     }
 }

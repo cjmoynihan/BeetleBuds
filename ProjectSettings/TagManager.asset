@@ -11,6 +11,7 @@ TagManager:
   - InteractiveItem
   - InteractiveObject
   - GameState
+  - Boss
   layers:
   - Default
   - TransparentFX
