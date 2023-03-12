@@ -12,9 +12,13 @@ public class StatsController : MonoBehaviour
         public int maxHealth;
         public int health;
         public float moveSpeed;
-        public float attackSpeed;
+        public float attackCooldown;
+        public float attackRange;
+        public float attackDamage;
+        public float slowDuration;
         private List<Func<Stats, Stats>> statEffects = new List<Func<Stats, Stats>>();
         private Stats modifiedStats;
+        public Stats _parentStats = null;
         public Stats ModifiedStats
         {
             get
@@ -51,10 +55,15 @@ public class StatsController : MonoBehaviour
         {
             Stats tempStats = new()
             {
+                // Set _parentStats to the upmost stats
+                _parentStats = (_parentStats != null ? _parentStats : this),
                 maxHealth = maxHealth,
                 health = health,
                 moveSpeed = moveSpeed,
-                attackSpeed = attackSpeed
+                attackCooldown = attackCooldown,
+                attackRange = attackRange,
+                attackDamage = attackDamage,
+                slowDuration = slowDuration
             };
             return tempStats;
         }
@@ -74,14 +83,19 @@ public class StatsController : MonoBehaviour
         public void UpdateStats()
         {
             ModifiedStats = GetAppliedStats();
+            if (ModifiedStats.health > ModifiedStats.maxHealth)
+            {
+                ModifiedStats.health = ModifiedStats.maxHealth;
+            }
         }
-
     }
 
     // All of the get and set functions for these stats have been overloaded
     // Getting the variable returns the modified variable
     // Setting the variable changes the initial (unmodified by status effects)
     private Stats initialStats = new Stats();
+    protected Animator anim;
+
     public Stats ModifiedStats
     {
         get { return initialStats.ModifiedStats; }
@@ -101,6 +115,11 @@ public class StatsController : MonoBehaviour
         get { return initialStats.health; }
         set
         {
+            if (value < health)
+            {
+                anim.SetBool("TakeDamage", true);
+                StartCoroutine(StopAnimation());
+            }
             initialStats.health = value;
             initialStats.UpdateStats();
         }
@@ -114,12 +133,39 @@ public class StatsController : MonoBehaviour
             initialStats.UpdateStats();
         }
     }
-    public float attackSpeed
+    public float attackCooldown
     {
-        get { return initialStats.attackSpeed; }
+        get { return initialStats.attackCooldown; }
         set
         {
-            initialStats.attackSpeed = value;
+            initialStats.attackCooldown = value;
+            initialStats.UpdateStats();
+        }
+    }
+    public float attackRange
+    {
+        get { return initialStats.attackRange; }
+        set
+        {
+            initialStats.attackRange = value;
+            initialStats.UpdateStats();
+        }
+    }
+    public float attackDamage
+    {
+        get { return initialStats.attackDamage; }
+        set
+        {
+            initialStats.attackDamage = value;
+            initialStats.UpdateStats();
+        }
+    }
+    public float slowDuration
+    {
+        get { return initialStats.slowDuration; }
+        set
+        {
+            initialStats.slowDuration = value;
             initialStats.UpdateStats();
         }
     }
@@ -130,5 +176,11 @@ public class StatsController : MonoBehaviour
     public void RemoveEffect(Func<Stats, Stats> effect)
     {
         initialStats.RemoveEffect(effect);
+    }
+    public IEnumerator StopAnimation()
+    {
+        AnimatorStateInfo curState = anim.GetCurrentAnimatorStateInfo(0);
+        yield return new WaitForEndOfFrame();
+        anim.SetBool("TakeDamage", false);
     }
 }

@@ -1533,6 +1533,8 @@ GameObject:
   - component: {fileID: 5315222489409661256}
   - component: {fileID: 6840018655891935380}
   - component: {fileID: -6205983469353035472}
+  - component: {fileID: -7982748441925722970}
+  - component: {fileID: 3903946214613755380}
   m_Layer: 0
   m_Name: Queen Bee
   m_TagString: Untagged
@@ -1612,10 +1614,52 @@ MonoBehaviour:
       Data2: 1103009641
       Data3: -357571186
       Data4: 948797975
-    Path: event:/Enemy Bugs/queen bee buzz
+    Path: event:/Enemy Bugs/queen_bee_buzz
   Event: 
   PlayEvent: 1
   StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &-7982748441925722970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6416344576048853291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 774f64c45e6943743a09daf86a9d1552, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3903946214613755380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6416344576048853291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -449737850
+      Data2: 1102416892
+      Data3: -1143156294
+      Data4: -1252260177
+    Path: event:/Enemy Bugs/hurt
+  Event: 
+  PlayEvent: 2
+  StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0

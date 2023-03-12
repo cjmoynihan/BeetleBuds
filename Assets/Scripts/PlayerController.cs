@@ -13,7 +13,11 @@ public class PlayerController : StatsController
     // Check out StatsController for more information
 
     public int STARTING_HEALTH = 1;
-    public int STARTING_SPEED = 2;
+    public float STARTING_SPEED = 2f;
+    public float STARTING_ATTACK_COOLDOWN = 0.5f;
+    public float STARTING_DAMAGE = 1f;
+    public float STARTING_RANGE = 1f;
+    public float SLOW_DURATION = 0.7f;
 
     private List<Parts.BugPart> playerParts = new List<Parts.BugPart>();
     public List<GameObject> childPartObjects;
@@ -21,6 +25,13 @@ public class PlayerController : StatsController
     public Rigidbody2D rb;
     // This variable will accept player movement from either keyboard or controller
     private Vector2 playerMovement;
+    public float magnitude
+    {
+        get
+        {
+            return playerMovement.magnitude;
+        }
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -28,8 +39,13 @@ public class PlayerController : StatsController
         maxHealth = STARTING_HEALTH;
         health = STARTING_HEALTH;
         moveSpeed = STARTING_SPEED;
+        attackCooldown = STARTING_ATTACK_COOLDOWN;
+        attackDamage = STARTING_DAMAGE;
+        attackRange = STARTING_RANGE;
+        slowDuration = SLOW_DURATION;
 
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
 
         // Organize child parts by part type
         childPartObjects = Enumerable.ToList<GameObject>(childPartObjects.OrderBy(obj => (int)obj.GetComponent<Parts.BugPart>().slot));
@@ -59,7 +75,7 @@ public class PlayerController : StatsController
     void Update()
     {
         GetPlayerInput();
-        if (health <= 0)
+        if (ModifiedStats.health <= 0)
         {
             GameOver();
         }
@@ -72,14 +88,15 @@ public class PlayerController : StatsController
 
     public void GameOver()
     {
-        Destroy(gameObject);
+        anim.SetBool("IsDead", true);
+        //Destroy(gameObject);
     }
 
     private void GetPlayerInput()
     {
         // Stick movement
         playerMovement = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-        //playerMovement = new Vector2(0, 0);
+        playerMovement = new Vector2(0, 0);
         // Keyboard movement
         float xMovement = 0;
         float yMovement = 0;
@@ -91,13 +108,21 @@ public class PlayerController : StatsController
             yMovement -= 1;
         if (Input.GetKey(KeyCode.W))
             yMovement += 1;
+        if (xMovement != 0 | yMovement != 0)
+        {
+            anim.SetBool("PlayerWalking", true);
+        }
+        else
+        {
+            anim.SetBool("PlayerWalking", false);
+        }
         playerMovement += new Vector2(xMovement, yMovement);
     }
 
     private void FixedUpdate()
     {
         // Apply movement based on speed and framerate
-        Vector2 realtimeMovement = playerMovement * moveSpeed * Time.deltaTime;
+        Vector2 realtimeMovement = playerMovement * ModifiedStats.moveSpeed * Time.deltaTime;
 
         rb.MovePosition(rb.position + realtimeMovement);
     }

@@ -4,10 +4,6 @@ using UnityEngine;
 
 public class HornBeetleAI : EnemyTypes.EnemyBehavior
 {
-    public void Start()
-    {
-        Debug.Log($"Health:{FindPlayer().GetComponent<PlayerController>().health}");
-    }
     // Horn beetle moves slowly
     // Has "big" attack
     // Charging enemy
@@ -81,7 +77,6 @@ public class HornBeetleAI : EnemyTypes.EnemyBehavior
         // Deal damage, knockback self, knockback player
         //throw new System.NotImplementedException();
         FindPlayer().GetComponent<PlayerController>().health -= 2;
-        Debug.Log($"Health:{FindPlayer().GetComponent<PlayerController>().health}");
     }
 
     protected override void AllCollision(Collision2D collision)

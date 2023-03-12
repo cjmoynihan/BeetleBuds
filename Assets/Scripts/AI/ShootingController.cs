@@ -1,24 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class ShootingController : MonoBehaviour
 {
     private Camera mainCam;
     private Vector3 mousePos;
+    private Animator anim;
+    private PlayerController playerController;
 
 
     public GameObject attackObject;
     public Transform attackTransform;
     public bool canAttack = true;
     public float attackRotation = -45;
-    public float attackCooldown = 0.3f;
     public int ninetyRotations = 3;
+    public float playerSlow = 0.5f;
 
     // Start is called before the first frame update
     void Start()
     {
         mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+        GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
+        anim = playerObj.GetComponent<Animator>();
+        playerController = playerObj.GetComponent<PlayerController>();
+        anim = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
+
     }
 
     public Vector2 rotate90(Vector2 v2)
@@ -53,19 +61,40 @@ public class ShootingController : MonoBehaviour
         // Handle Attacking
         if (Input.GetMouseButton(0) && canAttack)
         {
-
+            anim.SetBool("IsAttacking", true);
 
             canAttack = false;
-            Instantiate(attackObject, attackTransform.position, transform.rotation * Quaternion.Euler(0, 0, attackRotation));
+            GameObject attack = Instantiate(attackObject, attackTransform.position, transform.rotation * Quaternion.Euler(0, 0, attackRotation));
+            attack.transform.localScale *= playerController.ModifiedStats.attackRange;
+            StartCoroutine(StopAttackAnimation());
             StartCoroutine(WaitAttackCooldown());
-
-
+            StartCoroutine(SlowPlayer());
         }
     }
 
+    public StatsController.Stats slowAttacker(StatsController.Stats initialStats)
+    {
+        initialStats.moveSpeed *= playerSlow;
+        return initialStats;
+    }
+    private IEnumerator SlowPlayer()
+    {
+        Func<StatsController.Stats, StatsController.Stats> slowFunc = slowAttacker;
+        playerController.AddEffect(slowFunc);
+        yield return new WaitForSeconds(playerController.ModifiedStats.slowDuration);
+        playerController.RemoveEffect(slowFunc);
+    }
+
+
     IEnumerator WaitAttackCooldown()
     {
-        yield return new WaitForSeconds(attackCooldown);
+        yield return new WaitForSeconds(playerController.ModifiedStats.attackCooldown);
         canAttack = true;
+    }
+    private IEnumerator StopAttackAnimation()
+    {
+        AnimatorStateInfo curState = anim.GetCurrentAnimatorStateInfo(0);
+        yield return new WaitForEndOfFrame();
+        anim.SetBool("IsAttacking", false);
     }
 }

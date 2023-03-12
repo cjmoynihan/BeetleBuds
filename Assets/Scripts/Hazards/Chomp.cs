@@ -27,6 +27,7 @@ public class Chomp : IHazard
         {
             spriteRenderer.sprite = closedMouth;
             collider.gameObject.GetComponent<PlayerController>().AddEffect(ChompEffect);
+            
         }
     }
     private void OnTriggerExit2D(Collider2D collider)
