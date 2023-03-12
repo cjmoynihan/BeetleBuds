@@ -15,6 +15,8 @@ public abstract class IFloor : ScriptableObject
 
     public abstract int RoomsPerRun { get; }
 
+    private bool shopVisited = false;
+
     public List<string> RoomsVisited { get;} = new List<string>();
 
     public int NumRoomsVisited { get; set; } = 0;
@@ -30,7 +32,11 @@ public abstract class IFloor : ScriptableObject
     public string ChooseRoom()
     {
         // Rounds up to the nearest whole number.
-        if (RoomsPerRun - 2 == RoomsVisited.Count) return "FirstFloorShop";
+        if (RoomsPerRun - 2 == RoomsVisited.Count && !shopVisited)
+        {
+            shopVisited = true;
+            return Shop;
+        }
 
         if (RoomsRemaining.Count == 0)
         {

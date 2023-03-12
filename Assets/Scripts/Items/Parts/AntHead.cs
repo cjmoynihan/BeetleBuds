@@ -20,6 +20,7 @@ public class AntHead : Parts.BugPart
     public override StatsController.Stats applyStats(StatsController.Stats initialStats)
     {
         initialStats.health += 5;
+        initialStats.maxHealth += 5;
         return initialStats;
     }
 }

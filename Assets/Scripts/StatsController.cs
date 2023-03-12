@@ -71,9 +71,13 @@ public class StatsController : MonoBehaviour
             }
             return tempStats;
         }
-        private void UpdateStats()
+        public void UpdateStats()
         {
             ModifiedStats = GetAppliedStats();
+            if (ModifiedStats.health > ModifiedStats.maxHealth)
+            {
+                ModifiedStats.health = ModifiedStats.maxHealth;
+            }
         }
 
     }
@@ -82,25 +86,46 @@ public class StatsController : MonoBehaviour
     // Getting the variable returns the modified variable
     // Setting the variable changes the initial (unmodified by status effects)
     private Stats initialStats = new Stats();
+    public Stats ModifiedStats
+    {
+        get { return initialStats.ModifiedStats; }
+    }
+
     public int maxHealth
     {
-        get { return initialStats.ModifiedStats.maxHealth; }
-        set { initialStats.maxHealth = value; }
+        get { return initialStats.maxHealth;  }
+        set
+        {
+            initialStats.maxHealth = value;
+            initialStats.UpdateStats();
+        }
     }
     public int health
     {
-        get { return initialStats.ModifiedStats.health; }
-        set { initialStats.health = value; }
+        get { return initialStats.health; }
+        set
+        {
+            initialStats.health = value;
+            initialStats.UpdateStats();
+        }
     }
     public float moveSpeed
     {
-        get { return initialStats.ModifiedStats.moveSpeed; }
-        set { initialStats.moveSpeed = value; }
+        get { return initialStats.moveSpeed; }
+        set
+        {
+            initialStats.moveSpeed = value;
+            initialStats.UpdateStats();
+        }
     }
     public float attackSpeed
     {
-        get { return initialStats.ModifiedStats.attackSpeed; }
-        set { initialStats.moveSpeed = value; }
+        get { return initialStats.attackSpeed; }
+        set
+        {
+            initialStats.attackSpeed = value;
+            initialStats.UpdateStats();
+        }
     }
     public void AddEffect(Func<Stats, Stats> effect)
     {

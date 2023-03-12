@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Shop/FirstFloorShop.unity
     guid: ce5ddc890be680c4da4646cbcf1091d7
+  - enabled: 1
+    path: Assets/Scenes/Floors/First Floor/BigBoss.unity
+    guid: 6f7b4bd35e4b1a14ab79c76a7637c3a3
   m_configObjects: {}

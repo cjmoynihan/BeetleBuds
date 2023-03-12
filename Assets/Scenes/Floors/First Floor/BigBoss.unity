@@ -217,6 +217,7 @@ MonoBehaviour:
   moveSpeed: 100
   minDistance: 3
   backupModifier: 4
+  knockback: 300
   slowAttackCooldown: 0.5
   fastAttackCooldown: 0.2
   spread: 0.5
@@ -6215,7 +6216,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4216795989756480327, guid: 47b28587734a7f145bbcc39f1b094341, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.35
+      value: -0.38
       objectReference: {fileID: 0}
     - target: {fileID: 4216795989756480327, guid: 47b28587734a7f145bbcc39f1b094341, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6247,6 +6248,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4216795989756480327, guid: 47b28587734a7f145bbcc39f1b094341, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4216795989756480344, guid: 47b28587734a7f145bbcc39f1b094341, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
