@@ -50,7 +50,7 @@ public class EnemyTypes
 
         protected Transform FindPlayerTransform()
         {
-            return FindPlayer().transform;
+            return FindPlayer().transform;   
         }
         protected float DistToPlayer()
         {

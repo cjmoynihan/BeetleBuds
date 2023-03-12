@@ -8,7 +8,7 @@ public class Parts
     public enum BugSlot
     {
         Body,
-        Booty,
+        Booty, 
         Eyes,
         Head,
         Legs,

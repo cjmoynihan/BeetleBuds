@@ -77,3 +77,6 @@ TagManager:
   - name: Player
     uniqueID: 1676653107
     locked: 0
+  - name: Pause Menu
+    uniqueID: 2667912809
+    locked: 0
