@@ -96,5 +96,5 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: db36d9341c0e01143b0beac32c1075a9, type: 3}
   m_Name: 
-  m_EditorClassIdentifier:
-  _player: {fileID: 8679322471380547650, guid: 036c6621780654b0baa540be128b26eb, type: 3}
+  m_EditorClassIdentifier: 
+  _player: {fileID: 8679322471380547650, guid: 043b0089ebd794b4f8548e65f7cddb78, type: 3}
