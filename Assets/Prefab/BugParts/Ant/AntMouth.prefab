@@ -72,7 +72,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1676653107
-  m_SortingLayer: 9
+  m_SortingLayer: 10
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f22b75cb7074547d99e5e065b1baab74, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -97,4 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae2d6b5b4f49a4c038ac8a1a8ca81071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  childrenSprites:
+  - {fileID: -5359686245828718461, guid: 384d50ee331fc0f4b9465cabb1a01a4d, type: 3}
+  - {fileID: 744434525457357362, guid: 384d50ee331fc0f4b9465cabb1a01a4d, type: 3}
   limbSprite: {fileID: 21300000, guid: f22b75cb7074547d99e5e065b1baab74, type: 3}

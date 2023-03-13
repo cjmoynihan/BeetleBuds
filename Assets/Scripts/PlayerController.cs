@@ -21,6 +21,7 @@ public class PlayerController : StatsController
 
     private List<Parts.BugPart> playerParts = new List<Parts.BugPart>();
     public List<GameObject> childPartObjects;
+    public List<Sprite> currentSprites = new List<Sprite>();
 
     public Rigidbody2D rb;
     // This variable will accept player movement from either keyboard or controller
@@ -50,11 +51,15 @@ public class PlayerController : StatsController
         // Organize child parts by part type
         childPartObjects = Enumerable.ToList<GameObject>(childPartObjects.OrderBy(obj => (int)obj.GetComponent<Parts.BugPart>().slot));
         // Add in player parts
-        foreach(GameObject childManager in childPartObjects)
+        foreach(GameObject childPart in childPartObjects)
         {
-            Parts.BugPart bp = childManager.GetComponent<Parts.BugPart>();
-            playerParts.Add(bp);
-            AddEffect(bp.applyStats);
+            playerParts.Add(null);
+            AddParts(childPart.GetComponent<Parts.BugPart>());
+
+
+            //Parts.BugPart bp = childManager.GetComponent<Parts.BugPart>();
+            //playerParts.Add(bp);
+            //AddEffect(bp.applyStats);
         }
 
         //// Organize bug parts by part. Important for correct swapping
@@ -129,41 +134,63 @@ public class PlayerController : StatsController
 
     public void AddParts(Parts.BugPart newPart)
     {
-        // Logic to swap out parts of the same type.
-        GameObject childManager = childPartObjects[(int)newPart.slot];
-        // Swap scripts
+        // Get all children of this
+        // Get all children of that (grandchildren)
+        // Compare the sprite of the bug part to the sprite in each object
+        // If it's the same, turn it on. If not, turn it off.
 
-        // Legacy code:
-        Parts.BugPart oldComponent = childManager.GetComponent<Parts.BugPart>();
-        //newPart.childrenSprites = oldComponent.childrenSprites;
-        // :End legacy code
-
-        Component newComponent = childManager.AddComponent(newPart.GetType());
-        //Destroy(GetComponent(oldComponent.GetType()));  // Not destroying component!!
-        Destroy(oldComponent);
-
-        // Swap sprites
-        SpriteRenderer[] childRenderers = childManager.GetComponentsInChildren<SpriteRenderer>();
-        if (childRenderers.Length == 1)
+        // Change sprites
+        GameObject prevPart = childPartObjects[(int)newPart.slot];
+        Parts.BugPart oldComponent = prevPart.GetComponent<Parts.BugPart>();
+        // Remove old sprites
+        List<Sprite> oldSprites;
+        if (oldComponent.childrenSprites.Count() == 0)
         {
-            childRenderers[0].sprite = newPart.partSprite;
+            oldSprites = new List<Sprite> { oldComponent.partSprite };
         } else
         {
-            for (int idx = 0; idx < childRenderers.Length; idx++)
+            oldSprites = oldComponent.childrenSprites;
+        }
+        foreach (Sprite oldSprite in oldSprites)
+        {
+            currentSprites.Remove(oldSprite);
+        }
+
+        // Add new sprites:
+        if (newPart.childrenSprites.Count() == 0)
+        {
+            currentSprites.Add(newPart.partSprite);
+        } else
+        {
+            foreach (Sprite s in newPart.childrenSprites)
             {
-                childRenderers[idx].sprite = newPart.childrenSprites[idx];
+                currentSprites.Add(s);
             }
         }
 
-        //Parts.BugPart newScript = childManager.GetComponent
-        //Parts.BugPart inplaceScript = childManager.GetComponent(newPart.GetType());
-        //newPart.ReplaceSprites();
-
+        // Turn on / off objects if we have them in sprites
+        for (int childIdx = 0; childIdx < transform.childCount; childIdx++)
+        {
+            Transform child = transform.GetChild(childIdx);
+            for (int grandchildIdx = 0; grandchildIdx < child.childCount; grandchildIdx++)
+            {
+                GameObject grandchild = child.GetChild(grandchildIdx).gameObject;
+                SpriteRenderer grandchildRenderer = grandchild.GetComponent<SpriteRenderer>();
+                if (grandchildRenderer != null)
+                {
+                    // Has renderer
+                    grandchild.SetActive(currentSprites.Contains(grandchildRenderer.sprite));
+                }
+            }
+        }
 
         // Add new parts to logic
         // Remove old parts from logic
         Parts.BugPart previousPart = playerParts[(int)newPart.slot];
-        RemoveEffect(previousPart.applyStats);
+        if (previousPart != null)
+        {
+            RemoveEffect(previousPart.applyStats);
+        }
         AddEffect(newPart.applyStats);
         playerParts[(int)newPart.slot] = newPart;
     }

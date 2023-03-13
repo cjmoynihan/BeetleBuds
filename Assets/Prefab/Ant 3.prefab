@@ -3818,7 +3818,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6951413293068787367}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: back_leg_back_manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8505,7 +8505,14 @@ MonoBehaviour:
   STARTING_DAMAGE: 1
   STARTING_RANGE: 1
   SLOW_DURATION: 0.7
-  childPartObjects: []
+  childPartObjects:
+  - {fileID: 3233193428765748090, guid: 116d67903e20e4aaba65369a4a587122, type: 3}
+  - {fileID: 3233193428765748090, guid: e2715b340026b46a0b1a5174d084f3df, type: 3}
+  - {fileID: 3233193428765748090, guid: 6cd4ab3b1ece347f6ac413730debae50, type: 3}
+  - {fileID: 3233193428765748090, guid: d6f8ed97e3c5a4170865c6915e0cf31c, type: 3}
+  - {fileID: 3233193428765748090, guid: 8624e5c9c95b4467896ef1c3c02fc43d, type: 3}
+  - {fileID: 3233193428765748090, guid: e8f1f264ba69a49d08f35f6b52e7e3bd, type: 3}
+  - {fileID: 3233193428765748090, guid: 7401eaa48a49d4a0b95cdf4ed27c6525, type: 3}
   rb: {fileID: 0}
 --- !u!50 &2856596959870098470
 Rigidbody2D:
