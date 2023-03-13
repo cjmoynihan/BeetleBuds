@@ -23,4 +23,31 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Floors/First Floor/Floor Variants/Variant 12.unity
     guid: fbec25b127822eb47b6b8218a75ea819
+  - enabled: 1
+    path: Assets/Scenes/Floors/First Floor/Floor Variants/Variant 3.unity
+    guid: 2c2cf49e5b02bd74497e2b26ad5f8ea1
+  - enabled: 1
+    path: Assets/Scenes/Floors/First Floor/Floor Variants/Variant 4.unity
+    guid: 5a2147e967cb7b14686307eb3ed7d3c3
+  - enabled: 1
+    path: Assets/Scenes/Floors/First Floor/Floor Variants/Variant 5.unity
+    guid: f884d181ef2584049930616820b29661
+  - enabled: 1
+    path: Assets/Scenes/Floors/First Floor/Floor Variants/Variant 6.unity
+    guid: 91efc5df8f287b746a07a2f9fb4accb9
+  - enabled: 1
+    path: Assets/Scenes/Floors/First Floor/Floor Variants/Variant 7.unity
+    guid: bdfe39d47ad53c74486f00630bb08746
+  - enabled: 1
+    path: Assets/Scenes/Floors/First Floor/Floor Variants/Variant 8.unity
+    guid: b0c1eed6607082b48ae503086c02b6f6
+  - enabled: 1
+    path: Assets/Scenes/Floors/First Floor/Floor Variants/Variant 9.unity
+    guid: 14b47b0b8cfebbe409b561a8525b6467
+  - enabled: 1
+    path: Assets/Scenes/Floors/First Floor/Floor Variants/Variant 10.unity
+    guid: 1db48951c7ff8f34abc10408f77413e4
+  - enabled: 1
+    path: Assets/Scenes/Floors/First Floor/Floor Variants/Variant 11.unity
+    guid: 844faee2846406540989c06255b640ca
   m_configObjects: {}
