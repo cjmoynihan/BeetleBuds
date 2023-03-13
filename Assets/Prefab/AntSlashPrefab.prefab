@@ -260,6 +260,8 @@ GameObject:
   - component: {fileID: 9139887448147403377}
   - component: {fileID: 7591023571906437857}
   - component: {fileID: 7934670697479234033}
+  - component: {fileID: 7822737034247463808}
+  - component: {fileID: 7101300296306708424}
   m_Layer: 0
   m_Name: AntSlashPrefab
   m_TagString: Attack
@@ -407,6 +409,66 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0.12956351}
   serializedVersion: 2
   m_Radius: 0.10793649
+--- !u!114 &7822737034247463808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8806586625768347575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1653586566
+      Data2: 1334940176
+      Data3: 279899780
+      Data4: -1140910760
+    Path: event:/Player Bug/attack
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &7101300296306708424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8806586625768347575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -449737850
+      Data2: 1102416892
+      Data3: -1143156294
+      Data4: -1252260177
+    Path: event:/Enemy Bugs/hurt
+  Event: 
+  PlayEvent: 5
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &1843278902959875502
 PrefabInstance:
   m_ObjectHideFlags: 0
