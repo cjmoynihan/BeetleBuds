@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemyTypes
@@ -17,6 +18,7 @@ public class EnemyTypes
         private PlayerController playerController;
         // Applies in place, modifying the enemy object directly
         public abstract void Behavior();
+        public int dropchance = 1;
 
         protected virtual void Start()
         {
@@ -28,6 +30,7 @@ public class EnemyTypes
             hitPoints -= Mathf.CeilToInt(playerController.ModifiedStats.attackDamage);
             if (hitPoints <= 0)
             {
+                float dropped = 
                 Destroy(gameObject);
             }
         }

@@ -26,10 +26,16 @@ public class GameController : MonoBehaviour
         var seedGen = Instantiate(seedGenerator);
         var seedGenCon = seedGenerator.GetComponent<SetSeed>();
         seedGenCon.SetGameSeed(seedBox);
-        Destroy(seedGenerator);
-        LoadPersistentObjects();
-        _playController = new PlayController();
-        _playController.LoadNextLevel();
+        try
+        {
+            Destroy(seedGenerator);
+        } finally
+        {
+            LoadPersistentObjects();
+            _playController = new PlayController();
+            _playController.LoadNextLevel();
+        }
+        
     }
 
     public void LoadPersistentObjects()

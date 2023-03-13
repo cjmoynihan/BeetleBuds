@@ -25,6 +25,9 @@ public class PlayerController : StatsController
     public Rigidbody2D rb;
     // This variable will accept player movement from either keyboard or controller
     private Vector2 playerMovement;
+
+    public GameObject itemPickuper;
+
     public float magnitude
     {
         get
@@ -163,6 +166,8 @@ public class PlayerController : StatsController
         // Add new parts to logic
         // Remove old parts from logic
         Parts.BugPart previousPart = playerParts[(int)newPart.slot];
+        //var prev = Instantiate(itemPickuper);
+        //prev.GetComponent<PickupableItem>().SetItem(previousPart);
         RemoveEffect(previousPart.applyStats);
         AddEffect(newPart.applyStats);
         playerParts[(int)newPart.slot] = newPart;
