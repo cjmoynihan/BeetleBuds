@@ -98,6 +98,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   childrenSprites:
-  - {fileID: -3124942049398439921, guid: 292badaef6cbb13499e8046ba511fd6f, type: 3}
-  - {fileID: -8975720198322805200, guid: 292badaef6cbb13499e8046ba511fd6f, type: 3}
+  - {fileID: -8033936560744284908, guid: 384d50ee331fc0f4b9465cabb1a01a4d, type: 3}
+  - {fileID: 4515806720075192269, guid: 384d50ee331fc0f4b9465cabb1a01a4d, type: 3}
   limbSprite: {fileID: -8975720198322805200, guid: 292badaef6cbb13499e8046ba511fd6f, type: 3}

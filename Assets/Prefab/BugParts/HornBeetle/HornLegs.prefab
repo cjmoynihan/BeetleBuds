@@ -98,10 +98,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   childrenSprites:
-  - {fileID: 21300000, guid: 4a1ee318feb874146b99d21944478cd3, type: 2}
-  - {fileID: 21300000, guid: 10bcd431ff7db4c23b6216ee534668f5, type: 2}
-  - {fileID: 21300000, guid: 34ac1038d711e40899b0cf9a307af77a, type: 2}
-  - {fileID: 21300000, guid: d94079f891c0647c4b95d16b4712d9a2, type: 2}
-  - {fileID: 21300000, guid: 2f2c5d4880dd9429d851af127df4bb16, type: 2}
-  - {fileID: 0}
+  - {fileID: 5029276632831738525, guid: 384d50ee331fc0f4b9465cabb1a01a4d, type: 3}
+  - {fileID: -2126828464841906836, guid: 384d50ee331fc0f4b9465cabb1a01a4d, type: 3}
+  - {fileID: 4639274761108051057, guid: 384d50ee331fc0f4b9465cabb1a01a4d, type: 3}
+  - {fileID: 1433940350682951404, guid: 384d50ee331fc0f4b9465cabb1a01a4d, type: 3}
+  - {fileID: -2635025597296130842, guid: 384d50ee331fc0f4b9465cabb1a01a4d, type: 3}
+  - {fileID: 3629128947043303269, guid: 384d50ee331fc0f4b9465cabb1a01a4d, type: 3}
   limbSprite: {fileID: 21300000, guid: 4a1ee318feb874146b99d21944478cd3, type: 2}
