@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: 4d358cfd4efa944469e1a13990c2bfb9
+<<<<<<<< HEAD:Assets/Prefab/NonInteractable/Rock 1.prefab.meta
+guid: d99914b57782c26478947310864469af
+========
+guid: 6031b02ee62395b4087c6b5262d4a078
+>>>>>>>> master:Assets/Prefab/GrassSpawn.prefab.meta
 PrefabImporter:
   externalObjects: {}
   userData: 

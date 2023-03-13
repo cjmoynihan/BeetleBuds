@@ -1,10 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
-<<<<<<<< HEAD:Assets/Prefab/NonInteractable/Rock 2.prefab
---- !u!1 &729797295245675888
-========
---- !u!1 &3233193428765748090
->>>>>>>> master:Assets/Prefab/BugParts/HornBeetle/HornBum.prefab
+--- !u!1 &2018438480996418612
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12,66 +8,39 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<<< HEAD:Assets/Prefab/NonInteractable/Rock 2.prefab
-  - component: {fileID: 729797295245675892}
-  - component: {fileID: 729797295245675893}
-  - component: {fileID: 729797295245675894}
-  - component: {fileID: 729797295245675895}
+  - component: {fileID: 2018438480996418568}
+  - component: {fileID: 2018438480996418569}
+  - component: {fileID: 2018438480996418570}
+  - component: {fileID: 2018438480996418571}
   m_Layer: 0
   m_Name: Rock 2
-========
-  - component: {fileID: 2500763501382547674}
-  - component: {fileID: 9173784819448897112}
-  - component: {fileID: 6940135750856278907}
-  m_Layer: 6
-  m_Name: HornBum
->>>>>>>> master:Assets/Prefab/BugParts/HornBeetle/HornBum.prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<<< HEAD:Assets/Prefab/NonInteractable/Rock 2.prefab
---- !u!4 &729797295245675892
-========
---- !u!4 &2500763501382547674
->>>>>>>> master:Assets/Prefab/BugParts/HornBeetle/HornBum.prefab
+--- !u!4 &2018438480996418568
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<<< HEAD:Assets/Prefab/NonInteractable/Rock 2.prefab
-  m_GameObject: {fileID: 729797295245675888}
+  m_GameObject: {fileID: 2018438480996418612}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.87301034, y: 0.5519513, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-========
-  m_GameObject: {fileID: 3233193428765748090}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 2.33, z: 0}
-  m_LocalScale: {x: 252.98221, y: 252.98221, z: 252.98221}
->>>>>>>> master:Assets/Prefab/BugParts/HornBeetle/HornBum.prefab
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<<< HEAD:Assets/Prefab/NonInteractable/Rock 2.prefab
---- !u!212 &729797295245675893
-========
---- !u!212 &9173784819448897112
->>>>>>>> master:Assets/Prefab/BugParts/HornBeetle/HornBum.prefab
+--- !u!212 &2018438480996418569
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<<< HEAD:Assets/Prefab/NonInteractable/Rock 2.prefab
-  m_GameObject: {fileID: 729797295245675888}
-========
-  m_GameObject: {fileID: 3233193428765748090}
->>>>>>>> master:Assets/Prefab/BugParts/HornBeetle/HornBum.prefab
+  m_GameObject: {fileID: 2018438480996418612}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -103,17 +72,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-<<<<<<<< HEAD:Assets/Prefab/NonInteractable/Rock 2.prefab
   m_SortingLayerID: -514027651
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: -96582453, guid: 27cc7e74b54e9f94290e6ca0404f8991, type: 3}
-========
-  m_SortingLayerID: 1676653107
-  m_SortingLayer: 10
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 1542018015927620584, guid: 384d50ee331fc0f4b9465cabb1a01a4d, type: 3}
->>>>>>>> master:Assets/Prefab/BugParts/HornBeetle/HornBum.prefab
+  m_Sprite: {fileID: -96582453, guid: edcec7bede3964c49b7995a74fa83bdf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -124,26 +86,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-<<<<<<<< HEAD:Assets/Prefab/NonInteractable/Rock 2.prefab
---- !u!61 &729797295245675894
+--- !u!61 &2018438480996418570
 BoxCollider2D:
-========
---- !u!114 &6940135750856278907
-MonoBehaviour:
->>>>>>>> master:Assets/Prefab/BugParts/HornBeetle/HornBum.prefab
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<<< HEAD:Assets/Prefab/NonInteractable/Rock 2.prefab
-  m_GameObject: {fileID: 729797295245675888}
+  m_GameObject: {fileID: 2018438480996418612}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0043092966, y: 0.0129273385}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -154,16 +110,16 @@ MonoBehaviour:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.0258541, y: 0.6638888}
   m_EdgeRadius: 0
---- !u!50 &729797295245675895
+--- !u!50 &2018438480996418571
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 729797295245675888}
+  m_GameObject: {fileID: 2018438480996418612}
   m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -177,14 +133,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
-========
-  m_GameObject: {fileID: 3233193428765748090}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1c1257678eca4a78b75e3ec3f81958c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  childrenSprites: []
-  limbSprite: {fileID: 1542018015927620584, guid: 384d50ee331fc0f4b9465cabb1a01a4d, type: 3}
-  invulnerabilityLength: 3
->>>>>>>> master:Assets/Prefab/BugParts/HornBeetle/HornBum.prefab

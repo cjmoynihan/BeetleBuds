@@ -50,9 +50,9 @@ MonoBehaviour:
   - {fileID: 2556628442826410363, guid: 06bbe376a8740fe4ba1b3d1568e4bbb6, type: 3}
   - {fileID: 2398683625222968377, guid: e26d4ee127ca327429afa7659149f938, type: 3}
   rocks:
-  - {fileID: 5909769960291551885, guid: 0e2f04194847bec4d9ae2def687a3487, type: 3}
-  - {fileID: 1946081701708752761, guid: 89fabe58f10466142b4eee992b252513, type: 3}
-  - {fileID: 3033055318387157588, guid: 878c905e8b1d8394db072d2491e6d8bd, type: 3}
+  - {fileID: 2018438480996418612, guid: 0e95fd1079b36c345b88f37c29cf5c4f, type: 3}
+  - {fileID: 2018438480996418612, guid: f9e19481b28427a4793cdac0324e0d9f, type: 3}
+  - {fileID: 2018438480996418612, guid: d99914b57782c26478947310864469af, type: 3}
   zoneHeight: 3
   zoneWidth: 7
   numGrassToSpawn: 10
