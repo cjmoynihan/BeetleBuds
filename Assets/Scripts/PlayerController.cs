@@ -94,7 +94,12 @@ public class PlayerController : StatsController
     public void GameOver()
     {
         anim.SetBool("IsDead", true);
-        //Destroy(gameObject);
+        StartCoroutine(EndGame());
+    }
+    IEnumerator EndGame()
+    {
+        yield return new WaitForSeconds(1);
+        Destroy(gameObject);
     }
 
     private void GetPlayerInput()

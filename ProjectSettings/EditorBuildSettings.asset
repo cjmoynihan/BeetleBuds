@@ -50,4 +50,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Floors/First Floor/Floor Variants/Variant 11.unity
     guid: 844faee2846406540989c06255b640ca
+  - enabled: 1
+    path: Assets/Scenes/Shop/ShopFloor.unity
+    guid: 6e5173b96f890404d9f92cf1e6d48330
   m_configObjects: {}
