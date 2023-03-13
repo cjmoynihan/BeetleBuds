@@ -17,6 +17,7 @@ public class ShootingController : MonoBehaviour
     public float attackRotation = -45;
     public int ninetyRotations = 3;
     public float playerSlow = 0.5f;
+    public Vector3 adjustment = new Vector3(0, 0, 0);
 
     // Start is called before the first frame update
     void Start()
@@ -64,11 +65,12 @@ public class ShootingController : MonoBehaviour
             anim.SetBool("IsAttacking", true);
 
             canAttack = false;
-            GameObject attack = Instantiate(attackObject, attackTransform.position, transform.rotation * Quaternion.Euler(0, 0, attackRotation));
+            GameObject attack = Instantiate(attackObject, attackTransform.position + transform.rotation * adjustment, transform.rotation * Quaternion.Euler(0, 0, attackRotation));
             attack.transform.localScale *= playerController.ModifiedStats.attackRange;
             StartCoroutine(StopAttackAnimation());
             StartCoroutine(WaitAttackCooldown());
             StartCoroutine(SlowPlayer());
+            StartCoroutine(DestroyAttack(attack));
         }
     }
 
@@ -96,5 +98,10 @@ public class ShootingController : MonoBehaviour
         AnimatorStateInfo curState = anim.GetCurrentAnimatorStateInfo(0);
         yield return new WaitForEndOfFrame();
         anim.SetBool("IsAttacking", false);
+    }
+    private IEnumerator DestroyAttack(GameObject attack)
+    {
+        yield return new WaitForSeconds(1);
+        Destroy(attack);
     }
 }
