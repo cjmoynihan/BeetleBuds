@@ -6,7 +6,8 @@ public class FirstFloor : IFloor
 {
     public override List<string> Rooms => new List<string>{
         "BasicLevel",
-        "TestingGrounds" 
+        "TestingGrounds" ,
+        "Variant 1"
     };
 
     public override string Name => "Easy As Beans";
