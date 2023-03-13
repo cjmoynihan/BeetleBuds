@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2500763501382547674}
   - component: {fileID: 9173784819448897112}
-  - component: {fileID: 4635149715720130851}
+  - component: {fileID: 9083328055870463443}
   m_Layer: 6
   m_Name: AntLegs
   m_TagString: Untagged
@@ -85,7 +85,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4635149715720130851
+--- !u!114 &9083328055870463443
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -94,14 +94,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 3233193428765748090}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85efbab06effcb842adb05bbe5e88fa1, type: 3}
+  m_Script: {fileID: 11500000, guid: eff40e4cac9194d119570951c794ed0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   childrenSprites:
-  - {fileID: -189234165267477996, guid: 384d50ee331fc0f4b9465cabb1a01a4d, type: 3}
+  - {fileID: 6354374319102836594, guid: 384d50ee331fc0f4b9465cabb1a01a4d, type: 3}
   - {fileID: -7006877130078757222, guid: 384d50ee331fc0f4b9465cabb1a01a4d, type: 3}
-  - {fileID: 5754968758356629021, guid: 384d50ee331fc0f4b9465cabb1a01a4d, type: 3}
-  - {fileID: 3415468826115251395, guid: 384d50ee331fc0f4b9465cabb1a01a4d, type: 3}
+  - {fileID: -2993736072176446014, guid: 384d50ee331fc0f4b9465cabb1a01a4d, type: 3}
+  - {fileID: 8268832526308042643, guid: 384d50ee331fc0f4b9465cabb1a01a4d, type: 3}
   - {fileID: 3677115886583792204, guid: 384d50ee331fc0f4b9465cabb1a01a4d, type: 3}
-  - {fileID: -4537717326635080143, guid: 384d50ee331fc0f4b9465cabb1a01a4d, type: 3}
-  limbSprite: {fileID: -189234165267477996, guid: 384d50ee331fc0f4b9465cabb1a01a4d, type: 3}
+  - {fileID: 4957990549640638028, guid: 384d50ee331fc0f4b9465cabb1a01a4d, type: 3}
+  limbSprite: {fileID: 0}
