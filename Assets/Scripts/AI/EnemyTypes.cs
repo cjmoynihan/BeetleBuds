@@ -30,7 +30,6 @@ public class EnemyTypes
             hitPoints -= Mathf.CeilToInt(playerController.ModifiedStats.attackDamage);
             if (hitPoints <= 0)
             {
-                float dropped = 
                 Destroy(gameObject);
             }
         }

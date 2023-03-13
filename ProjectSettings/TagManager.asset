@@ -52,11 +52,11 @@ TagManager:
   - name: Ground
     uniqueID: 2000106925
     locked: 0
-  - name: Environment
-    uniqueID: 3780939645
-    locked: 0
   - name: Hazards
     uniqueID: 3583305493
+    locked: 0
+  - name: Environment
+    uniqueID: 3780939645
     locked: 0
   - name: Walls
     uniqueID: 3188057303
