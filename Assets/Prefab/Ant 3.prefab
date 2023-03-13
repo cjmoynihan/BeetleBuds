@@ -8430,7 +8430,6 @@ GameObject:
   - component: {fileID: 5420441262492315761}
   - component: {fileID: 7475539821966008834}
   - component: {fileID: 9095139776346568823}
-  - component: {fileID: 3950371468409562562}
   - component: {fileID: 8248842258903997939}
   - component: {fileID: 3463650750804285319}
   - component: {fileID: 8066809048559885968}
@@ -8588,24 +8587,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Library: []
   m_SpriteLibraryAsset: {fileID: 7108339969198208228, guid: c91f58f09f230ac44b2f67148f3dd6e3, type: 3}
---- !u!114 &3950371468409562562
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8679322471380547650}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9468c5f457ace64f8d4df6d642b107f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LoadEvent: 1
-  UnloadEvent: 2
-  Banks:
-  - Master
-  CollisionTag: 
-  PreloadSamples: 0
 --- !u!114 &8248842258903997939
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -60,6 +60,7 @@ GameObject:
   - component: {fileID: 1686316719878659523}
   - component: {fileID: 1686316719878659522}
   - component: {fileID: 9182661310914196792}
+  - component: {fileID: 7005782278103209492}
   m_Layer: 5
   m_Name: GameHUD
   m_TagString: Untagged
@@ -184,6 +185,24 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
+--- !u!114 &7005782278103209492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1686316719878659521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9468c5f457ace64f8d4df6d642b107f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LoadEvent: 1
+  UnloadEvent: 2
+  Banks:
+  - Master
+  CollisionTag: 
+  PreloadSamples: 0
 --- !u!1 &4617713413229194570
 GameObject:
   m_ObjectHideFlags: 0
