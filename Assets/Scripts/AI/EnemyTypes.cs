@@ -28,6 +28,11 @@ public class EnemyTypes
         protected void AttackCollision(Collision2D collision)
         {
             hitPoints -= Mathf.CeilToInt(playerController.ModifiedStats.attackDamage);
+            playerController.anim.SetBool("DealDamage", true);
+            StartCoroutine(StopDealDamage());
+            // Push away
+            Vector3 direction = transform.position - collision.transform.position;
+            GetComponent<Rigidbody2D>().AddForce(direction.normalized * 500, ForceMode2D.Force);
             if (hitPoints <= 0)
             {
                 Destroy(gameObject);
@@ -65,6 +70,11 @@ public class EnemyTypes
         protected float DistToPlayer()
         {
             return Vector2.Distance(FindPlayer().transform.position, transform.position);
+        }
+        IEnumerator StopDealDamage()
+        {
+            yield return new WaitForNextFrameUnit();
+            playerController.anim.SetBool("DealDamage", false);
         }
     }
 

@@ -94,7 +94,7 @@ public class StatsController : MonoBehaviour
     // Getting the variable returns the modified variable
     // Setting the variable changes the initial (unmodified by status effects)
     private Stats initialStats = new Stats();
-    protected Animator anim;
+    public Animator anim;
 
     public Stats ModifiedStats
     {
