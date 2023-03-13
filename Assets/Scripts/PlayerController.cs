@@ -179,7 +179,8 @@ public class PlayerController : StatsController
                 if (grandchildRenderer != null)
                 {
                     // Has renderer
-                    grandchild.SetActive(currentSprites.Contains(grandchildRenderer.sprite));
+                    bool matches = currentSprites.Contains(grandchildRenderer.sprite);
+                    grandchild.SetActive(matches);
                 }
             }
         }

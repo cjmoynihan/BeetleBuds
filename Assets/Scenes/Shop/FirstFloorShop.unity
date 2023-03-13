@@ -5272,7 +5272,7 @@ MonoBehaviour:
   BuyableParts:
   - {fileID: 6413054704157409293, guid: 18e5975bfd32d4c4885c169686a0957d, type: 3}
   - {fileID: -1287107248042989461, guid: d3a4163b59ef34688839ac0d38ff76a1, type: 3}
-  - {fileID: -8614968051780695604, guid: 13a48ade0720e433c9d22b104a04a4a2, type: 3}
+  - {fileID: 6940135750856278907, guid: 3302026d1fbe44247881d180f3a19260, type: 3}
   - {fileID: -7646177567987970853, guid: c5e529552db3b4255997ee8f25043fef, type: 3}
 --- !u!1001 &1155525703
 PrefabInstance:
@@ -5329,6 +5329,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4216795989756480345, guid: 47b28587734a7f145bbcc39f1b094341, type: 3}
+      propertyPath: _player
+      value: 
+      objectReference: {fileID: 8679322471380547650, guid: 036c6621780654b0baa540be128b26eb, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b28587734a7f145bbcc39f1b094341, type: 3}
 --- !u!1 &1169025855 stripped
