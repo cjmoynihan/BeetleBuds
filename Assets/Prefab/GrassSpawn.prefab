@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2084469089387125016
+--- !u!1 &1411314537402995244
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,8 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2084469089387125014}
-  - component: {fileID: 2084469089387125015}
+  - component: {fileID: 1411314537402995234}
+  - component: {fileID: 1411314537402995235}
   m_Layer: 0
   m_Name: GrassSpawn
   m_TagString: Untagged
@@ -17,13 +17,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2084469089387125014
+--- !u!4 &1411314537402995234
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2084469089387125016}
+  m_GameObject: {fileID: 1411314537402995244}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -32,13 +32,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2084469089387125015
+--- !u!114 &1411314537402995235
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2084469089387125016}
+  m_GameObject: {fileID: 1411314537402995244}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cd9cb287f24829748aefd5d5e7f83a0c, type: 3}
@@ -50,10 +50,10 @@ MonoBehaviour:
   - {fileID: 2556628442826410363, guid: 06bbe376a8740fe4ba1b3d1568e4bbb6, type: 3}
   - {fileID: 2398683625222968377, guid: e26d4ee127ca327429afa7659149f938, type: 3}
   rocks:
-  - {fileID: 2018438480996418612, guid: 0e95fd1079b36c345b88f37c29cf5c4f, type: 3}
-  - {fileID: 729797295245675888, guid: a58897b1086280442bc92de80f150ace, type: 3}
-  - {fileID: 3491057457815619949, guid: 4d358cfd4efa944469e1a13990c2bfb9, type: 3}
+  - {fileID: 5909769960291551885, guid: 0e2f04194847bec4d9ae2def687a3487, type: 3}
+  - {fileID: 1946081701708752761, guid: 89fabe58f10466142b4eee992b252513, type: 3}
+  - {fileID: 3033055318387157588, guid: 878c905e8b1d8394db072d2491e6d8bd, type: 3}
   zoneHeight: 3
   zoneWidth: 7
   numGrassToSpawn: 10
-  numRocksToSpawn: 4
+  numRocksToSpawn: 3

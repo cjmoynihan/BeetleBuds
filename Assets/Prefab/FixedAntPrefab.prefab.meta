@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Prefab/GrassSpawn.prefab.meta
+guid: fd87a6940088f8c4c94961f96ae5e262
+========
+guid: 505db7431a2e24c5a97fa8ba50898227
+>>>>>>>> master:Assets/Prefab/FixedAntPrefab.prefab.meta
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

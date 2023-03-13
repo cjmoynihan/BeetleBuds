@@ -1,0 +1,2526 @@
+fileFormatVersion: 2
+guid: 0fc2b520d9c8dc449813f17a42ed2c07
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMasterTextureLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 160
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: Eye B-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 289
+      y: 469
+      width: 15
+      height: 17
+    spriteID: d318d26164a3ed24ab370dc7680cfd80
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 289, y: 469}
+    spritePosition: {x: 58, y: 77}
+  - name: Eye F-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 138
+      y: 613
+      width: 27
+      height: 24
+    spriteID: 10887899c14cd0f458323cf9ba0708d1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 138, y: 613}
+    spritePosition: {x: 53, y: 73}
+  - name: Eye HR-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 89
+      y: 993
+      width: 25
+      height: 25
+    spriteID: 828df8ce31107e54e8866fc59004b8a2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 89, y: 993}
+    spritePosition: {x: 53, y: 72}
+  - name: Eye AG-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 259
+      y: 434
+      width: 22
+      height: 27
+    spriteID: 7c7b2302fbce12849bcb7de41197fe0c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 259, y: 434}
+    spritePosition: {x: 54, y: 69}
+  - name: Eye AB-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 259
+      y: 469
+      width: 22
+      height: 27
+    spriteID: 0e254df9a00d35f4cb0e8d88ee01c679
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 259, y: 469}
+    spritePosition: {x: 54, y: 69}
+  - name: Eye AR-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 259
+      y: 504
+      width: 22
+      height: 27
+    spriteID: bc502f981830f8b4594025d55f92556d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 259, y: 504}
+    spritePosition: {x: 54, y: 69}
+  - name: Head C-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 966
+      width: 67
+      height: 50
+    spriteID: 1e579775d97c72544a3504c11034321e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 966}
+    spritePosition: {x: 25, y: 67}
+  - name: Head F-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 89
+      y: 255
+      width: 64
+      height: 57
+    spriteID: c016a22192615024ab68a4880bb06755
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 89, y: 255}
+    spritePosition: {x: 26, y: 56}
+  - name: Head C-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 259
+      y: 56
+      width: 46
+      height: 36
+    spriteID: 231268f0fe4f98a499bc02b528eb6694
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 259, y: 56}
+    spritePosition: {x: 34, y: 68}
+  - name: Head BB-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 89
+      y: 4
+      width: 78
+      height: 90
+    spriteID: b96940a1f1576004fba083811342a0d3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 89, y: 4}
+    spritePosition: {x: 13, y: 60}
+  - name: Head HB-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 89
+      y: 726
+      width: 58
+      height: 53
+    spriteID: e6590c09d1bd86344957eece0e935169
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 89, y: 726}
+    spritePosition: {x: 26, y: 64}
+  - name: Head AG-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 388
+      width: 63
+      height: 84
+    spriteID: c4930d66ea5e57a459fa23af84bc5433
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 388}
+    spritePosition: {x: 15, y: 65}
+  - name: Head AB-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 480
+      width: 63
+      height: 84
+    spriteID: 1f28fffda8aa85a47898a8c3106a16ea
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 480}
+    spritePosition: {x: 15, y: 65}
+  - name: Head AR-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 572
+      width: 63
+      height: 84
+    spriteID: 9f2c4268f724c1c4da018d5fd48bb2bc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 572}
+    spritePosition: {x: 15, y: 65}
+  - name: Mandible L C-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 259
+      y: 226
+      width: 27
+      height: 34
+    spriteID: f2ff6b6bbd669894087ed4627888e65b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 259, y: 226}
+    spritePosition: {x: 53, y: 49}
+  - name: Mandible L BB-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 141
+      y: 702
+      width: 10
+      height: 15
+    spriteID: 8b4892245476f3945b5c62cd2856513d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 141, y: 702}
+    spritePosition: {x: 64, y: 62}
+  - name: Mandible L HR-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 213
+      y: 339
+      width: 32
+      height: 60
+    spriteID: a3f9802f4684005459e1a7f959586e42
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 213, y: 339}
+    spritePosition: {x: 50, y: 24}
+  - name: Mandible L AR-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 259
+      y: 310
+      width: 23
+      height: 37
+    spriteID: 611dd549a5de3ed4caad9fc94d4024b3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 259, y: 310}
+    spritePosition: {x: 56, y: 50}
+  - name: Mandible R C-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 259
+      y: 268
+      width: 26
+      height: 34
+    spriteID: c3d1995889789834c85bc8cd4013f75d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 259, y: 268}
+    spritePosition: {x: 28, y: 48}
+  - name: Mandible R BB-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 291
+      y: 396
+      width: 9
+      height: 15
+    spriteID: e9def2ce9a699824b97dda74c78f1d06
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 291, y: 396}
+    spritePosition: {x: 39, y: 58}
+  - name: Mandible R HR-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 213
+      y: 644
+      width: 31
+      height: 49
+    spriteID: a8b7172ffbcc70c43989f76760f2e42c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 213, y: 644}
+    spritePosition: {x: 24, y: 33}
+  - name: Mandible R AR-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 289
+      y: 434
+      width: 18
+      height: 27
+    spriteID: c0b2695f97294e84698647263bba3a64
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 289, y: 434}
+    spritePosition: {x: 35, y: 51}
+  - name: Front Leg M C-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 89
+      y: 787
+      width: 46
+      height: 63
+    spriteID: fe2d45036bfd4824194e357a545761d0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 89, y: 787}
+    spritePosition: {x: 66, y: 17}
+  - name: Front Leg M BB-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 138
+      y: 562
+      width: 22
+      height: 43
+    spriteID: 3005d76de2661ac4ea74dd2416867b3d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 138, y: 562}
+    spritePosition: {x: 80, y: 38}
+  - name: Front Leg M HRB-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 138
+      y: 390
+      width: 28
+      height: 78
+    spriteID: 4d26728580f8c2d41a8fe84482010cfd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 138, y: 390}
+    spritePosition: {x: 65, y: 7}
+  - name: Front Leg M AG-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 136
+      y: 920
+      width: 30
+      height: 77
+    spriteID: 603f1792fae4bed47a76a4ff242a3588
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 136, y: 920}
+    spritePosition: {x: 69, y: 8}
+  - name: Front Leg M AB-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 175
+      y: 4
+      width: 30
+      height: 77
+    spriteID: 12e1b28c1cc62ca4796f0869fc0707dd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 175, y: 4}
+    spritePosition: {x: 69, y: 8}
+  - name: Front Leg M AR-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 175
+      y: 89
+      width: 30
+      height: 77
+    spriteID: a7c7d75343767fd439a04cca419c93bf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 175, y: 89}
+    spritePosition: {x: 69, y: 8}
+  - name: Front Leg F BB-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 141
+      y: 648
+      width: 22
+      height: 46
+    spriteID: 380b884a86c5d7d4ca999bb69a922af7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 141, y: 648}
+    spritePosition: {x: 57, y: 32}
+  - name: Front Leg F HRB-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 213
+      y: 4
+      width: 38
+      height: 60
+    spriteID: 475f6ca1115a2a0469704bc2b946ca92
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 213, y: 4}
+    spritePosition: {x: 46, y: 18}
+  - name: Front Leg F AG0-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 213
+      y: 72
+      width: 38
+      height: 60
+    spriteID: 0181a18b106023d488c49aabbc27b570
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 213, y: 72}
+    spritePosition: {x: 49, y: 18}
+  - name: Front Leg F AB-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 213
+      y: 140
+      width: 38
+      height: 60
+    spriteID: 1ac1a0ae69c10bf42b204c74d2345c6f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 213, y: 140}
+    spritePosition: {x: 49, y: 18}
+  - name: Front Leg F AR-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 213
+      y: 208
+      width: 38
+      height: 60
+    spriteID: d5a6d2f0c910c4b4dbeab75c5df3c87b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 213, y: 208}
+    spritePosition: {x: 49, y: 18}
+  - name: Front Leg F C-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 89
+      y: 320
+      width: 55
+      height: 62
+    spriteID: d4012ad9ec20d654a85096616fb9d105
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 89, y: 320}
+    spritePosition: {x: 45, y: 16}
+  - name: Front Leg B BB-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 213
+      y: 964
+      width: 26
+      height: 46
+    spriteID: 6f053c40fb6ddb44ab9382e7094f10d3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 213, y: 964}
+    spritePosition: {x: 91, y: 38}
+  - name: Front Leg B HRB-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 89
+      y: 648
+      width: 44
+      height: 70
+    spriteID: bd362f6bef5639d4f832e3a0830ac52f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 89, y: 648}
+    spritePosition: {x: 89, y: 14}
+  - name: Front Leg B AG-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 89
+      y: 390
+      width: 41
+      height: 78
+    spriteID: 5a1e961717295d144971bc0580e1c4a1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 89, y: 390}
+    spritePosition: {x: 88, y: 15}
+  - name: Front Leg B AB-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 89
+      y: 476
+      width: 41
+      height: 78
+    spriteID: 992ae79179e6f404ebbd0cbd1dcf84bf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 89, y: 476}
+    spritePosition: {x: 88, y: 15}
+  - name: Front Leg B AR-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 89
+      y: 562
+      width: 41
+      height: 78
+    spriteID: 2638d5692636e3145b386a18a33533a8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 89, y: 562}
+    spritePosition: {x: 88, y: 15}
+  - name: Front Leg B C-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 89
+      y: 920
+      width: 39
+      height: 65
+    spriteID: eba8f33cf0cffa64f85a67c662a9fd94
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 89, y: 920}
+    spritePosition: {x: 85, y: 17}
+  - name: Body C-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 259
+      y: 4
+      width: 50
+      height: 44
+    spriteID: 9a5b2f1fba0027f4fa2b6b3aea024425
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 259, y: 4}
+    spritePosition: {x: 56, y: 68}
+  - name: Body BB-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 317
+      y: 4
+      width: 54
+      height: 39
+    spriteID: b2102a5d771031245b48eda126185e6e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 317, y: 4}
+    spritePosition: {x: 49, y: 67}
+  - name: Body HR-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 213
+      y: 922
+      width: 37
+      height: 34
+    spriteID: d826c72ae506e1e498084deb520fc329
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 213, y: 922}
+    spritePosition: {x: 61, y: 66}
+  - name: Body AG-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 259
+      y: 100
+      width: 35
+      height: 34
+    spriteID: 7f53064f360a6b0479058996e6dc092e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 259, y: 100}
+    spritePosition: {x: 62, y: 63}
+  - name: Body AB-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 259
+      y: 142
+      width: 35
+      height: 34
+    spriteID: 6812a4bc3aa603e42858913977b7eb95
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 259, y: 142}
+    spritePosition: {x: 62, y: 63}
+  - name: Body AR-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 259
+      y: 184
+      width: 35
+      height: 34
+    spriteID: d1401b24a07ba2b41b8ff034b0794f46
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 259, y: 184}
+    spritePosition: {x: 62, y: 63}
+  - name: Bum C-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 89
+      y: 182
+      width: 66
+      height: 65
+    spriteID: 5ab29b704ea8a684e85b17b6846a85af
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 89, y: 182}
+    spritePosition: {x: 90, y: 83}
+  - name: Bum BB-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 898
+      width: 76
+      height: 60
+    spriteID: 9f35eca27674749419fbedd5a5eb9b1f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 898}
+    spritePosition: {x: 74, y: 71}
+  - name: Bum HR-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 89
+      y: 102
+      width: 78
+      height: 72
+    spriteID: f7350d9180af056408a7b040a62c93e7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 89, y: 102}
+    spritePosition: {x: 80, y: 69}
+  - name: Bum AG-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 664
+      width: 73
+      height: 70
+    spriteID: 46894a5077ca9f24e9dacd3babd0cabb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 664}
+    spritePosition: {x: 80, y: 62}
+  - name: Bum AB-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 742
+      width: 73
+      height: 70
+    spriteID: d8b78ab0f74912e43894a947e8d0d446
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 742}
+    spritePosition: {x: 80, y: 62}
+  - name: Bum AR-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 820
+      width: 73
+      height: 70
+    spriteID: f81c4d927ced0e64e9379d7016dd8695
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 820}
+    spritePosition: {x: 80, y: 62}
+  - name: Back Leg FBB-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 259
+      y: 396
+      width: 24
+      height: 30
+    spriteID: 4cac4b44bab5eff4d9784ee51fbaa60e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 259, y: 396}
+    spritePosition: {x: 44, y: 41}
+  - name: Back Leg FHRB-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 213
+      y: 407
+      width: 32
+      height: 55
+    spriteID: edcb0ea309e734e4196b988f4c822969
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 213, y: 407}
+    spritePosition: {x: 40, y: 23}
+  - name: Back Leg FAG-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 213
+      y: 470
+      width: 33
+      height: 50
+    spriteID: 04bdcb4efc39285459919dbaa3db7e81
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 213, y: 470}
+    spritePosition: {x: 40, y: 23}
+  - name: Back Leg F AB-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 213
+      y: 528
+      width: 33
+      height: 50
+    spriteID: acdb509c97fc02540ad34cb1dba57803
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 213, y: 528}
+    spritePosition: {x: 40, y: 23}
+  - name: Back Leg FAR-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 213
+      y: 586
+      width: 33
+      height: 50
+    spriteID: ef94ce3de6ee1ba47b93e2036ebbaac1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 213, y: 586}
+    spritePosition: {x: 40, y: 23}
+  - name: Back Leg FC-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 89
+      y: 858
+      width: 50
+      height: 54
+    spriteID: 52a5e4c6650886b4eb3b302261ed900c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 89, y: 858}
+    spritePosition: {x: 33, y: 19}
+  - name: Back Leg M C-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 213
+      y: 276
+      width: 38
+      height: 55
+    spriteID: 92930b791ca38bb44a21d49526910828
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 213, y: 276}
+    spritePosition: {x: 75, y: 23}
+  - name: Back Leg M BB-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 259
+      y: 355
+      width: 23
+      height: 33
+    spriteID: bdc42eedd7a885d4eab984c1bab171a5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 259, y: 355}
+    spritePosition: {x: 80, y: 44}
+  - name: Back Leg M HRB-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 138
+      y: 476
+      width: 28
+      height: 47
+    spriteID: 4131b9d89fe3e7949b651c593c7f858c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 138, y: 476}
+    spritePosition: {x: 81, y: 28}
+  - name: Back Leg M AG-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 213
+      y: 757
+      width: 30
+      height: 47
+    spriteID: 5af1bed1e1e000542b226eccbba6f2f2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 213, y: 757}
+    spritePosition: {x: 79, y: 27}
+  - name: Back Leg M AB-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 213
+      y: 812
+      width: 30
+      height: 47
+    spriteID: d78832d29368cf14482c265a91a165fe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 213, y: 812}
+    spritePosition: {x: 79, y: 27}
+  - name: Back Leg M AR-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 213
+      y: 867
+      width: 30
+      height: 47
+    spriteID: 26496e88a328c8949842ffab1a90c853
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 213, y: 867}
+    spritePosition: {x: 79, y: 27}
+  - name: Back Leg B BB-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 293
+      y: 268
+      width: 16
+      height: 31
+    spriteID: 55964c3047c5af34cae278d61e11ba8c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 293, y: 268}
+    spritePosition: {x: 66, y: 44}
+  - name: Back Leg B HRB-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 143
+      y: 787
+      width: 22
+      height: 48
+    spriteID: 18d9a9cb4c584434c9a73cc4527e896a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 143, y: 787}
+    spritePosition: {x: 71, y: 25}
+  - name: Back Leg B AG-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 77
+      height: 120
+    spriteID: f58ba64708662a74490f0fb7b758b690
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 19, y: 10}
+  - name: Back Leg B AB-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 132
+      width: 77
+      height: 120
+    spriteID: d652380f251d497479a3b109b02ac45f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 132}
+    spritePosition: {x: 19, y: 10}
+  - name: Back Leg B AR-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 260
+      width: 77
+      height: 120
+    spriteID: f2203793516788246a5ba6c7e2906780
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 260}
+    spritePosition: {x: 19, y: 10}
+  - name: 'Back Leg B C-1 '
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 213
+      y: 701
+      width: 30
+      height: 48
+    spriteID: fcf5d1d6c94e5cb42a57af745fbe9951
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 213, y: 701}
+    spritePosition: {x: 67, y: 24}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    boneReadOnly: 0
+  sharedRigSpriteImportData: []
+  sharedRigCharacterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    boneReadOnly: 0
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Server
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  mosaicLayers: 1
+  characterMode: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  layerMappingOption: 2
+  generatePhysicsShape: 0
+  paperDollMode: 0
+  keepDupilcateSpriteName: 1
+  skeletonAssetReferenceID: 
+  spriteCategoryList:
+    categories: []
+  spritePackingTag: 
+  resliceFromLayer: 0
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: Eye
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 2c49af2a14a2589428a57a652d15c1ca
+    layerID: 0
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Eye B-1
+    spriteName: Eye B-1
+    isGroup: 0
+    parentIndex: 0
+    spriteID: d318d26164a3ed24ab370dc7680cfd80
+    layerID: -500704021
+    mosaicPosition: {x: 289, y: 469}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Eye F-1
+    spriteName: Eye F-1
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 10887899c14cd0f458323cf9ba0708d1
+    layerID: -500704153
+    mosaicPosition: {x: 138, y: 613}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Eye HR-1
+    spriteName: Eye HR-1
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 828df8ce31107e54e8866fc59004b8a2
+    layerID: -117933925
+    mosaicPosition: {x: 89, y: 993}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Eye AG-1
+    spriteName: Eye AG-1
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 7c7b2302fbce12849bcb7de41197fe0c
+    layerID: 1455056219
+    mosaicPosition: {x: 259, y: 434}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Eye AB-1
+    spriteName: Eye AB-1
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 0e254df9a00d35f4cb0e8d88ee01c679
+    layerID: -729380108
+    mosaicPosition: {x: 259, y: 469}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Eye AR-1
+    spriteName: Eye AR-1
+    isGroup: 0
+    parentIndex: 0
+    spriteID: bc502f981830f8b4594025d55f92556d
+    layerID: -117934268
+    mosaicPosition: {x: 259, y: 504}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Head
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: df5252524e439f142b7c9177b9a61171
+    layerID: -158744160
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Head C-1
+    spriteName: Head C-1
+    isGroup: 0
+    parentIndex: 7
+    spriteID: 1e579775d97c72544a3504c11034321e
+    layerID: 385754735
+    mosaicPosition: {x: 4, y: 966}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Head F-1
+    spriteName: Head F-1
+    isGroup: 0
+    parentIndex: 7
+    spriteID: c016a22192615024ab68a4880bb06755
+    layerID: 1366985696
+    mosaicPosition: {x: 89, y: 255}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Head C-1
+    spriteName: Head C-1
+    isGroup: 0
+    parentIndex: 7
+    spriteID: 231268f0fe4f98a499bc02b528eb6694
+    layerID: -746496735
+    mosaicPosition: {x: 259, y: 56}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Head BB-1
+    spriteName: Head BB-1
+    isGroup: 0
+    parentIndex: 7
+    spriteID: b96940a1f1576004fba083811342a0d3
+    layerID: -1547750186
+    mosaicPosition: {x: 89, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Head HB-1
+    spriteName: Head HB-1
+    isGroup: 0
+    parentIndex: 7
+    spriteID: e6590c09d1bd86344957eece0e935169
+    layerID: 11685540
+    mosaicPosition: {x: 89, y: 726}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Head AG-1
+    spriteName: Head AG-1
+    isGroup: 0
+    parentIndex: 7
+    spriteID: c4930d66ea5e57a459fa23af84bc5433
+    layerID: 919010978
+    mosaicPosition: {x: 4, y: 388}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Head AB-1
+    spriteName: Head AB-1
+    isGroup: 0
+    parentIndex: 7
+    spriteID: 1f28fffda8aa85a47898a8c3106a16ea
+    layerID: 919011143
+    mosaicPosition: {x: 4, y: 480}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Head AR-1
+    spriteName: Head AR-1
+    isGroup: 0
+    parentIndex: 7
+    spriteID: 9f2c4268f724c1c4da018d5fd48bb2bc
+    layerID: 919011639
+    mosaicPosition: {x: 4, y: 572}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Mandible L
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: ff92346c715a92c4d87be53434be7070
+    layerID: 1236719802
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Mandible L C-1
+    spriteName: Mandible L C-1
+    isGroup: 0
+    parentIndex: 16
+    spriteID: f2ff6b6bbd669894087ed4627888e65b
+    layerID: -421273781
+    mosaicPosition: {x: 259, y: 226}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Mandible L BB-1
+    spriteName: Mandible L BB-1
+    isGroup: 0
+    parentIndex: 16
+    spriteID: 8b4892245476f3945b5c62cd2856513d
+    layerID: -1507818108
+    mosaicPosition: {x: 141, y: 702}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Mandible L HR-1
+    spriteName: Mandible L HR-1
+    isGroup: 0
+    parentIndex: 16
+    spriteID: a3f9802f4684005459e1a7f959586e42
+    layerID: 1227713958
+    mosaicPosition: {x: 213, y: 339}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Mandible L AR-1
+    spriteName: Mandible L AR-1
+    isGroup: 0
+    parentIndex: 16
+    spriteID: 611dd549a5de3ed4caad9fc94d4024b3
+    layerID: 320388355
+    mosaicPosition: {x: 259, y: 310}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Mandible R
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: f61ba311e233c434b83fdc265ff7ba14
+    layerID: -282309972
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Mandible R C-1
+    spriteName: Mandible R C-1
+    isGroup: 0
+    parentIndex: 21
+    spriteID: c3d1995889789834c85bc8cd4013f75d
+    layerID: 1796213681
+    mosaicPosition: {x: 259, y: 268}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Mandible R BB-1
+    spriteName: Mandible R BB-1
+    isGroup: 0
+    parentIndex: 21
+    spriteID: e9def2ce9a699824b97dda74c78f1d06
+    layerID: -1071482446
+    mosaicPosition: {x: 291, y: 396}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Mandible R HR-1
+    spriteName: Mandible R HR-1
+    isGroup: 0
+    parentIndex: 21
+    spriteID: a8b7172ffbcc70c43989f76760f2e42c
+    layerID: 487953776
+    mosaicPosition: {x: 213, y: 644}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Mandible R AR-1
+    spriteName: Mandible R AR-1
+    isGroup: 0
+    parentIndex: 21
+    spriteID: c0b2695f97294e84698647263bba3a64
+    layerID: 192074013
+    mosaicPosition: {x: 289, y: 434}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Front Leg M
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: b04f25e840792a448a3701d0826a3713
+    layerID: -2067308214
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Front Leg M C-1
+    spriteName: Front Leg M C-1
+    isGroup: 0
+    parentIndex: 26
+    spriteID: fe2d45036bfd4824194e357a545761d0
+    layerID: 1864974817
+    mosaicPosition: {x: 89, y: 787}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Front Leg M BB-1
+    spriteName: Front Leg M BB-1
+    isGroup: 0
+    parentIndex: 26
+    spriteID: 3005d76de2661ac4ea74dd2416867b3d
+    layerID: -1682831556
+    mosaicPosition: {x: 138, y: 562}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Front Leg M HRB-1
+    spriteName: Front Leg M HRB-1
+    isGroup: 0
+    parentIndex: 26
+    spriteID: 4d26728580f8c2d41a8fe84482010cfd
+    layerID: -258611724
+    mosaicPosition: {x: 138, y: 390}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Front Leg M AG-1
+    spriteName: Front Leg M AG-1
+    isGroup: 0
+    parentIndex: 26
+    spriteID: 603f1792fae4bed47a76a4ff242a3588
+    layerID: 1906323268
+    mosaicPosition: {x: 136, y: 920}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Front Leg M AB-1
+    spriteName: Front Leg M AB-1
+    isGroup: 0
+    parentIndex: 26
+    spriteID: 12e1b28c1cc62ca4796f0869fc0707dd
+    layerID: -1682831523
+    mosaicPosition: {x: 175, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Front Leg M AR-1
+    spriteName: Front Leg M AR-1
+    isGroup: 0
+    parentIndex: 26
+    spriteID: a7c7d75343767fd439a04cca419c93bf
+    layerID: -1071385683
+    mosaicPosition: {x: 175, y: 89}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Front Leg F
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 6371c8b2cce42e14b81db2bb58a28d21
+    layerID: -2067308223
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Front Leg F BB-1
+    spriteName: Front Leg F BB-1
+    isGroup: 0
+    parentIndex: 33
+    spriteID: 380b884a86c5d7d4ca999bb69a922af7
+    layerID: -1682836987
+    mosaicPosition: {x: 141, y: 648}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Front Leg F HRB-1
+    spriteName: Front Leg F HRB-1
+    isGroup: 0
+    parentIndex: 33
+    spriteID: 475f6ca1115a2a0469704bc2b946ca92
+    layerID: -258774051
+    mosaicPosition: {x: 213, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Front Leg F AG0-1
+    spriteName: Front Leg F AG0-1
+    isGroup: 0
+    parentIndex: 33
+    spriteID: 0181a18b106023d488c49aabbc27b570
+    layerID: 937769635
+    mosaicPosition: {x: 213, y: 72}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Front Leg F AB-1
+    spriteName: Front Leg F AB-1
+    isGroup: 0
+    parentIndex: 33
+    spriteID: 1ac1a0ae69c10bf42b204c74d2345c6f
+    layerID: -1682837148
+    mosaicPosition: {x: 213, y: 140}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Front Leg F AR-1
+    spriteName: Front Leg F AR-1
+    isGroup: 0
+    parentIndex: 33
+    spriteID: d5a6d2f0c910c4b4dbeab75c5df3c87b
+    layerID: -1071391308
+    mosaicPosition: {x: 213, y: 208}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Front Leg F C-1
+    spriteName: Front Leg F C-1
+    isGroup: 0
+    parentIndex: 33
+    spriteID: d4012ad9ec20d654a85096616fb9d105
+    layerID: 1864969308
+    mosaicPosition: {x: 89, y: 320}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Front Leg B
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: e24f333e03c70a34aaa920bf3ca1aa35
+    layerID: -2067308227
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Front Leg B BB-1
+    spriteName: Front Leg B BB-1
+    isGroup: 0
+    parentIndex: 40
+    spriteID: 6f053c40fb6ddb44ab9382e7094f10d3
+    layerID: -1682841335
+    mosaicPosition: {x: 213, y: 964}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Front Leg B HRB-1
+    spriteName: Front Leg B HRB-1
+    isGroup: 0
+    parentIndex: 40
+    spriteID: bd362f6bef5639d4f832e3a0830ac52f
+    layerID: -258917799
+    mosaicPosition: {x: 89, y: 648}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Front Leg B AG-1
+    spriteName: Front Leg B AG-1
+    isGroup: 0
+    parentIndex: 40
+    spriteID: 5a1e961717295d144971bc0580e1c4a1
+    layerID: 1906313295
+    mosaicPosition: {x: 89, y: 390}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Front Leg B AB-1
+    spriteName: Front Leg B AB-1
+    isGroup: 0
+    parentIndex: 40
+    spriteID: 992ae79179e6f404ebbd0cbd1dcf84bf
+    layerID: -1682841496
+    mosaicPosition: {x: 89, y: 476}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Front Leg B AR-1
+    spriteName: Front Leg B AR-1
+    isGroup: 0
+    parentIndex: 40
+    spriteID: 2638d5692636e3145b386a18a33533a8
+    layerID: -1071395656
+    mosaicPosition: {x: 89, y: 562}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Front Leg B C-1
+    spriteName: Front Leg B C-1
+    isGroup: 0
+    parentIndex: 40
+    spriteID: eba8f33cf0cffa64f85a67c662a9fd94
+    layerID: 1864964952
+    mosaicPosition: {x: 89, y: 920}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Body
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: fa23447275b33da42bd8f2198aa7da6e
+    layerID: -911352830
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Body C-1
+    spriteName: Body C-1
+    isGroup: 0
+    parentIndex: 47
+    spriteID: 9a5b2f1fba0027f4fa2b6b3aea024425
+    layerID: -340115149
+    mosaicPosition: {x: 259, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Body BB-1
+    spriteName: Body BB-1
+    isGroup: 0
+    parentIndex: 47
+    spriteID: b2102a5d771031245b48eda126185e6e
+    layerID: -1458241444
+    mosaicPosition: {x: 317, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Body HR-1
+    spriteName: Body HR-1
+    isGroup: 0
+    parentIndex: 47
+    spriteID: d826c72ae506e1e498084deb520fc329
+    layerID: 665844782
+    mosaicPosition: {x: 213, y: 922}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Body AG-1
+    spriteName: Body AG-1
+    isGroup: 0
+    parentIndex: 47
+    spriteID: 7f53064f360a6b0479058996e6dc092e
+    layerID: -1034753776
+    mosaicPosition: {x: 259, y: 100}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Body AB-1
+    spriteName: Body AB-1
+    isGroup: 0
+    parentIndex: 47
+    spriteID: 6812a4bc3aa603e42858913977b7eb95
+    layerID: -1034753941
+    mosaicPosition: {x: 259, y: 142}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Body AR-1
+    spriteName: Body AR-1
+    isGroup: 0
+    parentIndex: 47
+    spriteID: d1401b24a07ba2b41b8ff034b0794f46
+    layerID: -1034753445
+    mosaicPosition: {x: 259, y: 184}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Bum
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 53c0ad30468485e449ed07b2b965fed9
+    layerID: -1985798726
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Bum C-1
+    spriteName: Bum C-1
+    isGroup: 0
+    parentIndex: 54
+    spriteID: 5ab29b704ea8a684e85b17b6846a85af
+    layerID: -1634855895
+    mosaicPosition: {x: 89, y: 182}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Bum BB-1
+    spriteName: Bum BB-1
+    isGroup: 0
+    parentIndex: 54
+    spriteID: 9f35eca27674749419fbedd5a5eb9b1f
+    layerID: 1395308916
+    mosaicPosition: {x: 4, y: 898}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Bum HR-1
+    spriteName: Bum HR-1
+    isGroup: 0
+    parentIndex: 54
+    spriteID: f7350d9180af056408a7b040a62c93e7
+    layerID: 2006754574
+    mosaicPosition: {x: 89, y: 102}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Bum AG-1
+    spriteName: Bum AG-1
+    isGroup: 0
+    parentIndex: 54
+    spriteID: 46894a5077ca9f24e9dacd3babd0cabb
+    layerID: 414078116
+    mosaicPosition: {x: 4, y: 664}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Bum AB-1
+    spriteName: Bum AB-1
+    isGroup: 0
+    parentIndex: 54
+    spriteID: d8b78ab0f74912e43894a947e8d0d446
+    layerID: 1395309077
+    mosaicPosition: {x: 4, y: 742}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Bum AR-1
+    spriteName: Bum AR-1
+    isGroup: 0
+    parentIndex: 54
+    spriteID: f81c4d927ced0e64e9379d7016dd8695
+    layerID: 2006754917
+    mosaicPosition: {x: 4, y: 820}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Back Leg F
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 0ef651ae000df3a49b8f8cba2d042110
+    layerID: 1160266731
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Back Leg FBB-1
+    spriteName: Back Leg FBB-1
+    isGroup: 0
+    parentIndex: 61
+    spriteID: 4cac4b44bab5eff4d9784ee51fbaa60e
+    layerID: -488005725
+    mosaicPosition: {x: 259, y: 396}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Back Leg FHRB-1
+    spriteName: Back Leg FHRB-1
+    isGroup: 0
+    parentIndex: 61
+    spriteID: edcb0ea309e734e4196b988f4c822969
+    layerID: 101458187
+    mosaicPosition: {x: 213, y: 407}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Back Leg FAG-1
+    spriteName: Back Leg FAG-1
+    isGroup: 0
+    parentIndex: 61
+    spriteID: 04bdcb4efc39285459919dbaa3db7e81
+    layerID: -64518255
+    mosaicPosition: {x: 213, y: 470}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Back Leg F AB-1
+    spriteName: Back Leg F AB-1
+    isGroup: 0
+    parentIndex: 61
+    spriteID: acdb509c97fc02540ad34cb1dba57803
+    layerID: -2015883560
+    mosaicPosition: {x: 213, y: 528}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Back Leg FAR-1
+    spriteName: Back Leg FAR-1
+    isGroup: 0
+    parentIndex: 61
+    spriteID: ef94ce3de6ee1ba47b93e2036ebbaac1
+    layerID: -1099451598
+    mosaicPosition: {x: 213, y: 586}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Back Leg FC-1
+    spriteName: Back Leg FC-1
+    isGroup: 0
+    parentIndex: 61
+    spriteID: 52a5e4c6650886b4eb3b302261ed900c
+    layerID: 1007043134
+    mosaicPosition: {x: 89, y: 858}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Back Leg M
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: fd5de1decd672a84bb842b6ea363f22b
+    layerID: -762047570
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Back Leg M C-1
+    spriteName: Back Leg M C-1
+    isGroup: 0
+    parentIndex: 68
+    spriteID: 92930b791ca38bb44a21d49526910828
+    layerID: 1923058131
+    mosaicPosition: {x: 213, y: 276}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Back Leg M BB-1
+    spriteName: Back Leg M BB-1
+    isGroup: 0
+    parentIndex: 68
+    spriteID: bdc42eedd7a885d4eab984c1bab171a5
+    layerID: -579405616
+    mosaicPosition: {x: 259, y: 355}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Back Leg M HRB-1
+    spriteName: Back Leg M HRB-1
+    isGroup: 0
+    parentIndex: 68
+    spriteID: 4131b9d89fe3e7949b651c593c7f858c
+    layerID: 2051425080
+    mosaicPosition: {x: 138, y: 476}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Back Leg M AG-1
+    spriteName: Back Leg M AG-1
+    isGroup: 0
+    parentIndex: 68
+    spriteID: 5af1bed1e1e000542b226eccbba6f2f2
+    layerID: 684150512
+    mosaicPosition: {x: 213, y: 757}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Back Leg M AB-1
+    spriteName: Back Leg M AB-1
+    isGroup: 0
+    parentIndex: 68
+    spriteID: d78832d29368cf14482c265a91a165fe
+    layerID: 684150347
+    mosaicPosition: {x: 213, y: 812}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Back Leg M AR-1
+    spriteName: Back Leg M AR-1
+    isGroup: 0
+    parentIndex: 68
+    spriteID: 26496e88a328c8949842ffab1a90c853
+    layerID: 684150843
+    mosaicPosition: {x: 213, y: 867}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Back Leg B
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 6dc5757df4a6d254e87097b663e2e071
+    layerID: -1165332097
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Back Leg B BB-1
+    spriteName: Back Leg B BB-1
+    isGroup: 0
+    parentIndex: 75
+    spriteID: 55964c3047c5af34cae278d61e11ba8c
+    layerID: -347234753
+    mosaicPosition: {x: 293, y: 268}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Back Leg B HRB-1
+    spriteName: Back Leg B HRB-1
+    isGroup: 0
+    parentIndex: 75
+    spriteID: 18d9a9cb4c584434c9a73cc4527e896a
+    layerID: 1513185455
+    mosaicPosition: {x: 143, y: 787}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Back Leg B AG-1
+    spriteName: Back Leg B AG-1
+    isGroup: 0
+    parentIndex: 75
+    spriteID: f58ba64708662a74490f0fb7b758b690
+    layerID: -206072087
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Back Leg B AB-1
+    spriteName: Back Leg B AB-1
+    isGroup: 0
+    parentIndex: 75
+    spriteID: d652380f251d497479a3b109b02ac45f
+    layerID: -206072252
+    mosaicPosition: {x: 4, y: 132}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Back Leg B AR-1
+    spriteName: Back Leg B AR-1
+    isGroup: 0
+    parentIndex: 75
+    spriteID: f2203793516788246a5ba6c7e2906780
+    layerID: -206071756
+    mosaicPosition: {x: 4, y: 260}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: 'Back Leg B C-1 '
+    spriteName: 'Back Leg B C-1 '
+    isGroup: 0
+    parentIndex: 75
+    spriteID: fcf5d1d6c94e5cb42a57af745fbe9951
+    layerID: 1124740080
+    mosaicPosition: {x: 213, y: 701}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  sharedRigPSDLayers: []
+  pSDLayerImportSetting: []
+  generateGOHierarchy: 0
+  textureAssetName: 
+  prefabAssetName: 
+  spriteLibAssetName: 
+  skeletonAssetName: 
+  secondarySpriteTextures: []

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Prefab/NonInteractable/Rock 2.prefab.meta
 guid: a58897b1086280442bc92de80f150ace
+========
+guid: 0e2f04194847bec4d9ae2def687a3487
+>>>>>>>> master:Assets/Prefab/NonInteractable/Rock 1.prefab.meta
 PrefabImporter:
   externalObjects: {}
   userData: 

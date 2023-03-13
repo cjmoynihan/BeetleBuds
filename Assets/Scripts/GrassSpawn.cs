@@ -5,12 +5,12 @@ using UnityEngine;
 public class GrassSpawn : MonoBehaviour
 {
     public List<GameObject> grass;
-    public List<GameObject> rocks;
 
+    public List<GameObject> rocks;
     public int zoneHeight = 5;
     public int zoneWidth = 8;
     public int numGrassToSpawn = 10;
-    public int numRocksToSpawn = 4;
+    public int numRocksToSpawn = 3;
 
     public void Start()
     {
@@ -20,10 +20,11 @@ public class GrassSpawn : MonoBehaviour
             var objectToSpawn = grass[choice];
             Instantiate(objectToSpawn, transform.position + new Vector3(Random.Range(-zoneWidth, zoneWidth), Random.Range(-zoneHeight, zoneHeight), 0), new Quaternion());
         }
+
         for (int i = 0; i < numRocksToSpawn; i++)
         {
-            var choice = Random.Range(0, grass.Count);
-            var objectToSpawn = grass[choice];
+            var choice = Random.Range(0, rocks.Count);
+            var objectToSpawn = rocks[choice];
             Instantiate(objectToSpawn, transform.position + new Vector3(Random.Range(-zoneWidth, zoneWidth), Random.Range(-zoneHeight, zoneHeight), 0), new Quaternion());
         }
     }
