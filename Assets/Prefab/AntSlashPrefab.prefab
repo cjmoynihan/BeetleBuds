@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3169611023223154975}
   m_Layer: 0
   m_Name: ant_mandible_1
-  m_TagString: Untagged
+  m_TagString: Attack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 3602481098932224324}
   m_Layer: 0
   m_Name: ant_mandible_1 (1)
-  m_TagString: Untagged
+  m_TagString: Attack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
