@@ -8504,11 +8504,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f5e3a710d3634740a7034a42108d92a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 0}
   STARTING_HEALTH: 1
-  STARTING_SPEED: 2
+  STARTING_SPEED: 5
   STARTING_ATTACK_COOLDOWN: 0.5
-  STARTING_DAMAGE: 1
-  STARTING_RANGE: 1
+  STARTING_DAMAGE: 5
+  STARTING_RANGE: 1.5
   SLOW_DURATION: 0.7
   childPartObjects:
   - {fileID: 3233193428765748090, guid: 116d67903e20e4aaba65369a4a587122, type: 3}
