@@ -46,4 +46,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _hud: {fileID: 0}
   seedGenerator: {fileID: 0}
-  _player: {fileID: 3245137915381739891, guid: c91b41286252440a289a2f234fab5ff1, type: 3}
+  _player: {fileID: 8679322471380547650, guid: 043b0089ebd794b4f8548e65f7cddb78, type: 3}
+  _pauseMenu: {fileID: 0}
+  seedBox: {fileID: 0}

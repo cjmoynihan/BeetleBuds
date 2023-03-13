@@ -8506,9 +8506,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 0}
   STARTING_HEALTH: 1
-  STARTING_SPEED: 5
+  STARTING_SPEED: 4
   STARTING_ATTACK_COOLDOWN: 0.5
-  STARTING_DAMAGE: 5
+  STARTING_DAMAGE: 1
   STARTING_RANGE: 1.5
   SLOW_DURATION: 0.7
   childPartObjects:

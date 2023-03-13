@@ -28,7 +28,8 @@ public class GameController : MonoBehaviour
         seedGenCon.SetGameSeed(seedBox);
         try
         {
-            Destroy(seedGenerator);
+            //Destroy(seedGenerator);
+            seedGenerator.SetActive(false);
         } finally
         {
             LoadPersistentObjects();
@@ -40,8 +41,8 @@ public class GameController : MonoBehaviour
 
     public void LoadPersistentObjects()
     {
-        if (_player != null) Destroy(_player);
-        if (_hud != null) Destroy(_hud);
+        //if (_player != null) Destroy(_player);
+        //if (_hud != null) Destroy(_hud);
         DontDestroyOnLoad(Instantiate(_player));
         DontDestroyOnLoad(Instantiate(_hud));
         DontDestroyOnLoad(_pauseMenu);

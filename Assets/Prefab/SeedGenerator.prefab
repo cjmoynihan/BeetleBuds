@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &523050348799136323
 Transform:
   m_ObjectHideFlags: 0
@@ -47,4 +47,3 @@ MonoBehaviour:
   seedText: 
   useRandomSeed: 0
   usePlayerSeed: 1
-  seedbox: {fileID: 0}
