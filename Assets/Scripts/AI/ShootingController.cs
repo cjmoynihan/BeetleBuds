@@ -5,7 +5,6 @@ using System;
 
 public class ShootingController : MonoBehaviour
 {
-    private Camera mainCam;
     private Vector3 mousePos;
     private Animator anim;
     private PlayerController playerController;
@@ -22,7 +21,6 @@ public class ShootingController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
         GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
         anim = playerObj.GetComponent<Animator>();
         playerController = playerObj.GetComponent<PlayerController>();
@@ -38,15 +36,7 @@ public class ShootingController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        try
-        {
-            mousePos = mainCam.ScreenToWorldPoint(Input.mousePosition);
-        }
-        catch
-        {
-            mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
-            mousePos = mainCam.ScreenToWorldPoint(Input.mousePosition);
-        }
+        mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
         Vector3 rotation = mousePos - transform.position;
         Vector2 afterRotations = new Vector2(rotation.x, rotation.y);

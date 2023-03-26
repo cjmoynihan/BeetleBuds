@@ -12,6 +12,7 @@ TagManager:
   - InteractiveObject
   - GameState
   - Boss
+  - 4KCamera
   layers:
   - Default
   - TransparentFX
